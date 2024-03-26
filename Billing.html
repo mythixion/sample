@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #F0F0F6;
+        }
+        .billingSetting {
+            background-color: white;
+            padding: 40px;
+            border-radius: 4px;
+        }
+        .billingSetting__head {
+            display: flex;
+            justify-content: space-between;
+        }
+        .billingSetting__head__title {
+            margin: 0px;
+            font-weight: bold;
+        }
+        .billingSetting__head__button {
+            background-color: #D95E9D;
+            display: flex;
+            gap: 10px;
+            border-radius: 8px;
+            line-height: 45px;
+            align-items: center;
+            padding: 0px 24px;
+        }
+        .billingSetting__head__button__image {
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+        }
+        .billingSetting__head__button__label {
+            margin: 0px;
+            color: white;
+            font-size: 14px;
+        }
+        .billingSetting__title {
+            margin: 0px;
+            color: #2C1055;
+        }
+        .billingSetting__method {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            border: 1px solid #BAA8BF;
+            border-radius: 6px;
+            padding: 8px 16px;
+            align-items: center;
+        }
+        .billingSetting__method__card {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        .billingSetting__method__card__image {
+            width: 25px;
+            height: 25px;
+            border-radius: 50px;
+        }
+        .billingSetting__method__card__name {
+            margin: 0px;
+            color: #604A81;
+        }
+        .billingSetting__method__card__default {
+            margin: 0px;
+            background-color: #EDEEF6;
+            color: #000033;
+            border-radius: 16px;
+            align-items: center;
+            line-height: 35px;
+            padding: 0px 10px;
+        }
+        .billingSetting__method__number {
+            margin: 0px;
+            color: #604A81;
+        }
+        .billingSetting__method__date {
+            display: flex;
+            gap: 10px;
+        }
+        .billingSetting__method__date__label {
+            margin: 0px;
+            color: #412A66;
+        }
+        .billingSetting__method__date__value {
+            margin: 0px;
+            color: #604A81;
+        }
+        .billingCost {
+            background-color: white;
+            margin-top: 20px;
+            border-radius: 4px;
+            padding: 40px;
+        }
+        .billingCost__head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .billingCost__head__title {
+            margin: 0px;
+            color: #252343;
+            font-weight: bold;
+        }
+        .billingCost__head__payment {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .billingcost__head__payment__label {
+            margin: 0px;
+        }
+        .billingCost__head__payment__value {
+            margin: 0px;
+            background-color: #FCF0F7;
+            color: #EB62A6;
+            border-radius: 12px;
+            line-height: 35px;
+            padding: 0px 12px;
+        }
+        .billingCost__claim {
+            display: flex;
+            margin-top: 40px;
+        }
+        .billingCost__claim__wrapper {
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            border: 1px solid #DFD1DC;
+            border-radius: 8px;
+            padding: 8px 16px;
+            align-items: center;
+            height: 40px;
+            margin: 10px;
+        }
+        .billingCost__claim__wrapper__name {
+            margin: 0px;
+            color: #402864;
+        }
+        .billingCost__claim__wrapper__status {
+            margin: 0px;
+            background-color: #EDF9F4;
+            color: #2F6749;
+            border-radius: 12px;
+            line-height: 30px;
+            padding: 0px 10px;
+        }
+        .billingCost__claim__wrapper__plan {
+            margin: 0px;
+            color: #6D5C89;
+        }
+        .billingCost__claim__wrapper__search {
+            margin: 0px;
+            color: #6D5C89;
+        }
+        .billingCost__claim__wrapper__document {
+            margin: 0px;
+            color: #6D5C89;
+        }
+        .billingCost__claim__wrapper__cost {
+            margin: 0px;
+            color: #EC67A8;
+        }
+        .billingCost__claim__total {
+            display: flex;
+            width: 40%;
+            height: 90px;
+            gap: 60px;
+            border: 1px solid #DEDDEB;
+            align-items: center;
+            padding: 0px 16px;
+            border-radius: 12px;
+            margin: 10px;
+        }
+        .billingCost__claim__total__wrapper {
+
+        }
+        .billingCost__claim__total__label {
+            margin: 0px;
+            color: #584578;
+            font-weight: bold;
+        }
+        .billingCost__claim__total__tax {
+            margin: 0px;
+            font-size: 12px;
+            color: #462B6D;
+        }
+        .billingCost__claim__total__value {
+            color: #EC67A8;
+            margin: 0px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="billingSetting">
+        <div class="billingSetting__head">
+            <p class="billingSetting__head__title">Billing settings</p>
+            <div class="billingSetting__head__button">
+                <img src="./hamster.png" alt="" class="billingSetting__head__button__image">
+                <p class="billingSetting__head__button__label">Manage billing setting and invoices</p>
+            </div>
+        </div>
+        <p class="billingSetting__title">Payment methods</p>
+        <div class="billingSetting__method">
+            <div class="billingSetting__method__card">
+                <img src="./hamster.png" alt="" class="billingSetting__method__card__image">
+                <p class="billingSetting__method__card__name">Logos&Pathos Consulting</p>
+                <p class="billingSetting__method__card__default">default</p>
+            </div>
+            <p class="billingSetting__method__number">****-****-****-0196</p>
+            <div class="billingSetting__method__date">
+                <p class="billingSetting__method__date__label">Exp date</p>
+                <p class="billingSetting__method__date__value">7/2026</p>
+            </div>
+        </div>
+    </div>
+    <div class="billingCost">
+        <div class="billingCost__head">
+            <p class="billingCost__head__title">Estimated cost for this billing period</p>
+            <div class="billingCost__head__payment">
+                <p class="billingcost__head__payment__label">Next payment</p>
+                <p class="billingCost__head__payment__value">March 1st 2024</p>
+            </div>
+        </div>
+        <div class="billingCost__claim">
+            <div class="billingCost__claim__wrapper">
+                <p class="billingCost__claim__wrapper__name">Aurash</p>
+                <p class="billingCost__claim__wrapper__status">active</p>
+                <p class="billingCost__claim__wrapper__plan">Build - SINGAPORE</p>
+                <p class="billingCost__claim__wrapper__search">1,891</p>
+                <p class="billingCost__claim__wrapper__document">1,455</p>
+                <p class="billingCost__claim__wrapper__cost">$27.84</p>
+            </div>
+            <div class="billingCost__claim__total">
+                <div class="billingCost__claim__total__wrapper">
+                    <p class="billingCost__claim__total__label">Total</p>
+                    <p class="billingCost__claim__total__tax">Excluding taxes</p>
+                </div>
+                    <p class="billingCost__claim__total__value">$27.84</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

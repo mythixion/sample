@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #F3F4F6;
+            padding: 10px;
+        }
+        .head {
+            display: flex;
+            justify-content: space-between;
+        }
+        .head__wrapper {
+
+        }
+        .head__wrapper__title {
+            margin: 0px;
+            font-weight: bold;
+        }
+        .head__wrapper__description {
+            margin: 0px;
+        }
+        .head__button {
+            margin: 0px;
+            background-color: #48A1AF;
+            color: white;
+            border-radius: 6px;
+            padding: 0px 20px;
+            line-height: 50px;
+            align-items: center;
+            text-align: center;
+        }
+        .wrapper {
+            background-color: white;
+            margin-top: 40px;
+            border-radius: 4px;
+            border-bottom: 1px solid #E1E1E4;
+        }
+        .form {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .form__input {
+            border: 1px solid #E2E2E5;
+            border-radius: 8px;
+            padding: 10px;
+            height: 16px;
+            color: #A0A0A8;
+        }
+        .form__wrapper {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .form__wrapper__label {
+            margin: 0px;
+        }
+        .form__wrapper__select {
+            border: 1px solid #E5E5E7;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        .domain {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            border-bottom: 1px solid #E1E1E4;
+            border-top: 1px solid #E1E1E4;
+            padding: 20px;
+        }
+        .domain__about {
+            display: flex;
+            gap: 10px;
+        }
+        .domain__about__icon {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #E5E5E7;
+            border-radius: 4px;
+        }
+        .domain__about__wrapper {
+
+        }
+        .domain__about__wrapper__title {
+            margin: 0px;
+            font-weight: bold;
+        }
+        .domain__about__wrapper__description {
+            margin: 0px;
+        }
+        .domain__date {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        .domain__status {
+            margin: 0px;
+            font-size: 14px;
+            background-color: #E9F4F5;
+            color: #399CAB;
+            border-radius: 4px;
+            padding: 0px 10px;
+            line-height: 50px;
+        }
+        .domain__date__sending {
+            display: flex;
+            gap: 40px;
+        }
+        .domain__wrapper {
+
+        }
+        .domain__wrapper__label {
+            margin: 0px;
+            font-weight: bold;
+        }
+        .domain__wrapper__value {
+            margin: 0px;
+            color: #262627;
+        }
+        .domain__date__button {
+            background-color: #E4E4E7;
+            border-radius: 8px;
+            padding: 0px 10px;
+            line-height: 50px;
+            margin: 0px;
+        }
+        .search {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 20px;
+        }
+        .search__label {
+            margin: 0px;
+        }
+        .search__value {
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #E1E1E5;
+            width: 60px;
+            height: 35px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="head__wrapper">
+            <p class="head__wrapper__title">Domains</p>
+            <p class="head__wrapper__description">Emails will be sent to your recipients from the verified domians.</p>
+        </div>
+        <p class="head__button">Add domain</p>
+    </div>
+    <div class="wrapper">
+        <div class="form">
+            <input type="text" placeholder="Type to search" class="form__input">
+            <div class="form__wrapper">
+                <p class="form__wrapper__label">Sort by</p>
+                <select name="" id="" class="form__wrapper__select">
+                    <option value="">Date created</option>
+                </select>
+            </div>
+        </div>
+        <div class="domain">
+            <div class="domain__about">
+                <img src="./hamster.png" alt="" class="domain__about__icon">
+                <div class="domain__about__wrapper">
+                    <p class="domain__about__wrapper__title">Ipconsulting.jp</p>
+                    <p class="domain__about__wrapper__description">Domain is verified and ready to use</p>
+                </div>
+            </div>
+            <p class="domain__status">Verified</p>
+            <div class="domain__wrapper">
+                <p class="domain__wrapper__label">23,165</p>
+                <p class="domain__wrapper__value">Sent</p>
+            </div>
+            <div class="domain__wrapper">
+                <p class="domain__wrapper__label">23,137</p>
+                <p class="domain__wrapper__value">Delivered</p>
+            </div>
+            <div class="domain__wrapper">
+                <p class="domain__wrapper__label">24</p>
+                <p class="domain__wrapper__value">Rejected</p>
+            </div>
+            <div class="domain__wrapper">
+                <p class="domain__wrapper__label">0</p>
+                <p class="domain__wrapper__value">Received</p>
+            </div>
+            <p class="domain__date__button">Manage</p>
+        </div>
+        <div class="search">
+            <p class="search__label">View</p>
+            <select name="" id="" class="search__value">
+                <option value="">25</option>
+            </select>
+        </div>
+    </div>
+    
+</body>
+</html>

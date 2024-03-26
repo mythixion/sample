@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+            padding: 20px;
+            background-color: #512423;
+            width: 80%;
+            border-radius: 8px;
+        }
+        .icon {
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin: 0px;
+        }
+        .title2 {
+            color: white;
+            font-size: 14px;
+            margin: 0px;
+        }
+        .status {
+            background-color: rgba(46, 43, 51, 0.5);
+            border-radius: 8px;
+            padding: 12px 20px;
+            width: 100%;
+        }
+        .status__label {
+            color: #C4C2CB;
+            margin: 0px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .status__value {
+            color: white;
+            margin: 0px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .wrapper {
+            display: flex;
+            gap: 8px;
+            margin-top: 20px;
+        }
+        .wrapper1 {
+            display: flex;
+        }
+        .wrapper2 {
+            margin-left: 20px;
+        }
+        
+        .list1 {
+            width: 100%;
+        }
+        .list1__bar {
+            width: 100%;
+            background-color: #C18040;
+            height: 12px;
+        }
+        .list1__label {
+            margin: 0px;
+            color: #C18040;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .list2 {
+            width: 100%;
+        }
+        .list2__bar {
+            width: 100%;
+            background-color: #DEDC7A;
+            height: 12px;
+        }
+        .list2__label {
+            margin: 0px;
+            color: #DEDC7A;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .list3 {
+            width: 100%;
+        }
+        .list3__bar {
+            width: 100%;
+            background-color: #AF566A;
+            height: 12px;
+        }
+        .list3__label {
+            margin: 0px;
+            color: #AF566A;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .list4 {
+            width: 100%;
+        }
+        .list4__bar {
+            width: 100%;
+            background-color: #589F89;
+            height: 12px;
+        }
+        .list4__label {
+            margin: 0px;
+            color: #589F89;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .list5 {
+            width: 100%;
+        }
+        .list5__bar {
+            width: 100%;
+            background-color: #4B6E5A;
+            height: 12px;
+        }
+        .list5__label {
+            margin: 0px;
+            color: #4B6E5A;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .wrapper3 {
+            display: flex;
+            gap: 2px;
+            margin-top: 20px;
+        }
+        .status2__label {
+            color: white;
+            margin: 0px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .status2__value {
+            color: #C4C2CB;
+            margin: 0px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .wrapper4 {
+            display: flex;
+            margin-top: 12px;
+            justify-content: space-between;
+        }
+        .wrapper5 {
+            display: flex;
+        }
+        .status3__label {
+            color: #C4C2CB;
+            margin: 0px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .status3__value {
+            color: white;
+            margin: 0px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .wrapper6 {
+
+        }
+        .status4__label {
+            color: #C4C2CB;
+            margin: 0px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .status4__value {
+            color: white;
+            margin: 0px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .wrapper7 {
+            margin-left: 20px;
+        }
+        .wrapper8 {
+            display: flex;
+        
+        }
+        .wrapper9 {
+            margin-right: 60px;
+        }
+        .wrapper10 {
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="form">
+        <div class="wrapper1">
+            <img src="./hamster.png" alt="" class="icon">
+            <div class="wrapper2">
+                <p class="title">PvP Overview</p>
+                <p class="title2">4,953 Matches</p>    
+            </div>
+        </div>
+        <div class="wrapper3">
+            <div class="list1">
+                <div class="list1__bar"></div>
+                <p class="list1__label">Quickplay</p>
+            </div>
+            <div class="list2">
+                <div class="list2__bar"></div>
+                <p class="list2__label">Trials</p>
+            </div>
+            <div class="list3">
+                <div class="list3__bar"></div>
+                <p class="list3__label">Competitive</p>
+            </div>
+            <div class="list4">
+                <div class="list4__bar"></div>
+                <p class="list4__label">Gambit</p>
+            </div>
+            <div class="list5">
+                <div class="list5__bar"></div>
+                <p class="list5__label">Iron Banner</p>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="status">
+                <p class="status__label">K/D</p>
+                <p class="status__value">1.90</p>
+            </div>
+            <div class="status">
+                <p class="status__label">Win %</p>
+                <p class="status__value">68.5%</p>
+            </div>
+            <div class="status">
+                <p class="status__label">Kills</p>
+                <p class="status__value">64.455</p>
+            </div> 
+        </div>
+        <div class="wrapper4">
+            <div class="wrapper5">
+                <div class="wrapper6">
+                    <img src="./hamster.png" alt="" class="icon">
+                </div>
+                <div class="wrapper7">
+                    <p class="status2__label">control:...</p>
+                    <p class="status2__value">535 Matches</p>
+                </div>
+            </div>
+            <div class="wrapper8">
+                <div class="wrapper9">
+                    <p class="status3__label">K/D</p>
+                    <p class="status3__value">2.26</p>
+                </div>
+                <div class="wrapper10">
+                    <p class="status4__label">Win %</p>
+                    <p class="status4__value">66.9%</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper4">
+            <div class="wrapper5">
+                <div class="wrapper6">
+                    <img src="./hamster.png" alt="" class="icon">
+                </div>
+                <div class="wrapper7">
+                    <p class="status2__label">Trials of the nine</p>
+                    <p class="status2__value">1.347 Matches</p>
+                </div>
+            </div>
+            <div class="wrapper8">
+                <div class="wrapper9">
+                    <p class="status3__label">K/D</p>
+                    <p class="status3__value">1.80</p>
+                </div>
+                <div class="wrapper10">
+                    <p class="status4__label">Win %</p>
+                    <p class="status4__value">72.1%</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper4">
+            <div class="wrapper5">
+                <div class="wrapper6">
+                    <img src="./hamster.png" alt="" class="icon">
+                </div>
+                <div class="wrapper7">
+                    <p class="status2__label">Iron Banner</p>
+                    <p class="status2__value">745 Matches</p>
+                </div>
+            </div>
+            <div class="wrapper8">
+                <div class="wrapper9">
+                    <p class="status3__label">K/D</p>
+                    <p class="status3__value">2.10</p>
+                </div>
+                <div class="wrapper10">
+                    <p class="status4__label">Win %</p>
+                    <p class="status4__value">69.7%</p>
+                </div>
+            </div>
+        </div>
+    </div>     
+</body>
+</html>

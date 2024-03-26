@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/275662334b.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .sentry1 {
+            background-color: #1A1723;
+            display: flex;
+        }
+        .menue {
+            width: 220px;
+            border-right: 1px solid #383040;
+            padding: 20px;
+        }
+        .menue__wrapper {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+        .menue__wrapper .fa-font-awesome {
+            color: yellow;
+            font-size: 30px;
+        }
+        .menue__title {
+
+        }
+        .menue__title__description {
+            margin: 0px;
+            color: white;
+            font-size: 14px;
+        }
+        .menue__title__name {
+            margin: 0px;
+            color: #9186A1;
+            font-size: 12px;
+        }
+        .menue__select {
+            text-align: right;
+        }
+        .menue__select__head {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-top: 2px;
+        }
+        .menue__select__head.-on {
+            display: flex;
+            gap: 15px;
+            border-radius: 6px;
+            width: 190px;
+            margin-top: 15px;
+            line-height: 30px;
+            background-color: #34323D;
+            align-items: center;
+            position: relative;
+        }
+        .menue__select__head.-stats {
+            margin-top: 35px;
+        }
+        .menue__select__head.-trial {
+            margin-top: 165px;
+        }
+        .menue__select__head.-on::after {
+            content: '';
+            display: block;
+            width: 5px;
+            height: 20px;
+            background-color: #7469CC;
+            position: absolute;
+            top: 5px;
+            left: -20px;
+            border-radius: 0px 3px 3px 0px;
+        }
+        .menue__select__head__icon {
+            width: 28px;
+            height: 28px;
+            text-align: center;
+        }
+        .menue__head__image {
+            width: 17px;
+            height: 17px;
+            border-radius: 2px;
+        }
+        .menue__head__label {
+            margin: 0px;
+            color: white;
+            font-size: 14px;
+        }
+        .menue__select__head .fa-box-archive {
+            font-size: 16px;
+            color: white;
+        }
+        .menue__select__head .fa-gear {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head .fa-bell {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head .fa-folder {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head .fa-bolt {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head .fa-user {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head .fa-compass {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head .fa-clock {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head .fa-video {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head .fa-font {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head .fa-list {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head .fa-cc-discover {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head .fa-chart-column {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head .fa-tower-broadcast {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head .fa-circle-question {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head .fa-less-than {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head .fa-print {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head .fa-gift {
+            color: #9287A3;
+            font-size: 16px;
+        }
+        .menue__select__head__image {
+            width: 24px;
+            height: 24px;
+            border-radius: 2px;
+        }
+        .menue__select__head__name {
+            margin: 0px;
+            color: #9287A3;
+            font-size: 14px;
+        }
+        .menue__select__button1 {
+            margin: 0px;
+            color: white;
+            font-size: 10px;
+            background: linear-gradient(to right, #8063C0, #B04D91);
+            width: 20px;
+            line-height: 15px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .menue__select__button2 {
+            margin: 0px;
+            color: white;
+            font-size: 10px;
+            width: 35px;
+            line-height: 15px;
+            margin-left: 30px;
+            background: linear-gradient(to right, #4171D3, #41827C);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .sentry2 {
+            width: 100%;
+        }
+        .head {
+            padding: 15px 35px;
+            padding-bottom: 0px;
+        }
+        .head__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        .head__wrapper__title {
+            margin: 0px;
+            color: white;
+            font-size: 24px;
+        }
+        .head__wrapper__button {
+            margin: 0px;
+            color: white;
+            background-color: #231D29;
+            width: 40px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .head__select {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .head__select__wrapper {
+            display: flex;
+            padding-bottom: 10px;
+        }
+        .head__select__wrapper.-on {
+            border-bottom: 2px solid #A197F0;
+        }
+        .head__select__wrapper.-on .head__select__wrapper__tab {
+            color: #A197F0;
+        }
+        .head__select__wrapper__tab {
+            margin: 0px;
+            color: #D5D0DB;
+            font-size: 12px;
+        }
+        .head__select__wrapper__button {
+            margin: 0px;
+            color: white;
+            background-color: #2F2734;
+            font-size: 10px;
+            width: 20px;
+            line-height: 20px;
+            height: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-left: 5px
+        }
+        .select {
+            margin-bottom: 18px;
+        }
+        .select__label {
+            width: 115px;
+            height: 35px;
+            text-align: center;
+            border: 1px solid #383040;
+            color: #D5D0DB;
+            background-color: #231D29;
+            border-radius: 6px;
+        }
+        .form {
+            border: 1px solid #383040;
+            border-radius: 8px;
+        }
+        .form__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #19141E;
+            padding: 10px 15px;
+            border-radius: 8px 8px 0px 0px;
+        }
+        .form__wrapper__select {
+            display: flex;
+        }
+        .form__wrapper__select__checkbox {
+            margin: 0px;
+            margin-right: 10px;
+            background-color: #231D29;
+            border: 1px solid #383040;
+        }
+        .form__wrapper__select__label1 {
+            background-color: #231D29;
+            color: #665E70;
+            border: 1px solid #383040;
+            width: 90px;
+            height: 25px;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+        .form__wrapper__select__label2 {
+            background-color: #231D29;
+            color: #B8C1E0;
+            border: 1px solid #383040;
+            width: 90px;
+            height: 25px;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+        .form__wrapper__select__button {
+            margin: 0px;
+            background-color: #231D29;
+            color: #D5D0DB;
+            width: 30px;
+            line-height: 25px;
+            text-align: center;
+            align-items: center;
+            border-radius: 4px;
+            border: 1px solid #383040;
+            margin-right: 5px;
+        }
+        .form__wrapper__date {
+            display: flex;
+            gap: 60px;
+        }
+        .form__wrapper__date__title {
+            margin: 0px;
+            color: #978DA3;
+            font-size: 12px;
+        }
+        .span {
+            color: white;
+        }
+        .project {
+            padding: 20px 35px;
+            background-color: #231D29;
+            height: 700px;
+        }
+        .form__project {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #2C2430;
+            padding: 15px;
+            padding-right: 138px;
+            align-items: center;
+            position: relative;
+        }
+        .form__project.-on::before {
+            content: '';
+            display: block;
+            width: 9px;
+            height: 15px;
+            background-color: #EE7F49;
+            position: absolute;
+            top: 18px;
+            left: 0px;
+            border-radius: 0px 4px 4px 0px;
+        }
+        .form__project__wrapper {
+            width: 100%;
+        }
+        .form__project__wrapper__title {
+            display: flex;
+            align-items: center;
+        }
+        .form__project__wrapper__title__checkbox {
+            margin: 0px;
+            margin-right: 5px;
+        }
+        .form__project__wrapper__title__label {
+            color: #7BA1F8;
+            font-size: 14px;
+        }
+        .form__project__wrapper__title__url {
+            margin: 0px;
+            color: #978DA3;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+        .form__project__wrapper__description {
+            margin: 0px;
+            color: #D5D0DB;
+            font-size: 12px;
+            margin-left: 19px;
+            overflow: hidden;
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+        }
+        .form__project__wrapper__select {
+            display: flex;
+            margin-top: 10px;
+            align-items: center;
+        }
+        .form__project__wrapper__select__button1 {
+            background-color: #2B2432;
+            border: 1px solid #383040;
+            margin: 0px;
+            margin-left: 20px;
+            border-radius: 12px;
+            color: #D5D0DB;
+            font-size: 10px;
+            width: 65px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .form__project__wrapper__select__button2 {
+            margin: 0px;
+            margin-left: 20px;
+            background-color: #302729;
+            border: 1px solid #503E2A;
+            border-radius: 12px;
+            width: 40px;
+            line-height: 20px;
+            text-align: center;
+            color: #D5D0DB;
+            font-size: 10px;
+        }
+        .form__project__wrapper__select__image {
+            width: 15px;
+            height: 15px;
+            margin-left: 10px;
+        }
+        .form__project__wrapper__select__place {
+            margin: 0px;
+            color: #D5D0DB;
+            font-size: 10px;
+            margin-left: 5px;
+        }
+        .form__project__wrapper__select__name {
+            margin: 0px;
+            color: #E77A7A;
+            font-size: 10px;
+            margin-left: 5px;
+        }
+        .form__project__wrapper__select__label {
+
+        }
+        .form__project__wrapper__select__time {
+            margin: 0px;
+            color: #D5D0DB;
+            font-size: 10px;
+            margin-left: 5px;
+        }
+        .form__project__wrapper__select__number {
+            margin: 0px;
+            font-size: 10px;
+            color: #D5D0DB;
+            margin-left: 10px;
+        }
+        .form__project__wrapper__select__tag {
+            margin: 0px;
+            font-size: 10px;
+            color: #D5D0DB;
+            margin-left: 10px;
+        }
+        .form__project__wrapper__list {
+            display: flex;
+        }
+        .form__project__wrapper__list__value {
+            margin: 0px;
+            width: 120px;
+            color: #D5D0DB;
+            text-align: right;
+        }
+        .form__select {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            justify-content: end;
+        }
+        .form__select__value {
+            margin: 0px;
+            color: #978DA3;
+            margin-right: 14px;
+        }
+        .form__select__button1 {
+            margin: 0px;
+            color: #6F6678;
+            width: 38px;
+            line-height: 30px;
+            border: 1px solid #312938;
+            text-align: center;
+            border-radius: 6px 0px 0px 6px;
+        }
+        .form__select__button2 {
+            margin: 0px;
+            color: #6F6678;
+            width: 38px;
+            line-height: 30px;
+            border: 1px solid #312938;
+            text-align: center;
+            border-radius: 0px 6px 6px 0px;
+        }
+        .status {
+            background-color: #19141E;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+            align-items: center;
+            border-top: 1px solid #383040;
+        }
+        .status__wrapper {
+            display: flex;
+        }
+        .status__wrapper__label {
+            display: flex;
+            margin: 0px;
+            font-size: 12px;
+            color: #978DA3;
+        }
+        .status__image {
+            width: 25px;
+            height: 25px;
+        }
+    </style >
+</head >
+<body>
+    <div class="sentry1">
+        <div class="menue">
+            <div class="menue__wrapper">
+                <i class="fa-solid fa-font-awesome"></i>
+                <div class="menue__title">
+                    <p class="menue__title__description">Logos&Pathos ...</p>
+                    <p class="menue__title__name">hatoya</p>
+                </div>
+            </div>
+            <div class="menue__select">
+                <div class="menue__select__head -on">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-solid fa-box-archive"></i>
+                    </div>
+                    <p class="menue__head__label">Issues</p>
+                </div>
+                <div class="menue__select__head">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
+                    <p class="menue__select__head__name">Projects</p>
+                </div>
+                <div class="menue__select__head -stats">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <p class="menue__select__head__name">Performance</p>
+                </div>
+                <div class="menue__select__head">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-solid fa-font"></i>
+                    </div>
+                    <p class="menue__select__head__name">Profilings</p>
+                </div>
+                <div class="menue__select__head">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <p class="menue__select__head__name">Replays</p>
+                </div>
+                <div class="menue__select__head">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <p class="menue__select__head__name">User Feedback</p>
+                    <p class="menue__select__button1">B</p>
+                </div>
+                <div class="menue__select__head">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <p class="menue__select__head__name">Crons</p>
+                </div>
+                <div class="menue__select__head">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <p class="menue__select__head__name">Alets</p>
+                </div>
+                <div class="menue__select__head -stats">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-brands fa-cc-discover"></i>
+                    </div>
+                    <p class="menue__select__head__name">Discover</p>
+                </div>
+                <div class="menue__select__head">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <p class="menue__select__head__name">Dashboards</p>
+                </div>
+                <div class="menue__select__head">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <p class="menue__select__head__name">Releases</p>
+                </div>
+                <div class="menue__select__head -stats">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+                    <p class="menue__select__head__name">Stats</p>
+                </div>
+                <div class="menue__select__head">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <p class="menue__select__head__name">Settings</p>
+                </div>
+                <div class="menue__select__head -trial">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-solid fa-print"></i>
+                    </div>
+                    <p class="menue__select__head__name">Free Trial</p>
+                    <p class="menue__select__button2">new</p>
+                </div>
+                <div class="menue__select__head">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <p class="menue__select__head__name">Help</p>
+                </div>
+                <div class="menue__select__head">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-solid fa-tower-broadcast"></i>
+                    </div>
+                    <p class="menue__select__head__name">What's new</p>
+                </div>
+                <div class="menue__select__head -stats">
+                    <div class="menue__select__head__icon">
+                        <i class="fa-solid fa-less-than"></i>
+                    </div>
+                    <p class="menue__select__head__name">Collapse</p>
+                </div>
+            </div>
+        </div>
+        <div class="sentry2">
+            <div class="head">
+            <div class="head__wrapper">
+                <p class="head__wrapper__title">Issues</p>
+                <p class="head__wrapper__button">F</p>
+            </div>
+            <div class="head__select">
+                <div class="head__select__wrapper -on">
+                    <p class="head__select__wrapper__tab">Unresolved</p>
+                    <p class="head__select__wrapper__button">5</p>
+                </div>
+                <div class="head__select__wrapper">
+                    <p class="head__select__wrapper__tab">For Review</p>
+                    <p class="head__select__wrapper__button">1</p>
+                </div>
+                <div class="head__select__wrapper">
+                    <p class="head__select__wrapper__tab">Regeressed</p>
+                </div>
+                <div class="head__select__wrapper">
+                    <p class="head__select__wrapper__tab">Escalating</p>
+                </div>
+                <div class="head__select__wrapper">
+                    <p class="head__select__wrapper__tab">Archived</p>
+                    <p class="head__select__wrapper__button">2</p>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="select">
+                <select name="" id="" class="select__label">
+                    <option value="">canna</option>
+                </select>
+                <select name="" id="" class="select__label">
+                    <option value="">prod</option>
+                </select>
+                <select name="" id="" class="select__label">
+                    <option value="">14D</option>
+                </select>
+            </div>
+            <div class="form">
+                <div class="form__wrapper">
+                    <div class="form__wrapper__select">
+                        <input type="checkbox" class="form__wrapper__select__checkbox">
+                        <select name="" id="" class="form__wrapper__select__label1">
+                            <option value="">Resolve</option>
+                        </select>
+                        <select name="" id="" class="form__wrapper__select__label1">
+                            <option value="">Archive</option>
+                        </select>
+                        <p class="form__wrapper__select__button">...</p>
+                        <select name="" id="" class="form__wrapper__select__label2">
+                            <option value="">Last Seen</option>
+                        </select>
+                    </div>
+                    <div class="form__wrapper__date">
+                        <p class="form__wrapper__date__title">GRAPH:</p>
+                        <p class="form__wrapper__date__title"><span class="span">24h</span> 14d</p>
+                        <p class="form__wrapper__date__title">EVENTS</p>
+                        <p class="form__wrapper__date__title">USERS</p>
+                        <p class="form__wrapper__date__title">ASSIGNEE</p>
+                    </div>
+                </div>
+                <div class="form__project -on">
+                    <div class="form__project__wrapper">
+                        <div class="form__project__wrapper__title">
+                            <input type="checkbox" id="check1" class="form__project__wrapper__title__checkbox">
+                            <label for="check1" class="form__project__wrapper__title__label">FirebaseError</label>
+                            <p class="form__project__wrapper__title__url">https://dlab-manager.web.app/project/188/contract</p>
+                        </div>
+                        <p class="form__project__wrapper__description">Firebase Storage: The operation ‘getDownloadURL’ cannot be performed on a root reference, create a non-root reference using child, such as .child(‘file.png’). (storage/invalid-root-operation)</p>
+                        <div class="form__project__wrapper__select">
+                            <p class="form__project__wrapper__select__button1">Ongoing</p>
+                            <img src="./hamster.png" alt="" class="form__project__wrapper__select__image">
+                            <p class="form__project__wrapper__select__place">CANNA-4</p>
+                            <img src="./hamster.png" alt="" class="form__project__wrapper__select__image">
+                            <p class="form__project__wrapper__select__name"><span class="form__project__wrapper__select__label"></span>Unhandled</p>
+                            <img src="./hamster.png" alt="" class="form__project__wrapper__select__image">
+                            <p class="form__project__wrapper__select__time">2hr ago 3wk old</p>
+                            <p class="form__project__wrapper__select__number">F 35</p>
+                            <p class="form__project__wrapper__select__tag">logos-pathos/canna#1358</p>
+                        </div>
+                    </div>
+                    <p class="form__project__wrapper__list__value">66</p>
+                    <p class="form__project__wrapper__list__value">17</p>
+                </div>
+                <div class="form__project">
+                    <div class="form__project__wrapper">
+                        <div class="form__project__wrapper__title">
+                            <input type="checkbox" id="check1" class="form__project__wrapper__title__checkbox">
+                            <label for="check1" class="form__project__wrapper__title__label">Error</label>
+                            <p class="form__project__wrapper__title__url">z(polyfills)</p>
+                        </div>
+                        <p class="form__project__wrapper__description">Uncaught(in promise): getDocument$ Error:account pdw2801 is not found</p>
+                        <div class="form__project__wrapper__select">
+                            <p class="form__project__wrapper__select__button2">New</p>
+                            <img src="./hamster.png" alt="" class="form__project__wrapper__select__image">
+                            <p class="form__project__wrapper__select__place">CANNA-11</p>
+                            <img src="./hamster.png" alt="" class="form__project__wrapper__select__image">
+                            <p class="form__project__wrapper__select__name"><span class="form__project__wrapper__select__label"></span>Unhandled</p>
+                            <img src="./hamster.png" alt="" class="form__project__wrapper__select__image">
+                            <p class="form__project__wrapper__select__time">1d sgo 1d old</p>
+                            <p class="form__project__wrapper__select__number">F 1</p>
+                        </div>
+                    </div>
+                    <p class="form__project__wrapper__list__value">1</p>
+                    <p class="form__project__wrapper__list__value">1</p>
+                </div>
+                <div class="form__project">
+                    <div class="form__project__wrapper">
+                        <div class="form__project__wrapper__title">
+                            <input type="checkbox" id="check1" class="form__project__wrapper__title__checkbox">
+                            <label for="check1" class="form__project__wrapper__title__label">FirebaseError</label>
+                            <p class="form__project__wrapper__title__url">https://dlab-manager.web.app/project/176/contract</p>
+                        </div>
+                        <p class="form__project__wrapper__description">Firebase Storage: Max retry time for operation exceeded, please try again. (storage/retry-limit-exceeded)</p>
+                        <div class="form__project__wrapper__select">
+                            <p class="form__project__wrapper__select__button2">New</p>
+                            <img src="./hamster.png" alt="" class="form__project__wrapper__select__image">
+                            <p class="form__project__wrapper__select__place">CANNA-9</p>
+                            <img src="./hamster.png" alt="" class="form__project__wrapper__select__image">
+                            <p class="form__project__wrapper__select__name"><span class="form__project__wrapper__select__label"></span>Unhandled</p>
+                            <img src="./hamster.png" alt="" class="form__project__wrapper__select__image">
+                            <p class="form__project__wrapper__select__time">2d ago 6d old</p>
+                            <p class="form__project__wrapper__select__number">F 5</p>
+                        </div>
+                    </div>
+                    <p class="form__project__wrapper__list__value">2</p>
+                    <p class="form__project__wrapper__list__value">2</p>
+                </div>
+                <div class="form__project">
+                    <div class="form__project__wrapper">
+                        <div class="form__project__wrapper__title">
+                            <input type="checkbox" id="check1" class="form__project__wrapper__title__checkbox">
+                            <label for="check1" class="form__project__wrapper__title__label">TypeError</label>
+                            <p class="form__project__wrapper__title__url">e.exportSheet(main)</p>
+                        </div>
+                        <p class="form__project__wrapper__description">Cannot read properties of undeefined(reading 'nativeElement')</p>
+                        <div class="form__project__wrapper__select">
+                            <p class="form__project__wrapper__select__button2">New</p>
+                            <img src="./hamster.png" alt="" class="form__project__wrapper__select__image">
+                            <p class="form__project__wrapper__select__place">CANNA-P</p>
+                            <img src="./hamster.png" alt="" class="form__project__wrapper__select__image">
+                            <p class="form__project__wrapper__select__name"><span class="form__project__wrapper__select__label"></span>Unhandled</p>
+                            <img src="./hamster.png" alt="" class="form__project__wrapper__select__image">
+                            <p class="form__project__wrapper__select__time">1wk ago 1wk old</p>
+                            <p class="form__project__wrapper__select__tag">logos-pathos/canna#1357</p>
+                        </div>
+                    </div>
+                    <p class="form__project__wrapper__list__value">2</p>
+                    <p class="form__project__wrapper__list__value">1</p>
+                </div>
+                <div class="form__project">
+                    <div class="form__project__wrapper">
+                        <div class="form__project__wrapper__title">
+                            <input type="checkbox" id="check1" class="form__project__wrapper__title__checkbox">
+                            <label for="check1" class="form__project__wrapper__title__label">TypeError</label>
+                            <p class="form__project__wrapper__title__url">?(main)</p>
+                        </div>
+                        <p class="form__project__wrapper__description">Cannot read properties of undeefined(reading 'label')</p>
+                        <div class="form__project__wrapper__select">
+                            <p class="form__project__wrapper__select__button2">New</p>
+                            <img src="./hamster.png" alt="" class="form__project__wrapper__select__image">
+                            <p class="form__project__wrapper__select__place">CANNA-N</p>
+                            <img src="./hamster.png" alt="" class="form__project__wrapper__select__image">
+                            <p class="form__project__wrapper__select__name"><span class="form__project__wrapper__select__label"></span>Unhandled</p>
+                            <img src="./hamster.png" alt="" class="form__project__wrapper__select__image">
+                            <p class="form__project__wrapper__select__time">1wk ago 1wk old</p>
+                            <p class="form__project__wrapper__select__tag">logos-pathos/canna#1359</p>
+                        </div>
+                    </div>
+                    <p class="form__project__wrapper__list__value">3</p>
+                    <p class="form__project__wrapper__list__value">1</p>
+                </div>
+            </div>
+            <div class="form__select">
+                <p class="form__select__value">1-5 of 5</p>
+                <p class="form__select__button1"><</p>
+                <p class="form__select__button2">></p>
+            </div>
+        </div>
+        <div class="status">
+            <div class="status__wrapper">
+                <p class="status__wrapper__label">Privacy Policy</p>
+                <p class="status__wrapper__label">Terms of Use</p>
+            </div>
+            <img src="./hamster.png" alt="" class="status__image">
+            <div class="status__wrapper">
+                <p class="status__wrapper__label">Service Status</p>
+                <p class="status__wrapper__label">API</p>
+                <p class="status__wrapper__label">Docs</p>
+                <p class="status__wrapper__label">Contribute</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

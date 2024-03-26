@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #F3F4F6;
+            padding: 10px;
+            margin: 0px;
+        }
+        .head {
+            display: flex;
+            justify-content: space-between;
+        }
+        .head__wrapper {
+
+        }
+        .head__wrapper__title {
+            margin: 0px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .head__wrapper__description {
+            margin: 0px;
+            margin-top: 10px;
+            color: #525253;
+        }
+        .head__button {
+            margin: 0px;
+            border: 1px solid #D4D4D8;
+            border-radius: 4px;
+            line-height: 50px;
+            padding: 0px 20px;
+            height: 50px;
+        }
+        .form {
+            background-color: white;
+            margin-top: 40px;
+            border-radius: 4px;
+        }
+        .form__select {
+            padding: 30px;
+            display: flex;
+            gap: 10px;
+        }
+        .form__select__input {
+            border: 1px solid #E0E0E4;
+            border-radius: 4px;
+            padding: 0px 30px;
+            line-height: 35px;
+            width: 250px;
+        }
+        .form__select__tag {
+            border: 1px solid #E0E0E4;
+            border-radius: 4px;
+            height: 40px;
+            width: 250px;
+            padding: 0px 10px;
+        }
+        .form__select__button {
+            background-color: #4D48D8;
+            color: white;
+            border-radius: 4px;
+            width: 80px;
+            height: 40px;
+            text-align: center;
+            margin: 0px;
+            line-height: 40px;
+        }
+        .form__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 20px;
+            padding: 20px 30px;
+            border-bottom: 1px solid #EAEBEE;
+            border-top: 1px solid #EAEBEE;
+        }
+        .form__list__wrapper__checkbox:disabled + label {
+            color: #909192;
+        }
+        .form__list__wrapper {
+            display: flex;
+            gap: 10px;
+            width: 320px;
+            align-items: center;
+        }
+        .form__list__wrapper__checkbox {
+            margin: 0px;
+            accent-color: #897ECE;
+            display: block;
+            height: 20px;
+            width: 20px;
+            border: 1px solid #E7E7E9;
+            border-radius: 6px;
+        }
+        .form__list__wrapper__label {
+            display: block;
+        }
+        .form__list__select__wrapper__check {
+            margin: 0px;
+            color: #323334;
+        }
+        .form__report {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 30px;
+            align-items: center;
+        }
+        .form__report__title {
+            margin: 0px;
+        }
+        .seven {
+            font-weight: bold;
+        }
+        .form__report__wrapper {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .form__report__wrapper__select {
+            border: 1px solid #E0E0E4;
+            height: 40px;
+            width: 70px;
+            color: #55A6B3;
+            border-radius: 4px;
+        }
+        .form__report__wrapper__button {
+            background-color: #48A1AF;
+            color: white;
+            border-radius: 4px;
+            line-height: 40px;
+            padding: 0px 20px;
+        }
+        .status {
+            display: flex;
+            background-color: white;
+            border-radius: 4px;
+            height: 100px;
+            width: 100%;
+            align-items: center;
+            gap: 20px;
+            padding: 0px 30px;
+        }
+        .wrapper {
+            display: flex;
+            margin-top: 20px;
+            gap: 30px;
+            
+        }
+        .status__icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 4px;
+        }
+        .status__wrapper {
+
+        }
+        .status__wrapper__label {
+            margin: 0px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .status__wrapper__value {
+            margin: 0px;
+            font-size: 14px;
+        }
+        .wrapper__status {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="head__wrapper">
+            <p class="head__wrapper__title">Analytics</p>
+            <p class="head__wrapper__description">Email analytics and saved reports help you improve your templates and improve your user experience.</p>
+        </div>
+        <p class="head__button">Saved reports</p>
+    </div>
+    <div class="form">
+        <div class="form__select">
+            <input type="text" placeholder="2024-03-02 - 2024-03-08" class="form__select__input">
+            <input type="text" placeholder="Days" class="form__select__input">
+            <select name="" id="" class="form__select__tag">
+                <option value="">Tags</option>
+            </select>
+            <p class="form__select__button">@</p>
+        </div>
+        <div class="form__list">
+            <div class="form__list__wrapper">
+                <input type="checkbox" id="check1" class="form__list__wrapper__checkbox">
+                <label for="check1" class="form__list__wrapper__label">Email volume</label>
+            </div> 
+            <div class="form__list__wrapper">
+                <input type="checkbox" id="check3" class="form__list__wrapper__checkbox">
+                <label for="check3" class="form__list__wrapper__label">Open and clicks over time</label>
+            </div>
+            <div class="form__list__wrapper">
+                <input type="checkbox" id="check5" class="form__list__wrapper__checkbox" disabled>
+                <label for="check5" class="form__list__wrapper__label">Spam complaints and unsubscribes</label>
+            </div>
+            <div class="form__list__wrapper">
+                <input type="checkbox" id="check7" class="form__list__wrapper__checkbox" disabled>
+                <label for="check7" class="form__list__wrapper__label">Unsubscribe reasons</label>
+            </div>   
+            <div class="form__list__wrapper">
+                <input type="checkbox" id="check2" class="form__list__wrapper__checkbox">
+                <label for="check2" class="form__list__wrapper__label">Hard and soft bounces</label>
+            </div>
+            <div class="form__list__wrapper">
+                <input type="checkbox" id="check4" class="form__list__wrapper__checkbox">
+                <label for="check4" class="form__list__wrapper__label">Reading enviroment</label>
+            </div>
+            <div class="form__list__wrapper">
+                <input type="checkbox" id="check6" class="form__list__wrapper__checkbox">
+                <label for="check6" class="form__list__wrapper__label">Opens by location</label>
+            </div>
+        </div>    
+        <div class="form__report">
+            <p class="form__report__title">Report contains <span class="seven">7</span> items</p>
+            <div class="form__report__wrapper">
+                <select name="" id="" class="form__report__wrapper__select">
+                    <option value="">Export</option>
+                </select>
+                <p class="form__report__wrapper__button">Save</p>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="status">
+            <img src="./hamster.png" alt="" class="status__icon">
+            <div class="status__wrapper">
+                <p class="status__wrapper__label">857</p>
+                <p class="status__wrapper__value">Processed</p>
+            </div>
+        </div>
+        <div class="status">
+            <img src="./hamster.png" alt="" class="status__icon">
+            <div class="status__wrapper">
+                <p class="status__wrapper__label">100%</p>
+                <p class="status__wrapper__value">Delivered</p>
+            </div>
+        </div>
+        <div class="status">
+            <img src="./hamster.png" alt="" class="status__icon">
+            <div class="status__wrapper">
+                <p class="status__wrapper__label">0.00%</p>
+                <p class="status__wrapper__value">Bounced</p>
+            </div>
+        </div>
+        <div class="status">
+            <img src="./hamster.png" alt="" class="status__icon">
+            <div class="status__wrapper">
+                <p class="status__wrapper__label">0</p>
+                <p class="status__wrapper__value">Received</p>
+            </div>
+        </div>
+    </div> 
+    <div class="wrapper__status">
+        <div class="status">
+            <img src="./hamster.png" alt="" class="status__icon">
+            <div class="status__wrapper">
+                <p class="status__wrapper__label">0.00%</p>
+                <p class="status__wrapper__value" >Spam conplaint</p>
+            </div>
+        </div>
+        <div class="status">
+            <img src="./hamster.png" alt="" class="status__icon">
+            <div class="status__wrapper">
+                <p class="status__wrapper__label">9.60%</p>
+                <p class="status__wrapper__value">Opened</p>
+            </div>
+        </div>
+        <div class="status">
+            <img src="./hamster.png" alt="" class="status__icon">
+            <div class="status__wrapper">
+                <p class="status__wrapper__label">0.00%</p>
+                <p class="status__wrapper__value">Clicked</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #071524;
+            margin: 0px;
+            padding: 12px;
+        }
+        .title {
+            color: #828EA2;
+            margin: 0px;
+        }
+        .currentRelease {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            background-color: #122134;
+            padding: 10px 20px;
+            border-radius: 8px;
+            height: 80px;
+            align-items: center;
+        }
+        .currentRelease__wrapper {
+            display: flex;
+            gap: 10px;
+        }
+        .currentRelease__wrapper__wrapper {
+
+        }
+        .currentRelease__wrapper__image {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        .currentRelease__wrapper__address {
+            color: #828EA2;
+            margin: 0px;
+        }
+        .currentRelease__wrapper__date {
+            color: #828EA2;
+            margin: 0px;
+        }
+        .currentRelease__tag {
+            color: #828EA2;
+            margin: 0px;
+            border: 1px solid #4F5D73;
+            border-radius: 30px;
+            padding: 8px 10px;
+            width: 70px;
+            height: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .wrapper {
+            display: flex;
+            margin-top: 40px;
+            gap: 30px;
+            width: 100%;
+        }
+        .wrapper__wrapper {
+            border-radius: 8px;
+            width: 100%;
+        }
+        .previousRelease {
+            background-color: #122134;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .previousRelease__release {
+            display: flex;
+            gap: 20px;
+            border-bottom: 1px solid #243246;
+            padding: 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .previousRelease__release__wrapper {
+            display: flex;
+            gap: 10px;
+        }
+        .previousRelease__release__wrapper__image {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+        }
+        .previousRelease__release__wrapper__wrapper {
+
+        }
+        .previousRelease__release__wrapper__wrapper__address {
+            color: #96A4BA;
+            margin: 0px;
+        }
+        .previousRelease__release__wrapper__wrapper__date {
+            color: #96A4BA;
+            margin: 0px;
+        }
+        .previousRelease__release__tag {
+            color: #96A4BA;
+            margin: 0px;
+            border: 1px solid #4F5D73;
+            border-radius: 30px;
+            padding: 8px 10px;
+            width: 70px;
+            height: 20px;
+            font-size: 14px;
+            text-align: center;
+            align-items: center;
+        }
+        .previousRelease__action {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            padding: 20px;
+            justify-content: space-between;
+        }
+        .previousRelease__action__setting {
+            color: #99BAFB;
+            margin: 0px;
+            border: 1px solid #445161;
+            border-radius: 8px;
+            padding: 10px 20px;
+        }
+        .previousRelease__action__history {
+            color: #99BAFB;
+            margin: 0px;
+        }
+        .customDomain {
+            background-color: #122134;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .customDomain__domain {
+            border-bottom: 1px solid #243246;
+            padding: 10px 20px;
+        }
+        .customDomain__domain__url {
+            color: #99BAFB;
+            margin: 0px;
+        }
+        .customDomain__domain__default {
+            color: #9AA8BE;
+            margin: 0px;
+        }
+        .customDomain__wrapper {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            padding: 20px;
+            justify-content: space-between;
+        }
+        .customDomain__wrapper__create {
+            color: #99BAFB;
+            margin: 0px;
+            border: 1px solid #445161;
+            border-radius: 8px;
+            padding: 10px 20px;
+        }
+        .customDomain__wrapper__jump {
+            color: #99BAFB;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <p class="title">現在のリリース</p>
+    <div class="currentRelease">
+        <div class="currentRelease__wrapper">
+            <img src="./hamster.png" alt="" class="currentRelease__wrapper__image">
+            <div class="currentRelease__wrapper__wrapper">
+                <p class="currentRelease__wrapper__address">yutaro.takayanagi@Ipconsulting.jp</p>
+                <p class="currentRelease__wrapper__date">2024/02/28 4:28</p>
+            </div>
+        </div>
+        <p class="currentRelease__tag">1a6045</p>
+    </div>
+    <div class="wrapper">
+        <div class="wrapper__wrapper">
+            <p class="title">以前のリリース</p>
+            <div class="previousRelease">
+                <div class="previousRelease__release">
+                    <div class="previousRelease__release__wrapper">
+                        <img src="./hamster.png" alt="" class="previousRelease__release__wrapper__image">
+                        <div class="previousRelease__release__wrapper__wrapper">
+                            <p class="previousRelease__release__wrapper__wrapper__address">yutaro.takayanagi@Ipconsulting.jp</p>
+                            <p class="previousRelease__release__wrapper__wrapper__date">2024/02/28 4:28</p>
+                        </div>
+                    </div>
+                    <p class="previousRelease__release__tag">1a6045</p>
+                </div>
+                <div class="previousRelease__release">
+                    <div class="previousRelease__release__wrapper">
+                        <img src="./hamster.png" alt="" class="previousRelease__release__wrapper__image">
+                        <div class="previousRelease__release__wrapper__wrapper">
+                            <p class="previousRelease__release__wrapper__wrapper__address">yutaro.takayanagi@Ipconsulting.jp</p>
+                            <p class="previousRelease__release__wrapper__wrapper__date">2024/02/28 4:11</p>
+                        </div>
+                    </div>
+                    <p class="previousRelease__release__tag">c8d27f</p>
+                </div>
+                <div class="previousRelease__release">
+                    <div class="previousRelease__release__wrapper">
+                        <img src="./hamster.png" alt="" class="previousRelease__release__wrapper__image">
+                        <div class="previousRelease__release__wrapper__wrapper">
+                            <p class="previousRelease__release__wrapper__wrapper__address">yutaro.takayanagi@Ipconsulting.jp</p>
+                            <p class="previousRelease__release__wrapper__wrapper__date">2024/02/28 0:33</p>
+                        </div>
+                    </div>
+                    <p class="previousRelease__release__tag">bb15d2</p>
+                </div>
+                <div class="previousRelease__release">
+                    <div class="previousRelease__release__wrapper">
+                        <img src="./hamster.png" alt="" class="previousRelease__release__wrapper__image">
+                        <div class="previousRelease__release__wrapper__wrapper">
+                            <p class="previousRelease__release__wrapper__wrapper__address">yutaro.takayanagi@Ipconsulting.jp</p>
+                            <p class="previousRelease__release__wrapper__wrapper__date">2024/02/25 3:58</p>
+                        </div>
+                    </div>
+                    <p class="previousRelease__release__tag">8d019a</p>
+                </div>
+                <div class="previousRelease__action">
+                    <p class="previousRelease__action__setting">ストレージのリリースに関する設定</p>
+                    <p class="previousRelease__action__history">全履歴を表示</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper__wrapper">
+            <p class="title">ドメイン</p>
+            <div class="customDomain">
+                <div class="customDomain__domain">
+                    <p class="customDomain__domain__url">energy-5221a.web.app</p>
+                    <p class="customDomain__domain__default">デフォルト</p>
+                </div>
+                <div class="customDomain__domain">
+                    <p class="customDomain__domain__url">energy-5221a.firebaseapp.com</p>
+                    <p class="customDomain__domain__default">デフォルト</p>
+                </div>
+                <div class="customDomain__wrapper">
+                    <p class="customDomain__wrapper__create">カスタム ドメインを追加</p>
+                    <p class="customDomain__wrapper__jump">2 個のドメインをすべて表示</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
