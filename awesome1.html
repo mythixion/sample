@@ -8,16 +8,16 @@
   <style>
     body {
       background-color: white;
-      width: 1080px;
+      margin: 0px;
     }
     .global {
-      padding: 20px;
-      width: 1080px;
+      padding: 20px 20px 34px 20px;
     }
     .global .fa-flag {
       color: #618CD1;
       margin-right: 30px;
       display: block;
+      font-size: 20px;
     }
     .global__menu {
       display: flex;
@@ -38,7 +38,8 @@
       color: #636D88;
     }
     .global .fa-circle-user {
-      margin-left: 359px;
+      margin-left: 390px;
+      font-size: 20px;
     }
     .global__wrapper {
       background-color: #E2714F;
@@ -51,6 +52,7 @@
     .global__wrapper .fa-crown {
       display: block;
       font-size: 32px;
+      color: #1F3051;
     }
     .global__wrapper__description {
       margin: 0px;
@@ -60,31 +62,37 @@
     .global__wrapper__button {
       background-color: white;
       display: flex;
-      width: 200px;
+      width: 155px;
       align-items: center;
       padding: 10px 15px;
       border-radius: 6px;
       border: 2px solid #1E3050;
-      margin-left: 40px;
+      margin-left: 95px;
       gap: 10px;
     }
     .global__wrapper__button .fa-microphone {
-      font-size: 24px;
+      font-size: 20px;
       display: block;
+      color: #1E3050;
     }
     .global__wrapper__button__title {
       margin: 0px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #192C4E;
     }
     .form {
-
-    }.form__status {
-      display: flex;
       background-color: #071B3E;
+      padding: 65px 20px 0px 20px;
+    }
+    .form__status {
+      display: flex;
       align-items: center;
     }
     .form__status .fa-rocket {
       color: #86BEF7;
-      font-size: 65px;
+      font-size: 70px;
+      margin-right: 25px;
     }
     .form__status__wrapper {
 
@@ -92,47 +100,103 @@
     .form__status__wrapper__address {
       margin: 0px;
       color: #F3F4F6;
+      font-size: 14px;
+      font-weight: bold;
     }
     .form__status__wrapper__name {
       margin: 0px;
       color: #F0F1F3;
+      font-size: 30px;
+      font-weight: bold;
     }
     .form__status__wrapper__creation {
       margin: 0px;
       color: #86BEF7;
+      font-size: 14px;
+      font-weight: bold;
     }
     .form__status__button {
       background-color: #545E79;
+      display: flex;
+      border-radius: 8px;
+      align-items: center;
+      padding: 20px;
+      width: 110px;
+      height: 20px;
+      gap: 20px;
+      margin-left: 540px;
     }
-    .form__status__buuton__name {
+    .form__status__button__name {
+      margin: 0px;
+      color: #F0F1F3;
 
     }
     .form__status__button .fa-arrow-right-from-bracket {
-
+      color: #F2F3F5;
     }
     .form__billing {
-
+      background-color: #1E3050;
+      color: white;
+      width: 140px;
+      margin: 0px;
+      font-size: 12px;
+      padding: 10px;
+      margin-top: 10px;
+      margin-left: 412px;
+      border-radius: 2px;
+      position: relative;
+    }
+    .form__billing.-on::before {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: #1E3050;
+      transform: rotate(45deg);
+      top: 30px;
+      left: 74px;
+      position: absolute;
     }
     .form__select {
-
+      background-color: #C4C6D0;
+      border-radius: 4px 4px 0px 0px;
+      display: flex;
+      width: 770px;
+      margin-top: 5px;
     }
     .form__select__wrapper {
-
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+    }
+    .form__select__wrapper.-right {
+      border-right: 2px solid #071B3E;
+    }
+    .form__select__wrapper.-on {
+      background-color: white;
+      border-left: 2px solid #071B3E;
+      border-right: 2px solid #071B3E;
     }
     .form__select__wrapper .fa-basket-shopping {
-
+      color: #1E3050;
+      font-size: 18px;
     }
     .form__select__wrapper .fa-file {
-
+      color: #1E3050;
+      font-size: 18px;
     }
     .form__select__wrapper .fa-file-invoice-dollar {
-
+      color: #1E3050;
+      font-size: 18px;
     }
     .form__select__wrapper .fa-gear {
-
+      color: #1E3050;
+      font-size: 18px;
     }
     .form__select__wrapper__label {
-
+      margin: 0px;
+      font-weight: bold;
     }
     .head {
 
@@ -213,17 +277,17 @@
       <i class="fa-solid fa-rocket"></i>
       <div class="form__status__wrapper">
         <p class="form__status__wrapper__address">hatoyab@gamil.com</p>
-        <p class="form__status__wrapper__name">Hi there, hayato wada</p>
-        <p class="form__status__wrapper__creation">thanks for using Font Awesome since 2014!</p>
+        <p class="form__status__wrapper__name">Hi there, Hayato Wada</p>
+        <p class="form__status__wrapper__creation">Thanks for using Font Awesome since 2014!</p>
       </div>
       <div class="form__status__button">
         <p class="form__status__button__name">sign Out</p>
         <i class="fa-solid fa-arrow-right-from-bracket"></i>
       </div>
     </div>
-    <p class="form__biliing">Billing and Subscription</p>
+    <p class="form__billing -on">Billing and Subscription</p>
     <div class="form__select">
-      <div class="form__select__wrapper">
+      <div class="form__select__wrapper -right">
         <i class="fa-solid fa-basket-shopping"></i>
         <p class="form__select__wrapper__label">General</p>
       </div>
@@ -231,7 +295,7 @@
         <i class="fa-solid fa-file"></i>
         <p class="form__select__wrapper__label">License and seats</p>
       </div>
-      <div class="form__select__wrapper">
+      <div class="form__select__wrapper -on">
         <i class="fa-solid fa-file-invoice-dollar"></i>
         <p class="form__select__wrapper__label">Billing and Subscription</p>
       </div>
