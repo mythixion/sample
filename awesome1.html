@@ -8,60 +8,202 @@
   <style>
     body {
       background-color: white;
+      width: 1080px;
     }
     .global {
-
+      padding: 20px;
+      width: 1080px;
     }
     .global .fa-flag {
       color: #618CD1;
+      margin-right: 30px;
+      display: block;
     }
     .global__menu {
-
+      display: flex;
+      align-items: center;
+      gap: 40px;
     }
     .global__menu__select {
-
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+    .global__menu__select__label {
+      margin: 0px;
+      align-items: center;
+      color: #636D88;
     }
     .global__menu .fa-magnifying-glass {
-
+      color: #636D88;
     }
     .global .fa-circle-user {
-
+      margin-left: 359px;
     }
     .global__wrapper {
       background-color: #E2714F;
       display: flex;
+      padding: 20px;
+      align-items: center;
+      border-radius: 10px;
+      margin-top: 45px;
     }
     .global__wrapper .fa-crown {
-
+      display: block;
+      font-size: 32px;
     }
     .global__wrapper__description {
-
+      margin: 0px;
+      color: white;
+      margin-left: 15px;
     }
     .global__wrapper__button {
-
+      background-color: white;
+      display: flex;
+      width: 200px;
+      align-items: center;
+      padding: 10px 15px;
+      border-radius: 6px;
+      border: 2px solid #1E3050;
+      margin-left: 40px;
+      gap: 10px;
+    }
+    .global__wrapper__button .fa-microphone {
+      font-size: 24px;
+      display: block;
     }
     .global__wrapper__button__title {
+      margin: 0px;
+    }
+    .form {
+
+    }.form__status {
+      display: flex;
+      background-color: #071B3E;
+      align-items: center;
+    }
+    .form__status .fa-rocket {
+      color: #86BEF7;
+      font-size: 65px;
+    }
+    .form__status__wrapper {
+
+    }
+    .form__status__wrapper__address {
+      margin: 0px;
+      color: #F3F4F6;
+    }
+    .form__status__wrapper__name {
+      margin: 0px;
+      color: #F0F1F3;
+    }
+    .form__status__wrapper__creation {
+      margin: 0px;
+      color: #86BEF7;
+    }
+    .form__status__button {
+      background-color: #545E79;
+    }
+    .form__status__buuton__name {
+
+    }
+    .form__status__button .fa-arrow-right-from-bracket {
+
+    }
+    .form__billing {
+
+    }
+    .form__select {
+
+    }
+    .form__select__wrapper {
+
+    }
+    .form__select__wrapper .fa-basket-shopping {
+
+    }
+    .form__select__wrapper .fa-file {
+
+    }
+    .form__select__wrapper .fa-file-invoice-dollar {
+
+    }
+    .form__select__wrapper .fa-gear {
+
+    }
+    .form__select__wrapper__label {
+
+    }
+    .head {
+
+    }
+    .head__status {
+
+    }
+    .head__status__subscription {
+
+    }
+    .head__status__subscription__label {
+
+    }
+    .head__status__subscription__butoon {
+
+    }
+    .head__status__plan {
+
+    }
+    .head__status__plan__wrapper {
+
+    }
+    .head__status__plan__wrapper .fa-first-order-alt {
+
+    }
+    .head__status__plan__wrapper__value {
+
+    }
+    .head__status__plan__wrapper__label {
+
+    }
+    .head__status__billing {
+
+    }
+    .head__status__billing__wrapper {
+
+    }
+    .head__status__billing__wrapper__description {
+
+    }
+    .head__status__billing__wrapper__button1 {
+
+    }
+    .head__status__billing__wrapper__label {
+
+    }
+    .head__status__billing__wrapper__button2 {
 
     }
   </style>
 </head>
 <body>
   <div class="global">
-    <i class="fa-solid fa-flag"></i>
     <div class="global__menu">
-      <p class="global__menu__select">Your Kits</p>
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <p class="global__menu__select">Icons</p>
-      <p class="global__menu__select">Docs</p>
-      <p class="global__menu__select">Plans</p>
-      <p class="global__menu__select">Support</p>
-      <p class="global__menu__select">Podcast</p>
+      <i class="fa-solid fa-flag"></i>
+      <div class="global__menu__select">
+        <p class="global__menu__select__label">Your Kits</p>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <p class="global__menu__select__label">Icons</p>
+        <p class="global__menu__select__label">Docs</p>
+        <p class="global__menu__select__label">Plans</p>
+        <p class="global__menu__select__label">Support</p>
+        <p class="global__menu__select__label">Podcast</p>
+      </div>
+      <i class="fa-regular fa-circle-user"></i>
     </div>
-    <i class="fa-regular fa-circle-user"></i>
     <div class="global__wrapper">
       <i class="fa-solid fa-crown"></i>
       <p class="global__wrapper__description">Introducing Web Awesome, the biggest and best open-source library of web components.</p>
       <div class="global__wrapper__button">
+        <i class="fa-solid fa-microphone"></i>
         <p class="global__wrapper__button__title">Live on kickstarter!</p>
       </div>
     </div>
@@ -115,11 +257,11 @@
       <div class="head__status__billing">
         <div class="head__status__billing__wrapper">
           <p class="head__status__billing__wrapper__description">Grants you access to the latest Font Awesome Pro styles + icons,Pro services, and Actual Human Support.</p>
-          <p class="head__status__billing__wrapper__button">Manage Subscription in Stripe</p>
+          <p class="head__status__billing__wrapper__button1">Manage Subscription in Stripe</p>
         </div>
         <div class="head__status__billing__wrapper">
           <p class="head__status__billing__wrapper__label">Last billed on Sep15, 2023</p>
-          <p class="head__status__billing__wrapper__button">?</p>
+          <p class="head__status__billing__wrapper__button2">?</p>
         </div>
         <p class="head__status__billing__label">Get invoices,renew, cancel, or update payment info</p>
       </div>
