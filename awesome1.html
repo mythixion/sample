@@ -75,6 +75,7 @@
       border: 2px solid #1E3050;
       margin-left: 95px;
       gap: 10px;
+      box-shadow: 0px 6px 0px #1E3050;
     }
     .global__wrapper__button .fa-microphone {
       font-size: 20px;
@@ -209,21 +210,22 @@
     }
     .head {
       background-color: #F0F1F3;
-      padding: 48px 18px 18px 18px;
+      padding: 60px 18px 18px 18px;
     }
     .head__status {
       background-color: white;
-      padding: 20px;
       border-radius: 8px;
     }
     .head__status__subscription {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      padding: 20px 20px 0px 20px;
     }
     .head__status__subscription__label {
       color: #C5C7D1;
       font-weight: bold;
-      font-size: 14px;
+      font-size: 12px;
       margin: 0px
     }
     .head__status__subscription__button {
@@ -237,37 +239,76 @@
       font-weight: bold;
     }
     .head__status__plan {
-
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 15px;
+      border-bottom: 1px dotted #F0F1F3;
+      padding: 0px 20px 20px 20px;
     }
     .head__status__plan__wrapper {
-
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
     .head__status__plan__wrapper .fa-first-order-alt {
-
+      font-size: 24px;
+      color: #1E3050;
     }
     .head__status__plan__wrapper__value {
-
+      margin: 0px;
+      color: #1E3050;
+      font-weight: bold;
     }
-    .head__status__plan__wrapper__label {
-
+    .head__status__plan__label {
+      margin: 0px;
+      color: #6D7690;
+      font-size: 14px;
     }
     .head__status__billing {
 
     }
     .head__status__billing__wrapper {
-
+      display: flex;
+      padding: 0px 20px 20px 20px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .head__status__billing__date {
+      display: flex;
+      gap: 10px;
+      align-items: center;
     }
     .head__status__billing__wrapper__description {
-
+      margin: 0px;
+      color: #10274A;
     }
     .head__status__billing__wrapper__button1 {
-
+      margin: 0px;
+      border: 2px solid #C4C6D0;
+      border-radius: 6px;
+      color: #326BB8;
+      padding: 10px;
     }
-    .head__status__billing__wrapper__label {
-
+    .head__status__billing__date__label {
+      margin: 0px;
+      color: #6D7690;
+      font-size: 14px;
     }
-    .head__status__billing__wrapper__button2 {
-
+    .head__status__billing__date__button2 {
+      margin: 0px;
+      background-color: #C4C6D0;
+      color: white;
+      height: 15px;
+      width: 15px;
+      border-radius: 20px;
+      font-size: 10px;
+      text-align: center;
+    }
+    .head__status__billing__date__label {
+      margin: 0px;
+      color: #626C88;
+      font-size: 12px;
     }
   </style>
 </head>
@@ -351,10 +392,12 @@
           <p class="head__status__billing__wrapper__button1">Manage Subscription in Stripe</p>
         </div>
         <div class="head__status__billing__wrapper">
-          <p class="head__status__billing__wrapper__label">Last billed on Sep15, 2023</p>
-          <p class="head__status__billing__wrapper__button2">?</p>
+          <div class="head__status__billing__date">
+            <p class="head__status__billing__date__label">Last billed on Sep15, 2023</p>
+            <p class="head__status__billing__date__button2">?</p>
+          </div>
+          <p class="head__status__billing__wrapper1__label">Get invoices,renew, cancel, or update payment info</p>
         </div>
-        <p class="head__status__billing__label">Get invoices,renew, cancel, or update payment info</p>
       </div>
     </div>
   </div>
