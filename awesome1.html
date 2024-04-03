@@ -65,6 +65,9 @@
       color: white;
       margin-left: 15px;
     }
+    .description {
+      font-weight: bold;
+    }
     .global__wrapper__button {
       background-color: white;
       display: flex;
@@ -139,40 +142,17 @@
     .form__status__button__name {
       margin: 0px;
       color: #F0F1F3;
-
+      font-weight: bold;
     }
     .form__status__button .fa-arrow-right-from-bracket {
       color: #F2F3F5;
-    }
-    .form__billing {
-      background-color: #1E3050;
-      color: white;
-      width: 140px;
-      margin: 0px;
-      font-size: 12px;
-      padding: 10px;
-      margin-top: 10px;
-      margin-left: 412px;
-      border-radius: 2px;
-      position: relative;
-    }
-    .form__billing.-on::before {
-      content: '';
-      display: block;
-      width: 10px;
-      height: 10px;
-      background-color: #1E3050;
-      transform: rotate(45deg);
-      top: 30px;
-      left: 74px;
-      position: absolute;
     }
     .form__select {
       background-color: #C4C6D0;
       border-radius: 4px 4px 0px 0px;
       display: flex;
       width: 770px;
-      margin-top: 5px;
+      margin-top: 60px;
     }
     .form__select__wrapper {
       display: flex;
@@ -187,6 +167,31 @@
       background-color: white;
       border-left: 2px solid #071B3E;
       border-right: 2px solid #071B3E;
+      position: relative;
+    }
+    .form__select__wrapper.-on::after {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: #1E3050;
+      transform: rotate(45deg);
+      top: -12px;
+      left: 128px;
+      position: absolute;
+    }
+    .form__select__wrapper.-on::before {
+      content: 'Billing and Subscription';
+      background-color: #1E3050;
+      color: white;
+      width: 140px;
+      margin: 0px;
+      font-size: 12px;
+      padding: 10px;
+      border-radius: 2px;
+      top: -45px;
+      left: 54px;
+      position: absolute;
     }
     .form__select__wrapper .fa-basket-shopping {
       color: #1E3050;
@@ -216,19 +221,22 @@
       background-color: white;
       border-radius: 8px;
     }
-    .head__status__subscription {
+    .head__status__form {
+      padding: 20px;
+      border-bottom: 1px dotted #F0F1F3;
+    }
+    .head__status__form__subscription {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 20px 0px 20px;
     }
-    .head__status__subscription__label {
+    .head__status__form__subscription__label {
       color: #C5C7D1;
       font-weight: bold;
       font-size: 12px;
       margin: 0px
     }
-    .head__status__subscription__button {
+    .head__status__form__subscription__button {
       background-color: #87E3C0;
       margin: 0px;
       font-size: 12px;
@@ -238,29 +246,27 @@
       border-radius: 20px;
       font-weight: bold;
     }
-    .head__status__plan {
+    .head__status__form__plan {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-top: 15px;
-      border-bottom: 1px dotted #F0F1F3;
-      padding: 0px 20px 20px 20px;
     }
-    .head__status__plan__wrapper {
+    .head__status__form__plan__wrapper {
       display: flex;
       align-items: center;
       gap: 10px;
     }
-    .head__status__plan__wrapper .fa-first-order-alt {
+    .head__status__form__plan__wrapper .fa-first-order-alt {
       font-size: 24px;
       color: #1E3050;
     }
-    .head__status__plan__wrapper__value {
+    .head__status__form__plan__wrapper__value {
       margin: 0px;
       color: #1E3050;
       font-weight: bold;
     }
-    .head__status__plan__label {
+    .head__status__form__plan__label {
       margin: 0px;
       color: #6D7690;
       font-size: 14px;
@@ -268,34 +274,41 @@
     .head__status__billing {
 
     }
-    .head__status__billing__wrapper {
-      display: flex;
+    .head__status__billing__form {
       padding: 0px 20px 20px 20px;
-      justify-content: space-between;
-      align-items: center;
     }
-    .head__status__billing__date {
+    .head__status__billing__form__wrapper1 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .head__status__billing__form__wrapper2 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 18px;
+    }
+    .head__status__billing__form__date {
       display: flex;
       gap: 10px;
       align-items: center;
     }
-    .head__status__billing__wrapper__description {
+    .head__status__billing__form__wrapper__description {
       margin: 0px;
       color: #10274A;
     }
-    .head__status__billing__wrapper__button1 {
+    .head__status__billing__form__wrapper__button1 {
       margin: 0px;
       border: 2px solid #C4C6D0;
       border-radius: 6px;
       color: #326BB8;
       padding: 10px;
     }
-    .head__status__billing__date__label {
+    .head__status__billing__form__date__label {
       margin: 0px;
       color: #6D7690;
       font-size: 14px;
     }
-    .head__status__billing__date__button2 {
+    .head__status__billing__form__date__button2 {
       margin: 0px;
       background-color: #C4C6D0;
       color: white;
@@ -305,10 +318,10 @@
       font-size: 10px;
       text-align: center;
     }
-    .head__status__billing__date__label {
+    .head__status__billing__form__date__label {
       margin: 0px;
       color: #626C88;
-      font-size: 12px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -330,7 +343,7 @@
     <div class="global__head">
       <div class="global__wrapper">
         <i class="fa-solid fa-crown"></i>
-        <p class="global__wrapper__description">Introducing Web Awesome, the biggest and best open-source library of web components.</p>
+        <p class="global__wrapper__description"><span class="description">Introducing Web Awesome,</span> the biggest and best open-source library of web components.</p>
       </div>
       <div class="global__wrapper__button">
         <i class="fa-solid fa-microphone"></i>
@@ -353,7 +366,6 @@
         <i class="fa-solid fa-arrow-right-from-bracket"></i>
       </div>
     </div>
-    <p class="form__billing -on">Billing and Subscription</p>
     <div class="form__select">
       <div class="form__select__wrapper -right">
         <i class="fa-solid fa-basket-shopping"></i>
@@ -375,28 +387,32 @@
   </div>
   <div class="head">
     <div class="head__status">
-      <div class="head__status__subscription">
-        <p class="head__status__subscription__label">SUBSCRIPTION</p>
-        <p class="head__status__subscription__button">ACTIVE</p>
-      </div>
-      <div class="head__status__plan">
-        <div class="head__status__plan__wrapper">
-          <i class="fa-brands fa-first-order-alt"></i>
-          <p class="head__status__plan__wrapper__value">$99/yr Pro Plan</p>
+      <div class="head__status__form">
+        <div class="head__status__form__subscription">
+          <p class="head__status__form__subscription__label">SUBSCRIPTION</p>
+          <p class="head__status__form__subscription__button">ACTIVE</p>
         </div>
-        <p class="head__status__plan__label">Renews on Sep 15, 2024</p>
+        <div class="head__status__form__plan">
+          <div class="head__status__form__plan__wrapper">
+            <i class="fa-brands fa-first-order-alt"></i>
+            <p class="head__status__form__plan__wrapper__value">$99/yr Pro Plan</p>
+          </div>
+        <p class="head__status__form__plan__label">Renews on Sep 15, 2024</p>
+        </div>
       </div>
       <div class="head__status__billing">
-        <div class="head__status__billing__wrapper">
-          <p class="head__status__billing__wrapper__description">Grants you access to the latest Font Awesome Pro styles + icons,Pro services, and Actual Human Support.</p>
-          <p class="head__status__billing__wrapper__button1">Manage Subscription in Stripe</p>
-        </div>
-        <div class="head__status__billing__wrapper">
-          <div class="head__status__billing__date">
-            <p class="head__status__billing__date__label">Last billed on Sep15, 2023</p>
-            <p class="head__status__billing__date__button2">?</p>
+        <div class="head__status__billing__form">
+          <div class="head__status__billing__form__wrapper1">
+            <p class="head__status__billing__form__wrapper__description">Grants you access to the latest Font Awesome Pro styles + icons,Pro services, and Actual Human Support.</p>
+            <p class="head__status__billing__form__wrapper__button1">Manage Subscription in Stripe</p>
           </div>
-          <p class="head__status__billing__wrapper1__label">Get invoices,renew, cancel, or update payment info</p>
+          <div class="head__status__billing__form__wrapper2">
+            <div class="head__status__billing__form__date">
+              <p class="head__status__billing__form__date__label">Last billed on Sep15, 2023</p>
+              <p class="head__status__billing__form__date__button2">?</p>
+            </div>
+          <p class="head__status__billing__form__date__label">Get invoices,renew, cancel, or update payment info</p>
+          </div>
         </div>
       </div>
     </div>
