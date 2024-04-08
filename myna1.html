@@ -26,14 +26,18 @@
     }
     .myna__portal__menu {
       margin-top: 50px;
-      margin-left: 32px;
     }
     .myna__portal__menu__select {
       display: flex;
       align-items: center;
       margin-top: 40px;
       gap: 30px;
+      padding-left: 20px;
       position: relative;
+    }
+    .myna__portal__menu__select.-padding {
+      padding-left: 0px;
+      gap: 10px;
     }
     .myna__portal__menu__select.-on {
       border-bottom: 1px solid #F3F3F4;
@@ -59,6 +63,9 @@
       margin: 0px;
       font-size: 14px;
     }
+    .myna__portal__menu__select__name.-color {
+      color: #000FDB;
+    }
     .fa-house {
       font-size: 18px;
       color: #4C4C4C;
@@ -67,12 +74,18 @@
       font-size: 18px;
       color: #525252;
     }
-    .fa-magnifying-glass {
-
+    .fa-magnifying-glass.-back {
+      background-color: #EAF1FD;
+      color: #000FDB;
+      width: 50px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 15px;
     }
     .fa-bars {
       font-size: 18px;
-      color: #CDCDCD;
+      color: black;
     }
     .fa-bell {
       font-size: 18px;
@@ -113,14 +126,17 @@
     .myna__portal__wrapper__name {
       margin: 0px;
       font-size: 14px;
+      color: #000FDB;
     }
     .myna__form {
 
     }
     .myna__form__head {
       display: flex;
-      justify-content: space-between;
+      gap: 360px;
       align-items: end;
+      margin-top: 45px;
+      margin-left: 15px;
     }
     .myna__form__head__search {
       margin: 0px;
@@ -130,28 +146,45 @@
       margin: 0px;
       font-size: 14px;
       color: #0000B1;
-      border-bottom: 1px solid #0000AA;
+      text-decoration: underline;
     }
     .myna__form__search {
-
+      display: flex;
+      gap: 8px;
+      margin-top: 25px;
+      margin-left: 15px;
     }
     .myna__form__search__input {
-
+      width: 445px;
+      height: 42px;
+      color: #8D8D90;
+      border-radius: 6px;
+      border: 1px solid black;
     }
     .myna__form__search__button {
       display: flex;
       align-items: center;
+      width: 60px;
+      height: 42px;
+      background-color: #0516B9;
+      text-align: center;
+      border-radius: 4px;
+      color: white;
+      padding-left: 18px;
+      font-size: 14px;
     }
     .fa-magnifying-glass {
 
     }
     .myna__form__search__button__name {
       margin: 0px;
+
     }
     .myna__form__wrapper {
       display: flex;
       gap: 10px;
       margin-top: 10px;
+      margin-left: 15px;
     }
     .myna__form__wrapper__button__label {
       margin: 0px;
@@ -162,18 +195,29 @@
       align-items: center;
       border-radius: 16px;
       padding: 3px 12px;
+      font-size: 12px;
     }
     .myna__form__title {
-
+      margin: 0px;
+      margin-top: 45px;
     }
     .myna__form__attention {
-
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+      margin-left: 15px;
     }
     .myna__form__attention__select {
-
+      width: 84px;
+      height: 50px;
+      background-color: #F8F8FB;
+      border-radius: 6px;
+      text-align: center;
+      padding-top: 12px;
     }
     .myna__form__attention__select__name {
-
+      margin: 0px;
+      font-size: 12px;
     }
     .fa-address-card {
 
@@ -193,38 +237,62 @@
 
     }
     .myna__form__title {
-
+      margin-left: 15px;
     }
     .myna__form__menu {
-
+      display: flex;
+      gap: 6px;
+      margin-top: 6px;
+      margin-left: 15px;
     }
     .myna__form__menu__guide {
-
+      border: 1px solid #E7EBEA;
+      border-radius: 6px;
+      width: 128px;
     }
     .myna__form__menu__guide__image {
       width: 128px;
       height: 76px;
       object-fit: cover;
+      border-radius: 6px 6px 0px 0px;
     }.myna__form__menu__guide__description {
-
+      margin: 0px;
+      font-size: 12px;
+      margin-left: 8px;
     }
     .myna__form__category {
-
+      width: 610px;
+      height: 555px;
+      background-color: #F1F1F4;
+      padding: 35px 15px 0px 15px;
+      border-radius: 6px;
+      margin-top: 40px;
     }
     .myna__form__category__description {
-
+      margin: 0px;
     }
     .myna__form__category__menu {
-
+      background-color: white;
+      width: 595px;
+      height: 490px;
+      padding-left: 15px;
+      border-radius: 6px;
+      margin-top: 6px;
     }
     .myna__form__category__menu__wrapper {
-
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 20px 15px 0px;
     }
-    .myna__form__category__menu__wrapper__label {
-
+    .myna__form__category__menu__wrapper.-on {
+      border-bottom: 1px solid #DEDEE0;
+    }
+    .myna__form__category__memu__wrapper__label {
+      margin: 0px;
+      font-size: 14px;
     }
     .myna__form__category__menu__wrapper__value {
-
+      margin: 0px;
     }
     .myna__form__restart {
 
@@ -244,31 +312,31 @@
     .fa-arrow-up-right-from-square {
 
     }
-    .myna__form__search {
+    .myna__form__question {
 
     }
-    .myna__form__search__label {
+    .myna__form__question__label {
 
     }
-    .myna__form__search__description {
+    .myna__form__question__description {
 
     }
-    .myna__form__search__wrapper {
+    .myna__form__question__wrapper {
 
     }
-    .myna__form__search__wrapper__label {
+    .myna__form__question__wrapper__label {
 
     }
-    .myna__form__search__information {
+    .myna__form__question__information {
 
     }
-    .myna__form__search__input {
+    .myna__form__question__input {
 
     }
-    .myna__form__search__choice {
+    .myna__form__question__choice {
 
     }
-    .myna__form__search__send {
+    .myna__form__question__send {
 
     }
   </style>
@@ -286,9 +354,9 @@
           <i class="fa-solid fa-clipboard"></i>
           <p class="myna__portal__menu__select__name">やること</p>
         </div>
-        <div class="myna__portal__menu__select ">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <p class="myna__portal__menu__select__name">さがす</p>
+        <div class="myna__portal__menu__select -padding">
+          <i class="fa-solid fa-magnifying-glass -back"></i>
+          <p class="myna__portal__menu__select__name -color">さがす</p>
         </div>
         <div class="myna__portal__menu__select">
           <i class="fa-solid fa-bars"></i>
@@ -315,7 +383,7 @@
         <p class="myna__form__head__placename">神奈川県 横浜市</p>
       </div>
       <div class="myna__form__search">
-        <input type="text" value="キーワード" class="myna__form__search__input">
+        <input type="search" value="   キーワード" class="myna__form__search__input">
         <div class="myna__form__search__button">
           <i class="fa-solid fa-magnifying-glass"></i>
           <p class="myna__form__search__button__name">検索</p>
@@ -383,35 +451,35 @@
       <div class="myna__form__category">
         <p class="myna__form__category__description">カテゴリから検索</p>
         <div class="myna__form__category__menu">
-          <div class="myna__form__category__menu__wrapper">
+          <div class="myna__form__category__menu__wrapper -on">
             <p class="myna__form__category__memu__wrapper__label">妊娠・出産</p>
             <p class="myna__form__category__menu__wrapper__value">></p>
           </div>
-          <div class="myna__form__category__menu__wrapper">
+          <div class="myna__form__category__menu__wrapper -on">
             <p class="myna__form__category__memu__wrapper__label">子育て</p>
             <p class="myna__form__category__menu__wrapper__value">></p>
           </div>
-          <div class="myna__form__category__menu__wrapper">
+          <div class="myna__form__category__menu__wrapper -on">
             <p class="myna__form__category__memu__wrapper__label">引越し・住まい</p>
             <p class="myna__form__category__menu__wrapper__value">></p>
           </div>
-          <div class="myna__form__category__menu__wrapper">
+          <div class="myna__form__category__menu__wrapper -on">
             <p class="myna__form__category__memu__wrapper__label">高齢者・介護</p>
             <p class="myna__form__category__menu__wrapper__value">></p>
           </div>
-          <div class="myna__form__category__menu__wrapper">
+          <div class="myna__form__category__menu__wrapper -on">
             <p class="myna__form__category__memu__wrapper__label">ご不幸</p>
             <p class="myna__form__category__menu__wrapper__value">></p>
           </div>
-          <div class="myna__form__category__menu__wrapper">
+          <div class="myna__form__category__menu__wrapper -on">
             <p class="myna__form__category__memu__wrapper__label">障がい者支援</p>
             <p class="myna__form__category__menu__wrapper__value">></p>
           </div>
-          <div class="myna__form__category__menu__wrapper">
+          <div class="myna__form__category__menu__wrapper -on">
             <p class="myna__form__category__memu__wrapper__label">健康・医療</p>
             <p class="myna__form__category__menu__wrapper__value">></p>
           </div>
-          <div class="myna__form__category__menu__wrapper">
+          <div class="myna__form__category__menu__wrapper -on">
             <p class="myna__form__category__memu__wrapper__label">防災・被災者支援</p>
             <p class="myna__form__category__menu__wrapper__value">></p>
           </div>
@@ -429,22 +497,22 @@
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </div>
       </div>
-      <div class="myna__form__search">
-        <p class="myna__form__search__label">どんな情報が必要ですか</p>
-        <p class="myna__form__search__description">行政手続きについてどんな案内がほしいか、ご意見を教えてください。マイナポータル改善の参考にいたします。</p>
-        <div class="myna__form__search__wrapper">
-          <p class="myna__form__search__wrapper__label">いただいたご意見について</p>
+      <div class="myna__form__question">
+        <p class="myna__form__question__label">どんな情報が必要ですか</p>
+        <p class="myna__form__question__description">行政手続きについてどんな案内がほしいか、ご意見を教えてください。マイナポータル改善の参考にいたします。</p>
+        <div class="myna__form__question__wrapper">
+          <p class="myna__form__question__wrapper__label">いただいたご意見について</p>
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </div>
-        <p class="myna__form__search__information">必要な情報</p>
-        <p class="myna__form__search__description">個人が特定できる情報を入力しないでください</p>
-        <input type="text" value="〇〇について知りたい" class="myna__form__search__input">
-        <p class="myna__form__search__value">0 / 256</p>
-        <p class="myna__form__search__label">年代</p>
+        <p class="myna__form__question__information">必要な情報</p>
+        <p class="myna__form__question__description">個人が特定できる情報を入力しないでください</p>
+        <input type="text" value="〇〇について知りたい" class="myna__form__questio__input">
+        <p class="myna__form__question__value">0 / 256</p>
+        <p class="myna__form__question__label">年代</p>
         <select name="" id=""  class="">
           <label for=""></label>
         </select>
-        <p class="myna__form__search__send">送信</p>
+        <p class="myna__form__question__send">送信</p>
       </div>
     </div>
   </div>
