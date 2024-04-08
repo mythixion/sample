@@ -26,18 +26,19 @@
     }
     .myna__portal__menu {
       margin-top: 50px;
+      text-align: right;
     }
     .myna__portal__menu__select {
       display: flex;
       align-items: center;
-      margin-top: 40px;
+      margin-top: 35px;
       gap: 30px;
       padding-left: 20px;
       position: relative;
     }
     .myna__portal__menu__select.-padding {
       padding-left: 0px;
-      gap: 10px;
+      gap: 15px;
     }
     .myna__portal__menu__select.-on {
       border-bottom: 1px solid #F3F3F4;
@@ -56,7 +57,7 @@
       text-align: center;
       line-height: 15px;
       top: -4px;
-      left: 15px;
+      left: 36px;
       position: absolute;
     }
     .myna__portal__menu__select__name {
@@ -144,7 +145,7 @@
     }
     .myna__form__head__placename {
       margin: 0px;
-      font-size: 14px;
+      font-size: 13px;
       color: #0000B1;
       text-decoration: underline;
     }
@@ -295,49 +296,116 @@
       margin: 0px;
     }
     .myna__form__restart {
-
+      padding-left: 15px;
+      padding-right: 15px;
     }
-    .myna__form__restart__label {
-
+    .myna__form__restart__head {
+      width: 580px;
+      height: 86px;
+      background-color: #F8F8FB;
+      border-radius: 6px;
+      padding: 15px;
+      margin-top: 40px;
     }
-    .myna__form__restart__description {
-
+    .myna__form__restart__head__label {
+      margin: 0px;
+      font-weight: bold;
     }
-    .myna__form__restart__wrapper {
-
+    .myna__form__restart__head__description {
+      margin: 0px;
+      color: #7F7F81;
+      font-size: 14px;
+      margin-top: 6px;
     }
-    .myna__form__restart__wrapper__label {
-
+    .myna__form__restart__head__wrapper {
+      display: flex;
+      align-items: center;
+      margin-top: 12px;
+      gap: 10px;
+    }
+    .myna__form__restart__head__wrapper__label {
+      margin: 0px;
+      color: #0000B4;
+      font-size: 14px;
+      text-decoration: underline;
     }
     .fa-arrow-up-right-from-square {
-
+      font-size: 14px;
+      color: #49494B;
     }
     .myna__form__question {
-
+      width: 580px;
+      height: 520px;
+      background-color: #F8F8FB;
+      padding: 35px 15px 15px 15px;
+      border-radius: 6px;
+      margin-top: 65px;
     }
     .myna__form__question__label {
-
+      margin: 0px;
+      font-weight: bold;
+      color: black;
     }
     .myna__form__question__description {
-
+      margin: 0px;
+      color: #7F7F81;
+      font-size: 12px;
+      margin-top: 6px;
     }
     .myna__form__question__wrapper {
-
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 12px;
     }
     .myna__form__question__wrapper__label {
-
+      color: #0000B0;
+      margin: 0px;
+      font-size: 14px;
+      text-decoration: underline;
     }
     .myna__form__question__information {
-
+      margin: 0px;
+      font-size: 12px;
+      margin-top: 16px;
+      color: #8A8A8D;
     }
-    .myna__form__question__input {
-
+    .myna__form__question__text {
+      padding: 15px;
+      background-color: #F1F1F4;
+      color: #929294;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: 1px solid #79797C;
     }
-    .myna__form__question__choice {
-
+    .myna__form__question__value {
+      margin: 0px;
+      color: #98989B;
+      font-size: 12px;
+      margin-top: 6px;
+      text-align: end;
+    }
+    .myna__form__question__age {
+      font-size: 14px;
+      margin-top: 20px;
+      color: #8D8D90;
+    }
+    .myna__form__question__select {
+      margin-top: 10px;
+      height: 50px;
+      width: 580px;
+      padding: 15px;
+      color: #838386;
+      background-color: #F1F1F4;
+      border-radius: 6px;
+      border: 1px solid #79797C;
     }
     .myna__form__question__send {
-
+      margin: 0px;
+      text-align: center;
+      color: #89898C;
+      text-decoration: underline;
+      margin-top: 35px;
     }
   </style>
 </head>
@@ -490,29 +558,32 @@
         </div>
       </div>
       <div class="myna__form__restart">
-        <p class="myna__form__restart__label">自治体手続きの再開</p>
-        <p class="myna__form__restart__description">保存した申請データをアップロードして、自治体への申請手続きを再開できます。</p>
-        <div class="myna__form__restart__wrapper">
-          <p class="myna__form__restart__wrapper__label">申請の再開</p>
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        <div class="myna__form__restart__head">
+          <p class="myna__form__restart__head__label">自治体手続きの再開</p>
+          <p class="myna__form__restart__head__description">保存した申請データをアップロードして、自治体への申請手続きを再開できます。</p>
+          <div class="myna__form__restart__head__wrapper">
+            <p class="myna__form__restart__head__wrapper__label">申請の再開</p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
         </div>
-      </div>
-      <div class="myna__form__question">
-        <p class="myna__form__question__label">どんな情報が必要ですか</p>
-        <p class="myna__form__question__description">行政手続きについてどんな案内がほしいか、ご意見を教えてください。マイナポータル改善の参考にいたします。</p>
-        <div class="myna__form__question__wrapper">
-          <p class="myna__form__question__wrapper__label">いただいたご意見について</p>
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        <div class="myna__form__question">
+          <p class="myna__form__question__label">どんな情報が必要ですか</p>
+          <p class="myna__form__question__description">行政手続きについてどんな案内がほしいか、ご意見を教えてください。マイナポータル改善の参考にいたします。</p>
+          <div class="myna__form__question__wrapper">
+            <p class="myna__form__question__wrapper__label">いただいたご意見について</p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+          <p class="myna__form__question__information">必要な情報</p>
+          <p class="myna__form__question__description">個人が特定できる情報を入力しないでください</p>
+          <textarea name="" id="" cols="75" rows="5" class="myna__form__question__text">〇〇について知りたい
+          </textarea>
+          <p class="myna__form__question__value">0 / 256</p>
+          <p class="myna__form__question__age">年代</p>
+          <select name="" id="" class="myna__form__question__select">
+            <option value="">選択してください</option>
+          </select>
+          <p class="myna__form__question__send">送信</p>
         </div>
-        <p class="myna__form__question__information">必要な情報</p>
-        <p class="myna__form__question__description">個人が特定できる情報を入力しないでください</p>
-        <input type="text" value="〇〇について知りたい" class="myna__form__questio__input">
-        <p class="myna__form__question__value">0 / 256</p>
-        <p class="myna__form__question__label">年代</p>
-        <select name="" id=""  class="">
-          <label for=""></label>
-        </select>
-        <p class="myna__form__question__send">送信</p>
       </div>
     </div>
   </div>
