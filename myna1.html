@@ -141,37 +141,38 @@
     .myna__form {
 
     }
-    .myna__form__head {
+    .myna__form__main {
+      padding-top: 45px;
+      padding-left: 15px;
+    }
+    .myna__form__main__head {
       display: flex;
       gap: 360px;
       align-items: end;
-      margin-top: 45px;
-      margin-left: 15px;
     }
-    .myna__form__head__search {
+    .myna__form__main__head__search {
       margin: 0px;
       font-size: 26px;
     }
-    .myna__form__head__placename {
+    .myna__form__main__head__placename {
       margin: 0px;
       font-size: 13px;
       color: #0000B1;
       text-decoration: underline;
     }
-    .myna__form__search {
+    .myna__form__main__search {
       display: flex;
       gap: 8px;
       margin-top: 25px;
-      margin-left: 15px;
     }
-    .myna__form__search__input {
+    .myna__form__main__search__input {
       width: 445px;
       height: 42px;
       color: #8D8D90;
       border-radius: 6px;
       border: 1px solid black;
     }
-    .myna__form__search__button {
+    .myna__form__main__search__button {
       display: flex;
       align-items: center;
       width: 60px;
@@ -186,17 +187,16 @@
     .fa-magnifying-glass {
 
     }
-    .myna__form__search__button__name {
+    .myna__form__main__search__button__name {
       margin: 0px;
 
     }
-    .myna__form__wrapper {
+    .myna__form__main__wrapper {
       display: flex;
       gap: 10px;
       margin-top: 10px;
-      margin-left: 15px;
     }
-    .myna__form__wrapper__button__label {
+    .myna__form__main__wrapper__button__label {
       margin: 0px;
       color: #0000B3;
       height: 30px;
@@ -207,17 +207,16 @@
       padding: 3px 12px;
       font-size: 12px;
     }
-    .myna__form__title {
+    .myna__form__main__title {
       margin: 0px;
       margin-top: 45px;
     }
-    .myna__form__attention {
+    .myna__form__main__attention {
       display: flex;
       gap: 10px;
       margin-top: 15px;
-      margin-left: 15px;
     }
-    .myna__form__attention__select {
+    .myna__form__main__attention__select {
       width: 84px;
       height: 50px;
       background-color: #F8F8FB;
@@ -225,7 +224,7 @@
       text-align: center;
       padding-top: 12px;
     }
-    .myna__form__attention__select__name {
+    .myna__form__main__attention__select__name {
       margin: 0px;
       font-size: 12px;
     }
@@ -246,27 +245,26 @@
     .fa-landmark {
 
     }
-    .myna__form__title {
-      margin-left: 15px;
+    .myna__form__main__title {
+
     }
-    .myna__form__menu {
+    .myna__form__main__menu {
       display: flex;
       gap: 6px;
       margin-top: 6px;
-      margin-left: 15px;
     }
-    .myna__form__menu__guide {
+    .myna__form__main__menu__guide {
       border: 1px solid #E7EBEA;
       border-radius: 6px;
       width: 128px;
     }
-    .myna__form__menu__guide__image {
+    .myna__form__main__menu__guide__image {
       width: 128px;
       height: 76px;
       object-fit: cover;
       border-radius: 6px 6px 0px 0px;
       display: block;
-    }.myna__form__menu__guide__description {
+    }.myna__form__main__menu__guide__description {
       margin: 0px;
       font-size: 12px;
       padding: 8px;
@@ -468,74 +466,76 @@
       </div>
     </div>
     <div class="myna__form">
-      <div class="myna__form__head">
-        <p class="myna__form__head__search">さがす</p>
-        <p class="myna__form__head__placename">神奈川県 横浜市</p>
-      </div>
-      <div class="myna__form__search">
-        <input type="search" value="   キーワード" class="myna__form__search__input">
-        <div class="myna__form__search__button">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <p class="myna__form__search__button__name">検索</p>
+      <div class="myna__form__main">
+        <div class="myna__form__main__head">
+          <p class="myna__form__main__head__search">さがす</p>
+          <p class="myna__form__main__head__placename">神奈川県 横浜市</p>
         </div>
-      </div>
-      <div class="myna__form__wrapper">
-          <p class="myna__form__wrapper__button__label">#罹災証明・被災証明</p>
-          <p class="myna__form__wrapper__button__label">#確定申告</p>
-          <p class="myna__form__wrapper__button__label">#引越し</p>
-          <p class="myna__form__wrapper__button__label">#児童手当</p>
-          <p class="myna__form__wrapper__button__label">#給付金</p>
-          <p class="myna__form__wrapper__button__label">#口座</p>
-      </div>
-      <div class="myna__form__wrapper">
-          <p class="myna__form__wrapper__button__label">#保健所</p>
-          <p class="myna__form__wrapper__button__label">#パスポート</p>
-          <p class="myna__form__wrapper__button__label">#国民年金</p>
-      </div>
-      <p class="myna__form__title">注目</p>
-      <div class="myna__form__attention">
-        <div class="myna__form__attention__select">
-          <i class="fa-solid fa-address-card"></i>
-          <p class="myna__form__attention__select__name">証明書</p>
+        <div class="myna__form__main__search">
+          <input type="search" value="   キーワード" class="myna__form__main__search__input">
+          <div class="myna__form__main__search__button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <p class="myna__form__main__search__button__name">検索</p>
+          </div>
         </div>
-        <div class="myna__form__attention__select">
-          <i class="fa-solid fa-house-flag"></i>
-          <p class="myna__form__attention__select__name">住まい</p>
+        <div class="myna__form__main__wrapper">
+          <p class="myna__form__main__wrapper__button__label">#罹災証明・被災証明</p>
+          <p class="myna__form__main__wrapper__button__label">#確定申告</p>
+          <p class="myna__form__main__wrapper__button__label">#引越し</p>
+          <p class="myna__form__main__wrapper__button__label">#児童手当</p>
+          <p class="myna__form__main__wrapper__button__label">#給付金</p>
+          <p class="myna__form__main__wrapper__button__label">#口座</p>
         </div>
-        <div class="myna__form__attention__select">
-          <i class="fa-solid fa-face-smile-beam"></i>
-          <p class="myna__form__attention__select__name">こども</p>
+        <div class="myna__form__main__wrapper">
+          <p class="myna__form__main__wrapper__button__label">#保健所</p>
+          <p class="myna__form__main__wrapper__button__label">#パスポート</p>
+          <p class="myna__form__main__wrapper__button__label">#国民年金</p>
         </div>
-        <div class="myna__form__attention__select">
-          <i class="fa-solid fa-capsules"></i>
-          <p class="myna__form__attention__select__name">健康医療</p>
+        <p class="myna__form__main__title">注目</p>
+        <div class="myna__form__main__attention">
+          <div class="myna__form__main__attention__select">
+            <i class="fa-solid fa-address-card"></i>
+            <p class="myna__form__main__attention__select__name">証明書</p>
+          </div>
+          <div class="myna__form__main__attention__select">
+            <i class="fa-solid fa-house-flag"></i>
+            <p class="myna__form__main__attention__select__name">住まい</p>
+          </div>
+          <div class="myna__form__main__attention__select">
+            <i class="fa-solid fa-face-smile-beam"></i>
+            <p class="myna__form__main__attention__select__name">こども</p>
+          </div>
+          <div class="myna__form__main__attention__select">
+            <i class="fa-solid fa-capsules"></i>
+            <p class="myna__form__main__attention__select__name">健康医療</p>
+          </div>
+          <div class="myna__form__main__attention__select">
+            <i class="fa-solid fa-yen-sign"></i>
+            <p class="myna__form__main__attention__select__name">お金</p>
+          </div>
+          <div class="myna__form__main__attention__select">
+            <i class="fa-solid fa-landmark"></i>
+            <p class="myna__form__main__attention__select__name">出入国</p>
+          </div>
         </div>
-        <div class="myna__form__attention__select">
-          <i class="fa-solid fa-yen-sign"></i>
-          <p class="myna__form__attention__select__name">お金</p>
-        </div>
-        <div class="myna__form__attention__select">
-          <i class="fa-solid fa-landmark"></i>
-          <p class="myna__form__attention__select__name">出入国</p>
-        </div>
-      </div>
-      <p class="myna__form__title">ガイド</p>
-      <div class="myna__form__menu">
-        <div class="myna__form__menu__guide">
-          <img src="./hamster.png" alt="" class="myna__form__menu__guide__image">
-          <p class="myna__form__menu__guide__description">確定申告</p>
-        </div>
-        <div class="myna__form__menu__guide">
-          <img src="./hamster.png" alt="" class="myna__form__menu__guide__image">
-          <p class="myna__form__menu__guide__description">国外への渡航</p>
-        </div>
-        <div class="myna__form__menu__guide">
-          <img src="./hamster.png" alt="" class="myna__form__menu__guide__image">
-          <p class="myna__form__menu__guide__description">こどもの予防接種</p>
-        </div>
-        <div class="myna__form__menu__guide">
-          <img src="./hamster.png" alt="" class="myna__form__menu__guide__image">
-          <p class="myna__form__menu__guide__description">マイナンバーカードの作成</p>
+        <p class="myna__form__main__title">ガイド</p>
+        <div class="myna__form__main__menu">
+          <div class="myna__form__main__menu__guide">
+            <img src="./hamster.png" alt="" class="myna__form__main__menu__guide__image">
+            <p class="myna__form__main__menu__guide__description">確定申告</p>
+          </div>
+          <div class="myna__form__main__menu__guide">
+            <img src="./hamster.png" alt="" class="myna__form__main__menu__guide__image">
+            <p class="myna__form__main__menu__guide__description">国外への渡航</p>
+          </div>
+          <div class="myna__form__main__menu__guide">
+            <img src="./hamster.png" alt="" class="myna__form__main__menu__guide__image">
+            <p class="myna__form__main__menu__guide__description">こどもの予防接種</p>
+          </div>
+          <div class="myna__form__main__menu__guide">
+            <img src="./hamster.png" alt="" class="myna__form__main__menu__guide__image">
+            <p class="myna__form__main__menu__guide__description">マイナンバーカードの作成</p>
+          </div>
         </div>
       </div>
       <div class="myna__form__category">
