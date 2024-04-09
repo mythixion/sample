@@ -6,8 +6,159 @@
   <title>Document</title>
   <script src="https://kit.fontawesome.com/275662334b.js" crossorigin="anonymous"></script>
   <style>
+    body {
+      margin: 0px;
+      background-color: white;
+    }
     .tldv {
-
+      display: flex;
+    }
+    .menu {
+      background-color: #F6F5FA;
+      padding: 30px 5px 130px 5px;
+    }
+    .menu__title {
+      margin: 0px;
+      color: #1D1DF5;
+      font-weight: bold;
+      font-size: 22px;
+      padding-left: 15px;
+    }
+    .menu__input {
+      color: #5B5D89;
+      width: 190px;
+      height: 50px;
+      border: 1px solid white;
+      border-radius: 10px;
+      margin-top: 45px;
+    }
+    .menu__select {
+      padding-left: 15px;
+      margin-top: 15px;
+    }
+    .menu__select.-border {
+      border-top: 1px solid #E3E2EC;
+    }
+    .menu__select.-padding {
+      padding-left: 0px;
+    }
+    .menu__select.-margin {
+      margin-top: 230px;
+      border-top: 1px solid #E3E2EC;
+    }
+    .menu__select__wrapper {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      text-align: center;
+      gap: 8px;
+    }
+    .menu__select__wrapper.-on {
+      width: 160px;
+      height: 14px;
+      border-radius: 6px;
+      background-color: #E0DFFA;
+      padding: 10px 15px;
+      color: blue;
+    }
+    .menu__select__wrapper.back {
+      margin: px;
+    }
+    .menu__select__wrapper__icon {
+      width: 20px;
+      height: 20px;
+    }
+    .menu__select__wrapper__label {
+      margin: 0px;
+      font-size: 12px;
+      color: #5B5D89;
+    }
+    .menu__select__wrapper__label.-on {
+      color: #1D1DF5;
+    }
+    .menu__select__wrapper__button {
+      display: flex;
+      color: #1D1DF5;
+      align-items: center;
+      gap: 4px;
+      width: 50px;
+      height: 30px;
+      background-color: #C1C1FA;
+      padding-left: 5px;
+      border-radius: 12px;
+    }
+    .menu__select__wrapper__button__label {
+      margin: 0px;
+      font-size: 10px;
+      font-weight: bold;
+    }
+    .fa-video {
+      display: block;
+      color: #5B5D89;
+    }
+    .fa-clapperboard {
+      display: block;
+      color: #5B5D89;
+    }
+    .fa-dice {
+      display: block;
+      color: #5B5D89;
+    }
+    .fa-jedi-order {
+      display: block;
+      color: #5B5D89;
+    }
+    .fa-star {
+      display: block;
+      font-size: 10px;
+    }
+    .fa-square-full {
+      display: block;
+      color: #1D1DF5;
+    }
+    .fa-lightbulb {
+      display: block;
+      color: #5B5D89;
+    }
+    .fa-gift {
+      display: block;
+      color: #5B5D89;
+    }
+    .menu__select__input {
+      color: #5B5D89;
+      width: 184px;
+      height: 50px;
+      border: 1px solid white;
+      border-radius: 14px;
+      margin-top: 8px;
+    }
+    .menu__select__user {
+      display: flex;
+      gap: 58px;
+    }
+    .menu__select__user__wrapper {
+      display: flex;
+      gap: 8px;
+    }
+    .menu__select__user__wrapper__initial {
+      margin: 0px;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      background-color: #4C2FA2;
+      color: white;
+      text-align: center;
+      border-radius: 15px;
+      font-size: 14px;
+    }
+    .menu__select__user__wrapper__name {
+      margin: 0px;
+      font-size: 14px;
+      color: #5B5D89;
+    }
+    .menu__select__wrapper__arrow {
+      margin: 0px;
+      color: #5B5D89;
     }
   </style>
 </head>
@@ -15,8 +166,8 @@
 <div class="tldv">
   <div class="menu">
     <p class="menu__title">tl;dv</p>
-    <input type="search" class="menu__input">
-    <div class="menu__select">
+    <input type="search" value="        Search" class="menu__input">
+    <div class="menu__select -border">
       <div class="menu__select__wrapper">
         <div class="menu__select__wrapper__icon">
           <i class="fa-solid fa-video"></i>
@@ -42,42 +193,47 @@
         <p class="menu__select__wrapper__label">Al Reports</p>
         <div class="menu__select__wrapper__button">
           <i class="fa-solid fa-star"></i>
-          <p class="menu__select__wrapper__back__label">New</p>
+          <p class="menu__select__wrapper__button__label">New</p>
         </div>
       </div>
+    </div>
+    <div class="menu__select -padding">
       <div class="menu__select__wrapper -on">
         <div class="menu__select__wrapper__icon">
           <i class="fa-solid fa-square-full"></i>
         </div>
-        <p class="menu__select__wrapper__label">Integrations</p>
+      <p class="menu__select__wrapper__label -on">Integrations</p>
       </div>
+    </div>
+    <div class="menu__select">
       <div class="menu__select__wrapper">
         <div class="menu__select__wrapper__icon">
           <i class="fa-solid fa-lightbulb"></i>
         </div>
         <p class="menu__select__wrapper__label">Feature request</p>
       </div>
-      <div class="menu__select__wrapper -margin">
+    </div>
+    <div class="menu__select -margin">
+      <div class="menu__select__wrapper">
         <div class="menu__select__wrapper__icon">
           <i class="fa-solid fa-gift"></i>
         </div>
         <p class="menu__select__wrapper__label">Referral Program</p>
       </div>
-      <div class="menu__select__wrapper -back">
-        <div class="menu__select__wrapper__icon">
-          <i class="fa-solid fa-user-plus"></i>
-        </div>
-        <p class="menu__select__wrapper__label">Invite</p>
-      </div>
-      <div class="menu__select__wrapper">
-        <div class="menu__select__wrapper__user">
-          <p class="menu__select__wrapper__user__initial">H</p>
-          <p class="menu__select__wrapper__user__name">Hayato</p>
+    </div>
+    <input type="text" value="           Invite" class="menu__select__input">
+    <div class="menu__select">
+      <div class="menu__select__user">
+        <div class="menu__select__user__wrapper">
+          <p class="menu__select__user__wrapper__initial">H</p>
+          <p class="menu__select__user__wrapper__name">Hayato</p>
         </div>
         <p class="menu__select__wrapper__arrow">></p>
       </div>
     </div>
+    </div>
   </div>
+  <div class="form"></div>
 </div>
 </body>
 </html>
