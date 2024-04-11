@@ -15,7 +15,10 @@
     }
     .menu {
       background-color: #F6F5FA;
-      padding: 30px 8px 130px 8px;
+      height: 100vh;
+      position: sticky;
+      top: 0px;
+      left: 0px;
     }
     .menu__title {
       margin: 0px;
@@ -37,15 +40,17 @@
       padding-left: 15px;
       margin-top: 15px;
     }
+    .menu__select__fixed {
+      border-top: 1px solid #E3E2EC;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+    }
     .menu__select.-border {
       border-top: 1px solid #E3E2EC;
     }
     .menu__select.-padding {
       padding-left: 0px;
-    }
-    .menu__select.-margin {
-      margin-top: 230px;
-      border-top: 1px solid #E3E2EC;
     }
     .menu__select__wrapper {
       display: flex;
@@ -166,36 +171,41 @@
 
     }
     .form__title {
+      border-bottom: 1px solid #F5F5F5;
+    }
+    .form__title__label {
       font-weight: bold;
       font-size: 20px;
       padding: 10px 20px;
       margin: 0px;
     }
     .form__integration {
-      padding: 45px 85px;
-      border-top: 1px solid #F5F5F5;
+      padding: 45px 85px 35px 85px;
     }
-    .form__integration__head {
+    .form__integration__menu {
+
+    }
+    .form__integration__menu__head {
       display: flex;
       justify-content: space-between;
     }
-    .form__integration__head__wrapper {
+    .form__integration__menu__head__wrapper {
       display: flex;
       gap: 10px;
       align-items: center;
     }
-    .form__integration__head__wrapper__label {
+    .form__integration__menu__head__wrapper__label {
       margin: 0px;
       font-size: 14px;
       padding: 10px 15px;
       font-weight: bold;
       color: #5B5D89;
     }
-    .form__integration__head__wrapper__label.-on {
+    .form__integration__menu__head__wrapper__label.-on {
       color: #1D1DF5;
       border-bottom: 2px solid #1D1DF5;
     }
-    .form__integration__head__button {
+    .form__integration__menu__head__button {
       display: flex;
       align-items: center;
       gap: 10px;
@@ -209,13 +219,13 @@
       font-size: 12px;
       color: #5B5D89;
     }
-    .form__integration__head__button__description {
+    .form__integration__menu__head__button__description {
       margin: 0px;
       font-size: 10px;
       color: #5B5D89;
       font-weight: bold;
     }
-    .form__integration__input {
+    .form__integration__menu__input {
       margin-top: 30px;
       width: 100%;
       height: 45px;
@@ -225,14 +235,14 @@
       border: 1px solid white;
       padding-left: 45px;
     }
-    .form__integration__app {
+    .form__integration__menu__app {
       display: flex;
       margin-top: 30px;
       padding-right: 53px;
       flex-wrap: wrap;
       gap: 7px;
     }
-    .form__integration__app__select {
+    .form__integration__menu__app__select {
       background-color: white;
       height: 95px;
       width: 100px;
@@ -241,10 +251,10 @@
       text-align: center;
       border: 1px solid white;
     }
-    .form__integration__app__select__wrapper {
+    .form__integration__menu__app__select__wrapper {
       padding-top: 25px;
     }
-    .form__integration__app__select__wrapper__name {
+    .form__integration__menu__app__select__wrapper__name {
       margin: 0px;
       font-size: 12px;
       margin-top: 10px;
@@ -327,12 +337,13 @@
       color: #221F1F;
     }
     .form__workflow {
-      padding-left: 85px;
+
     }
     .form__workflow__title {
       margin: 0px;
       font-weight: bold;
       font-size: 16px;
+      margin-top: 45px;
     }
     .form__workflow__page {
       padding-left: 15px;
@@ -480,206 +491,212 @@
         <p class="menu__select__wrapper__label">Feature request</p>
       </div>
     </div>
-    <div class="menu__select -margin">
-      <div class="menu__select__wrapper">
-        <div class="menu__select__wrapper__icon">
-          <i class="fa-solid fa-gift"></i>
+    <div class="menu__select__fixed">
+      <div class="menu__select">
+        <div class="menu__select__wrapper">
+          <div class="menu__select__wrapper__icon">
+            <i class="fa-solid fa-gift"></i>
+          </div>
+          <p class="menu__select__wrapper__label">Referral Program</p>
         </div>
-        <p class="menu__select__wrapper__label">Referral Program</p>
       </div>
-    </div>
-    <input type="text" value="Invite" class="menu__select__input">
-    <div class="menu__select">
-      <div class="menu__select__user">
-        <div class="menu__select__user__wrapper">
-          <p class="menu__select__user__wrapper__initial">H</p>
-          <p class="menu__select__user__wrapper__name">Hayato</p>
+      <input type="text" value="Invite" class="menu__select__input">
+      <div class="menu__select">
+        <div class="menu__select__user">
+          <div class="menu__select__user__wrapper">
+            <p class="menu__select__user__wrapper__initial">H</p>
+            <p class="menu__select__user__wrapper__name">Hayato</p>
+          </div>
+          <p class="menu__select__wrapper__arrow">></p>
         </div>
-        <p class="menu__select__wrapper__arrow">></p>
       </div>
     </div>
   </div>
   <div class="form">
-    <p class="form__title">Integrations</p>
-    <div class="form__integration">
-      <div class="form__integration__head">
-        <div class="form__integration__head__wrapper">
-          <p class="form__integration__head__wrapper__label -on">New workflows</p>
-          <p class="form__integration__head__wrapper__label">My workflows</p>
-        </div>
-        <div class="form__integration__head__button">
-          <i class="fa-solid fa-lock"></i>
-          <p class="form__integration__head__button__description">Manage API Keys</p>
-        </div>
-      </div>
-      <input type="search" value="Search 5.000+ apps" class="form__integration__input">
-      <div class="form__integration__app">
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-brands fa-meetup"></i>
-            <p class="form__integration__app__select__wrapper__name">Google Meet</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-brands fa-joomla"></i>
-            <p class="form__integration__app__select__wrapper__name">Zoom</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-solid fa-people-group"></i>
-            <p class="form__integration__app__select__wrapper__name">Teams</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-brands fa-slack"></i>
-            <p class="form__integration__app__select__wrapper__name">Slack</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-brands fa-hubspot"></i>
-            <p class="form__integration__app__select__wrapper__name">Hubspot</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-brands fa-salesforce"></i>
-            <p class="form__integration__app__select__wrapper__name">Salesforce</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-brands fa-lyft"></i>
-            <p class="form__integration__app__select__wrapper__name">Salesloft</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-solid fa-calendar"></i>
-            <p class="form__integration__app__select__wrapper__name">Calendar</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-solid fa-helmet-un"></i>
-            <p class="form__integration__app__select__wrapper__name">Notion</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-brands fa-jira"></i>
-            <p class="form__integration__app__select__wrapper__name">Jira</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-solid fa-microchip"></i>
-            <p class="form__integration__app__select__wrapper__name">Miro</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-brands fa-trello"></i>
-            <p class="form__integration__app__select__wrapper__name">Trello</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-solid fa-egg"></i>
-            <p class="form__integration__app__select__wrapper__name">Clickup</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-solid fa-question"></i>
-            <p class="form__integration__app__select__wrapper__name">Greenhouse</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-brands fa-google-play"></i>
-            <p class="form__integration__app__select__wrapper__name">Google Sheets</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-brands fa-airbnb"></i>
-            <p class="form__integration__app__select__wrapper__name">Airtable</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-brands fa-mandalorian"></i>
-            <p class="form__integration__app__select__wrapper__name">Monday.com</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-solid fa-biohazard"></i>
-            <p class="form__integration__app__select__wrapper__name">Zoho</p>
-          </div>
-        </div>
-        <div class="form__integration__app__select">
-          <div class="form__integration__app__select__wrapper">
-            <i class="fa-brands fa-pied-piper"></i>
-            <p class="form__integration__app__select__wrapper__name">Pipedrive</p>
-          </div>
-        </div>
-      </div>
+    <div class="form__title">
+      <p class="form__title__label">Integrations</p>
     </div>
-    <div class="form__workflow">
-      <p class="form__workflow__title">Popular workflows</p>
-      <div class="form__workflow__page">
-        <div class="form__workflow__page__select">
-          <div class="form__workflow__page__select__wrapper">
-            <i class="fa-brands fa-square-tumblr"></i>
-            <i class="fa-solid fa-play"></i>
-            <i class="fa-solid fa-n"></i>
-            <p class="form__workflow__page__select__wrapper__description">Create pages in Notion for new tl;dv recordings</p>
+    <div class="form__integration">
+      <div class="form__integration__menu">
+        <div class="form__integration__menu__head">
+          <div class="form__integration__menu__head__wrapper">
+            <p class="form__integration__menu__head__wrapper__label -on">New workflows</p>
+            <p class="form__integration__menu__head__wrapper__label">My workflows</p>
           </div>
-          <p class="form__workflow__page__select__button">Try now</p>
+          <div class="form__integration__menu__head__button">
+            <i class="fa-solid fa-lock"></i>
+            <p class="form__integration__menu__head__button__description">Manage API Keys</p>
+          </div>
         </div>
-        <div class="form__workflow__page__select">
-          <div class="form__workflow__page__select__wrapper">
-            <i class="fa-brands fa-square-tumblr"></i>
-            <p class="form__workflow__page__select__wrapper__description">Upload new files in Google Drive to tl;dv</p>
+        <input type="search" value="Search 5.000+ apps" class="form__integration__menu__input">
+        <div class="form__integration__menu__app">
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-brands fa-meetup"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Google Meet</p>
+            </div>
           </div>
-          <p class="form__workflow__page__select__button">Try now</p>
-        </div>
-        <div class="form__workflow__page__select">
-          <div class="form__workflow__page__select__wrapper">
-            <i class="fa-brands fa-square-tumblr"></i>
-            <i class="fa-solid fa-play"></i>
-            <i class="fa-solid fa-n"></i>
-            <p class="form__workflow__page__select__wrapper__description">Create database items in Notion from new tl;dv notes</p>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-brands fa-joomla"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Zoom</p>
+            </div>
           </div>
-          <p class="form__workflow__page__select__button">Try now</p>
-        </div>
-        <div class="form__workflow__page__select">
-          <div class="form__workflow__page__select__wrapper">
-            <i class="fa-solid fa-camera"></i>
-            <i class="fa-solid fa-play"></i>
-            <i class="fa-brands fa-square-tumblr"></i>
-            <p class="form__workflow__page__select__wrapper__description">Upload new Zoom recordings to tl;dv</p>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-solid fa-people-group"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Teams</p>
+            </div>
           </div>
-          <p class="form__workflow__page__select__button">Try now</p>
-        </div>
-        <div class="form__workflow__page__select">
-          <div class="form__workflow__page__select__wrapper">
-            <i class="fa-brands fa-square-tumblr"></i>
-            <i class="fa-solid fa-play"></i>
-            <i class="fa-solid fa-n"></i>
-            <p class="form__workflow__page__select__wrapper__description">Create pages in Notion for new tl;dv transcripts</p>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-brands fa-slack"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Slack</p>
+            </div>
           </div>
-          <p class="form__workflow__page__select__button">Try now</p>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-brands fa-hubspot"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Hubspot</p>
+            </div>
+          </div>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-brands fa-salesforce"></i>
+            <p class="form__integration__menu__app__select__wrapper__name">Salesforce</p>
+            </div>
+          </div>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-brands fa-lyft"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Salesloft</p>
+            </div>
+          </div>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-solid fa-calendar"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Calendar</p>
+            </div>
+          </div>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-solid fa-helmet-un"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Notion</p>
+            </div>
+          </div>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-brands fa-jira"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Jira</p>
+            </div>
+          </div>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-solid fa-microchip"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Miro</p>
+            </div>
+          </div>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-brands fa-trello"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Trello</p>
+            </div>
+          </div>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-solid fa-egg"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Clickup</p>
+            </div>
+          </div>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-solid fa-question"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Greenhouse</p>
+            </div>
+          </div>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-brands fa-google-play"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Google Sheets</p>
+            </div>
+          </div>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-brands fa-airbnb"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Airtable</p>
+            </div>
+          </div>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-brands fa-mandalorian"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Monday.com</p>
+            </div>
+          </div>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-solid fa-biohazard"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Zoho</p>
+            </div>
+          </div>
+          <div class="form__integration__menu__app__select">
+            <div class="form__integration__menu__app__select__wrapper">
+              <i class="fa-brands fa-pied-piper"></i>
+              <p class="form__integration__menu__app__select__wrapper__name">Pipedrive</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="form__workflow__button">
+      <div class="form__workflow">
+        <p class="form__workflow__title">Popular workflows</p>
+        <div class="form__workflow__page">
+          <div class="form__workflow__page__select">
+            <div class="form__workflow__page__select__wrapper">
+              <i class="fa-brands fa-square-tumblr"></i>
+              <i class="fa-solid fa-play"></i>
+              <i class="fa-solid fa-n"></i>
+              <p class="form__workflow__page__select__wrapper__description">Create pages in Notion for new tl;dv recordings</p>
+            </div>
+            <p class="form__workflow__page__select__button">Try now</p>
+          </div>
+          <div class="form__workflow__page__select">
+            <div class="form__workflow__page__select__wrapper">
+              <i class="fa-brands fa-square-tumblr"></i>
+              <p class="form__workflow__page__select__wrapper__description">Upload new files in Google Drive to tl;dv</p>
+            </div>
+            <p class="form__workflow__page__select__button">Try now</p>
+          </div>
+          <div class="form__workflow__page__select">
+            <div class="form__workflow__page__select__wrapper">
+              <i class="fa-brands fa-square-tumblr"></i>
+              <i class="fa-solid fa-play"></i>
+              <i class="fa-solid fa-n"></i>
+              <p class="form__workflow__page__select__wrapper__description">Create database items in Notion from new tl;dv notes</p>
+            </div>
+            <p class="form__workflow__page__select__button">Try now</p>
+          </div>
+          <div class="form__workflow__page__select">
+            <div class="form__workflow__page__select__wrapper">
+              <i class="fa-solid fa-camera"></i>
+              <i class="fa-solid fa-play"></i>
+              <i class="fa-brands fa-square-tumblr"></i>
+              <p class="form__workflow__page__select__wrapper__description">Upload new Zoom recordings to tl;dv</p>
+            </div>
+            <p class="form__workflow__page__select__button">Try now</p>
+          </div>
+          <div class="form__workflow__page__select">
+            <div class="form__workflow__page__select__wrapper">
+              <i class="fa-brands fa-square-tumblr"></i>
+              <i class="fa-solid fa-play"></i>
+              <i class="fa-solid fa-n"></i>
+              <p class="form__workflow__page__select__wrapper__description">Create pages in Notion for new tl;dv transcripts</p>
+            </div>
+            <p class="form__workflow__page__select__button">Try now</p>
+          </div>
+        </div>
+        <div class="form__workflow__button">
           <p class="form__workflow__button__addition">+</p>
           <p class="form__workflow__button__description">Create workflow from scratch</p>
+        </div>
       </div>
     </div>
   </div>
