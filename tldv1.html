@@ -127,7 +127,7 @@
     }
     .menu__select__input {
       color: #5B5D89;
-      width: 184px;
+      width: 144px;
       height: 50px;
       border: 1px solid white;
       border-radius: 16px;
@@ -136,7 +136,7 @@
     }
     .menu__select__user {
       display: flex;
-      gap: 58px;
+      gap: 50px;
     }
     .menu__select__user__wrapper {
       display: flex;
@@ -227,7 +227,7 @@
     .form__integration__app {
       display: flex;
       margin-top: 30px;
-      padding-right: 30px;
+      padding-right: 60px;
       gap: 7px;
     }
     .form__integration__app__select {
@@ -235,7 +235,7 @@
       height: 100px;
       width: 100px;
       border-radius: 10px;
-      box-shadow: 5px 5px 10px -15px;
+      box-shadow: 0px 0px 10px -8px;
       text-align: center;
       border: 1px solid white;
     }
@@ -248,60 +248,121 @@
       margin-top: 5px;
     }
     .fa-meetup {
-
+      display: block;
+      color: #4DA852;
     }
     .fa-joomla {
-
+      display: block;
+      color: #5A89F7;
     }
     .fa-people-group {
-
+      display: block;
+      color: #5259C2;
     }
     .fa-slack {
-
+      display: block;
+      color: #CE365C;
     }
     .fa-hubspot {
-
+      display: block;
+      color: #EE8162;
     }
     .fa-salesforce {
-
+      display: block;
+      color: #479FDA;
     }
     .fa-lyft {
-
+      display: block;
+      color: #1F4830;
     }
     .fa-calendar {
-
+      display: block;
+      color: #5382EB;
     }
     .fa-helmet-un {
-
+      display: block;
+      color: #01012F;
     }
     .fa-jira {
-
+      display: block;
+      color: #2B60D3;
     }
     .fa-microchip {
-
+      display: block;
+      color: #F8D254;
     }
     .fa-trello {
-
+      display: block;
+      color: #387FC5;
     }
     .fa-egg {
-
+      display: block;
+      color: #EB51C8;
     }
     .fa-question {
-
+      display: block;
+      color: #50A280;
     }
     .fa-google-play {
-
+      display: block;
+      color: #50A36B;
     }
     .fa-airbnb {
-
+      display: block;
+      color: #59BCF9;
     }
     .fa-mandalorian {
-
+      display: block;
+      color: #FBE6A2;
     }
     .fa-biohazard {
-
+      display: block;
+      color: #77B27C
     }
     .fa-pied-piper {
+      display: block;
+      color: #221F1F;
+    }
+    .form__label {
+
+    }
+    .form__workflow {
+
+    }
+    .form__workflow__select {
+
+    }
+    .form__workflow__select__wrapper {
+
+    }
+    .form__workflow__select__wrapper__description {
+
+    }
+    .form__workflow__select__button {
+
+    }
+    .fa-square-tumblr {
+
+    }
+    .fa-play {
+
+    }
+    .fa-n {
+
+    }
+    .fa-camera {
+
+    }
+    .form__create {
+
+    }
+    .form__create__button {
+
+    }
+    .form__create__button__addition {
+
+    }
+    .form__create__button__description {
 
     }
   </style>
@@ -505,6 +566,58 @@
             <p class="form__integration__app__select__wrapper__name">Pipedrive</p>
           </div>
         </div>
+      </div>
+    </div>
+    <p class="form__label">Popular workflows</p>
+    <div class="form__workflow">
+      <div class="form__workflow__select">
+        <div class="form__workflow__select__wrapper">
+          <i class="fa-brands fa-square-tumblr"></i>
+          <i class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-n"></i>
+          <p class="form__workflow__select__wrapper__description">Create pages in Notion for new tl;dv recordings</p>
+        </div>
+        <p class="form__workflow__select__button">Try now</p>
+      </div>
+      <div class="form__workflow__select">
+        <div class="form__workflow__select_wrapper">
+          <i class="fa-brands fa-square-tumblr"></i>
+          <p class="form__workflow__select__wrapper__description">Upload new files in Google Drive to tl;dv</p>
+        </div>
+        <p class="form__workflow__select__button">Try now</p>
+      </div>
+      <div class="form__workflow__select">
+        <div class="form__workflow__select__wrapper">
+          <i class="fa-brands fa-square-tumblr"></i>
+          <i class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-n"></i>
+          <p class="form__workflow__select__wrapper__description">Create database items in Notion from new tl;dv notes</p>
+        </div>
+        <p class="form__workflow__select__button">Try now</p>
+      </div>
+      <div class="form__workflow__select">
+        <div class="form__workflow__select__wrapper">
+          <i class="fa-solid fa-camera"></i>
+          <i class="fa-solid fa-play"></i>
+          <i class="fa-brands fa-square-tumblr"></i>
+          <p class="form__workflow__select__wrapper__description">Upload new Zoom recordings to tl;dv</p>
+        </div>
+        <p class="form__workflow__select__button">Try now</p>
+      </div>
+      <div class="form__workflow__select">
+        <div class="form__workflow__select__wrapper">
+          <i class="fa-brands fa-square-tumblr"></i>
+          <i class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-n"></i>
+          <p class="form__workflow__select__wrapper__description">Create pages in Notion for new tl;dv transcripts</p>
+        </div>
+        <p class="form__workflow__select__button">Try now</p>
+      </div>
+    </div>
+    <div class="form__create">
+      <div class="form__create__button">
+        <p class="form__create__button__addition">+</p>
+        <p class="form__create__button__description">Create workflow from scratch</p>
       </div>
     </div>
   </div>
