@@ -31,7 +31,6 @@
     }
     .menu__input {
       color: #5B5D89;
-      width: 182px;
       height: 50px;
       border: 1px solid white;
       border-radius: 14px;
@@ -39,37 +38,30 @@
       padding-left: 40px;
     }
     .menu__select {
-      padding-left: 15px;
       margin-top: 15px;
+    }
+    .menu__select.-on {
+      border-top: 1px solid #E3E2EC;
     }
     .menu__select__fixed {
       border-top: 1px solid #E3E2EC;
       position: absolute;
       bottom: 10px;
     }
-    .menu__select.-border {
-      border-top: 1px solid #E3E2EC;
-    }
-    .menu__select.-padding {
-      padding-left: 0px;
-    }
     .menu__select__wrapper {
       display: flex;
       align-items: center;
-      margin-top: 20px;
       text-align: center;
       gap: 8px;
+      height: 35px;
+      border-radius: 6px;
+      padding-left: 15px;
+      margin-top: 10px;
+      color: #5B5D89;
     }
     .menu__select__wrapper.-on {
-      width: 152px;
-      height: 14px;
-      border-radius: 6px;
       background-color: #E0DFFA;
-      padding: 10px 15px;
-      color: blue;
-    }
-    .menu__select__wrapper.back {
-      margin: px;
+      color: #1D1DF5;
     }
     .menu__select__wrapper__icon {
       width: 20px;
@@ -78,10 +70,6 @@
     .menu__select__wrapper__label {
       margin: 0px;
       font-size: 13px;
-      color: #5B5D89;
-    }
-    .menu__select__wrapper__label.-on {
-      color: #1D1DF5;
     }
     .menu__select__wrapper__button {
       display: flex;
@@ -101,19 +89,15 @@
     }
     .fa-video {
       display: block;
-      color: #5B5D89;
     }
     .fa-clapperboard {
       display: block;
-      color: #5B5D89;
     }
     .fa-dice {
       display: block;
-      color: #5B5D89;
     }
     .fa-jedi-order {
       display: block;
-      color: #5B5D89;
     }
     .fa-star {
       display: block;
@@ -121,28 +105,35 @@
     }
     .fa-square-full {
       display: block;
-      color: #1D1DF5;
     }
     .fa-lightbulb {
       display: block;
-      color: #5B5D89;
     }
     .fa-gift {
       display: block;
+    }
+    .menu__select__button {
+      display: flex;
+      height: 50px;
+      width: 165px;
+      align-items: center;
+      background-color: white;
+      border-radius: 12px;
+      gap: 8px;
+      padding-left: 18px;
+    }
+    .fa-user-plus {
       color: #5B5D89;
     }
-    .menu__select__input {
+    .menu__select__button__label {
+      margin: 0px;
       color: #5B5D89;
-      width: 136px;
-      height: 50px;
-      border: 1px solid white;
-      border-radius: 16px;
-      margin-top: 8px;
-      padding-left: 42px;
+      font-size: 12px;
     }
     .menu__select__user {
       display: flex;
       gap: 60px;
+      padding-left: 12px;
     }
     .menu__select__user__wrapper {
       display: flex;
@@ -354,7 +345,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 1070px;
       height: 60px;
       border: 1px solid white;
       border-radius: 8px;
@@ -419,7 +409,6 @@
     .form__workflow__button {
       display: flex;
       align-items: center;
-      width: 1120px;
       height: 15px;
       background-color: #FAFAFC;
       border: 1px solid #E3E2EC;
@@ -445,8 +434,8 @@
 <div class="tldv">
   <div class="menu">
     <p class="menu__title">tl;dv</p>
-    <input type="search" value="Search" class="menu__input">
-    <div class="menu__select -border">
+    <input type="text" placeholder="Search" class="menu__input">
+    <div class="menu__select -on">
       <div class="menu__select__wrapper">
         <div class="menu__select__wrapper__icon">
           <i class="fa-solid fa-video"></i>
@@ -475,16 +464,12 @@
           <p class="menu__select__wrapper__button__label">New</p>
         </div>
       </div>
-    </div>
-    <div class="menu__select -padding">
       <div class="menu__select__wrapper -on">
         <div class="menu__select__wrapper__icon">
           <i class="fa-solid fa-square-full"></i>
         </div>
-      <p class="menu__select__wrapper__label -on">Integrations</p>
+        <p class="menu__select__wrapper__label">Integrations</p>
       </div>
-    </div>
-    <div class="menu__select">
       <div class="menu__select__wrapper">
         <div class="menu__select__wrapper__icon">
           <i class="fa-solid fa-lightbulb"></i>
@@ -501,7 +486,10 @@
           <p class="menu__select__wrapper__label">Referral Program</p>
         </div>
       </div>
-      <input type="text" value="Invite" class="menu__select__input">
+      <div class="menu__select__button">
+        <i class="fa-solid fa-user-plus"></i>
+        <p class="menu__select__button__label">Invite</p>
+      </div>
       <div class="menu__select">
         <div class="menu__select__user">
           <div class="menu__select__user__wrapper">
@@ -529,7 +517,7 @@
             <p class="form__integration__menu__head__button__description">Manage API Keys</p>
           </div>
         </div>
-        <input type="search" value="Search 5.000+ apps" class="form__integration__menu__input">
+        <input type="text" placeholder="Search 5.000+ apps" class="form__integration__menu__input">
         <div class="form__integration__menu__app">
           <div class="form__integration__menu__app__select">
             <div class="form__integration__menu__app__select__wrapper">
