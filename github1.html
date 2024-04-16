@@ -8,23 +8,347 @@
   <style>
     body {
       margin: 0px;
+
+    }
+    .github {
+      background-color: #020409;
+      padding-bottom: 0px;
+    }
+    .github__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 15px 0px;
+    }
+    .github__head__wrapper1 {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .github__head__wrapper2 {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .fa-bars {
+      color: #868D96;
+    }
+    .fa-github {
+      color: #E6EDF1;
+      font-size: 40px;
+    }
+    .github__head__wrapper__conpany {
+      color: #E6EDF1;
+      margin: 0px;
+    }
+    .github__head__wrapper__conpany__span {
+      color: #858C95;
+    }
+    .fa-user {
+      color: #E6EDF1;
+    }
+    .github__head__wrapper__input {
+      width: 350px;
+      height: 20px;
+      padding: 5px;
+      padding-left: 25px;
+      border: 1px solid #31363B;
+      border-radius: 6px;
+      color: #868D96;
+    }
+    .github__head__wrapper__select {
+      padding: 15px;
+      height: 30px;
+      border: 1px solid #31363B;
+      border-radius: 6px;
+    }
+    .github__head__wrapper__icon {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #31363B;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .github__head__wrapper__icon__dot {
+      color: #868D96;
+    }
+    .fa-code-pull-request {
+      color: #868D96;
+    }
+    .fa-github-alt {
+      color: #868D96;
+    }
+    .github__head__wrapper__image {
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+    }
+    .github__menu {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding-left: 15px;
+      margin-top: 25px;
+      border-bottom: 1px solid #31363B;
+    }
+    .github__menu__wrapper {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      padding: 0px 8px 15px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0);
+    }
+    .github__menu__wrapper.-on {
+      border-color: #E8876D;
+    }
+    .github__menu__wrapper__icon {
+      width: 17px;
+      height: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .github__menu__wrapper__icon__dot {
+      color: #868D96;
+    }
+    .fa-arrows-left-right {
+      color: #878E97;
+    }
+    .github__menu__wrapper__label {
+      margin: 0px;
+      color: #DEE4E9;
+      font-size: 14px;
+    }
+    .github__menu__wrapper__button1 {
+      width: 20px;
+      height: 15px;
+      background-color: #2E3138;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      padding: 5px;
+    }
+    .github__menu__wrapper__button2 {
+      width: 15px;
+      height: 15px;
+      padding: 5px;
+      background-color: #2E3138;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .github__menu__wrapper__button__value {
+      margin: 0px;
+      color: #E6EDF1;
+      font-size: 12px
+    }
+    .fa-circle-play {
+      color: #858C96;
+    }
+    .fa-shield {
+      color: #858C96;
+    }
+    .fa-chart-line {
+      color: #858C96;
+    }
+    .fa-gear {
+      color: #858C96;
+    }
+    .issue {
+      padding: 25px 150px 40px;
+    }
+    .issue__head {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+    .issue__head__input {
+      width: 810px;
+      height: 33px;
+      border: 1px solid #31363B;
+      border-radius: 6px;
+      padding-left: 25px;
+      background-color: #171B22;
+    }
+    .issue__head__tag {
+      display: flex;
+      border: 1px solid #31363B;
+      border-radius: 6px;
+      height: 35px;
+    }
+    .issue__head__tag__wrapper1 {
+      display: flex;
+      gap: 4px;
+      padding: 2px 15px;
+      align-items: center;
+      border-right: 1px solid #31363B;
+    }
+    .issue__head__tag__wrapper2 {
+      display: flex;
+      gap: 4px;
+      padding: 2px 15px;
+      align-items: center;
+    }
+    .issue__head__tag__wrapper__icon {
+
+    }
+    .fa-solid {
+      color: #E6EDF1;
+    }
+    .fa-tag {
+      color: #E6EDF1;
+    }
+    .issue__head__tag__wrapper__label {
+      margin: 0px;
+      font-size: 14px;
+      color: #E6EDF1;
+    }
+    .issue__head__tag__wrapper__button {
+      margin: 0px;
+      font-size: 12px;
+      background-color: #353940;
+      color: #E6EDF1;
+      padding: 0px 5px;
+      border-radius: 8px;
+      height: 17px;
+    }
+    .fa-pen {
+
+    }
+    .issue__head__button {
+      margin: 0px;
+      color: #E6EDF1;
+      background-color: #438440;
+      padding: 10px;
+      font-size: 14px;
+      width: 72px;
+      height: 17px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .issue__wrapper {
+
+    }
+    .issue__wrapper__button {
+
+    }
+    .issue__wrapper__description {
+
+    }
+    .issue__list {
+
+    }
+    .issue__list__head {
+
+    }
+    .issue__list__head__checkbox {
+
+    }
+    .issue__list__head__wrapper {
+
+    }
+    .fa-circle-dot {
+
+    }
+    .issue__list__head__wrapper__open {
+
+    }
+    .fa-check {
+
+    }
+    .issue__list__head__wrapper__close {
+
+    }
+    .issue__list__head__select {
+
+    }
+    .issue__list__head__select__wrapper {
+
+    }
+    .issue__list__head__select__name {
+
+    }
+    .fa-caret-down {
+
+    }
+    .issue__report__list {
+
+    }
+    .issue__report__list__checkbox {
+
+    }
+    .issue__report__list__dot {
+
+    }
+    .issue__report__list__name {
+
+    }
+    .issue__report__list__name__wrapper {
+
+    }
+    .issue__report__list__name__wrapper__title {
+
+    }
+    .issue__report__list__name__label1 {
+
+    }
+    .issue__report__list__name__made {
+
+    }
+    .issue__report__list__image {
+
+    }
+    .issue__report__list____name {
+
+    }
+    .issue__report__list____name__wrapper {
+
+    }
+    .issue__report__list____name__wrapper__title {
+
+    }
+    .issue__report__list____name__label1 {
+
+    }
+    .issue__report__list____tag {
+
+    }
+    .issue__report__list____name__label2 {
+
+    }
+    .issue__report__list____name__pull {
+
+    }
+    .fa-code-pull-request {
+
+    }
+    .issue__report__list____name__pull__value {
+
     }
   </style>
 </head>
 <body>
   <div class="github">
     <div class="github__head">
-      <div class="github__head__wrapper">
-        <i class="fa-solid fa-bars"></i>
+      <div class="github__head__wrapper1">
+        <div class="github__head__wrapper__icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
         <i class="fa-brands fa-github"></i>
-        <p class="github__head__wrapper__conpany">logos-pathos / canna</p>
+        <p class="github__head__wrapper__conpany">logos-pathos <span class="github__head__wrapper__conpany__span">/</span> canna</p>
         <i class="fa-solid fa-user"></i>
       </div>
-      <div class="github__head__wrapper">
+      <div class="github__head__wrapper2">
         <input type="text" placeholder="Type / to search" class="github__head__wrapper__input">
         <select name="" id="" class="github__head__wrapper__select"></select>
         <div class="github__head__wrapper__icon">
-          <i class="fa-solid fa-circle-dot"></i>
+          <i class="fa-solid fa-circle-dot github__head__wrapper__icon__dot"></i>
         </div>
         <div class="github__head__wrapper__icon">
           <i class="fa-solid fa-code-pull-request"></i>
@@ -42,12 +366,12 @@
         </div>
         <p class="github__menu__wrapper__label">Code</p>
       </div>
-      <div class="github__menu__wrapper">
+      <div class="github__menu__wrapper -on">
         <div class="github__menu__wrapper__icon">
-          <i class="fa-solid fa-circle-dot"></i>
+          <i class="fa-solid fa-circle-dot github__menu__wrapper__icon__dot"></i>
         </div>
         <p class="github__menu__wrapper__label">Issues</p>
-        <div class="github__menu__wrapper__button">
+        <div class="github__menu__wrapper__button1">
           <p class="github__menu__wrapper__button__value">18</p>
         </div>
       </div>
@@ -56,8 +380,8 @@
           <i class="fa-solid fa-code-pull-request"></i>
         </div>
         <p class="github__menu__wrapper__label">Pull requests</p>
-        <div class="github__menu__wrapper__button">
-          <p class="github__menu__wrapper__value">8</p>
+        <div class="github__menu__wrapper__button2">
+          <p class="github__menu__wrapper__button__value">8</p>
         </div>
       </div>
       <div class="github__menu__wrapper">
@@ -86,82 +410,110 @@
       </div>
     </div>
   </div>
-  <div class="form">
-    <div class="form__head">
-      <input type="text" placeholder="is:open is:issue" class="form__head__input">
-      <div class="form__head__tag">
-        <div class="form__head__tag__wrapper">
-          <div class="form__head__tag__wrapper__icon">
+  <div class="issue">
+    <div class="issue__head">
+      <input type="text" placeholder="is:open is:issue" class="issue__head__input">
+      <div class="issue__head__tag">
+        <div class="issue__head__tag__wrapper1">
+          <div class="issue__head__tag__wrapper__icon">
             <i class="fa-solid fa-tag"></i>
           </div>
-          <p class="form__head__tag__wrapper__label">Labels</p>
-          <p class="form__head__tag__wrapper__button">6</p>
+          <p class="issue__head__tag__wrapper__label">Labels</p>
+          <p class="issue__head__tag__wrapper__button">6</p>
         </div>
-        <div class="form__head__tag__wrapper">
-          <div class="form__head__tag__wrapper__icon">
+        <div class="issue__head__tag__wrapper2">
+          <div class="issue__head__tag__wrapper__icon">
             <i class="fa-solid fa-pen"></i>
           </div>
-          <p class="form__head__tag__wrapper__label">Milestones</p>
-          <div class="form__head__tag__wrapper__button">13</div>
+          <p class="issue__head__tag__wrapper__label">Milestones</p>
+          <div class="issue__head__tag__wrapper__button">13</div>
         </div>
       </div>
-      <p class="form__head__button">New issue</p>
+      <p class="issue__head__button">New issue</p>
     </div>
-    <div class="form__wrapper">
-      <p class="form__wrapper__button">×</p>
-      <p class="form__wrapper__description">Clear current search query, filters, and sorts</p>
+    <div class="issue__wrapper">
+      <p class="issue__wrapper__button">×</p>
+      <p class="issue__wrapper__description">Clear current search query, filters, and sorts</p>
     </div>
-    <div class="form__menu">
-      <div class="form__menu__head">
-        <input type="checkbox" class="form__menu__head__checkbox">
-        <div class="form__menu__head__wrapper">
+    <div class="issue__list">
+      <div class="issue__list__head">
+        <input type="checkbox" class="issue__list__head__checkbox">
+        <div class="issue__list__head__wrapper">
           <i class="fa-solid fa-circle-dot"></i>
-          <p class="form__menu__head__wrapper__open">18 Open</p>
+          <p class="issue__list__head__wrapper__open">18 Open</p>
         </div>
-        <div class="form__menu__head__wrapper">
+        <div class="issue__list__head__wrapper">
           <i class="fa-solid fa-check"></i>
-          <p class="form__menu__head__wrapper__close">360 Closed</p>
+          <p class="issue__list__head__wrapper__close">360 Closed</p>
         </div>
-        <div class="form__menu__head__select">
-          <div class="form__menu__head__select__wrapper">
-            <p class="form__menu__head__select__name">Author</p>
+        <div class="issue__list__head__select">
+          <div class="issue__list__head__select__wrapper">
+            <p class="issue__list__head__select__name">Author</p>
             <i class="fa-solid fa-caret-down"></i>
           </div>
-          <div class="form__menu__head__select__wrapper">
-            <p class="form__menu__head__select__name">Label</p>
+          <div class="issue__list__head__select__wrapper">
+            <p class="issue__list__head__select__name">Label</p>
             <i class="fa-solid fa-caret-down"></i>
           </div>
-          <div class="form__menu__head__select__wrapper">
-            <p class="form__menu__head__select__name">Projects</p>
+          <div class="issue__list__head__select__wrapper">
+            <p class="issue__list__head__select__name">Projects</p>
             <i class="fa-solid fa-caret-down"></i>
           </div>
-          <div class="form__menu__head__select__wrapper">
-            <p class="form__menu__head__select__name">Milestones</p>
+          <div class="issue__list__head__select__wrapper">
+            <p class="issue__list__head__select__name">Milestones</p>
             <i class="fa-solid fa-caret-down"></i>
           </div>
-          <div class="form__menu__head__select__wrapper">
-            <p class="form__menu__head__select__name">Assignee</p>
+          <div class="issue__list__head__select__wrapper">
+            <p class="issue__list__head__select__name">Assignee</p>
             <i class="fa-solid fa-caret-down"></i>
           </div>
-          <div class="form__menu__head__select__wrapper">
-            <p class="form__menu__head__select__name">Sort</p>
+          <div class="issue__list__head__select__wrapper">
+            <p class="issue__list__head__select__name">Sort</p>
             <i class="fa-solid fa-caret-down"></i>
           </div>
         </div>
       </div>
-      <div class="form__menu__list">
-        <div class="form__menu__list__head">
-          <input type="checkbox" class="form__menu__list__checkbox">
-          <div class="form__menu__list__head__wrapper">
-            <div class="form__menu__list__head__wrapper__icon">
-              <i class="fa-solid fa-circle-dot"></i>
-            </div>
-            <p class="form__menu__list__head__wrapper__label">Signals対応</p>
-            <p class="form__menu__list__head__wrapper__description">(AccountIndexComponent • PartnerIndexComponent)</p>
-            <p class="form__menu__list__head__wrapper__button">chore</p>
+      <div class="issue__report__list">
+        <input type="checkbox" class="issue__report__list__checkbox">
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper">
+            <p class="issue__report__list__name__wrapper__title">Signals対応</p>
+            <p class="issue__report__list__name__wrapper__title">(AccountIndexComponent • PartnerIndexComponent)</p>
+            <p class="issue__report__list__name__label1">chore</p>
           </div>
-          <img src="./hamster.png" alt="" class="form__menu__list__head__image">
+          <p class="issue__report__list__name__made">#1419 opened 2 hours ago by hatoya</p>
         </div>
+        <img src="./hamster.png" alt="" class="issue__report__list__image">
+      </div>
+      <div class="issue__report__list">
+        <input type="checkbox" class="issue__report__list__checkbox">
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list____name">
+          <div class="issue__report__list____name__wrapper">
+            <p class="issue__report__list____name__wrapper__title">Signals対応</p>
+            <p class="issue__report__list____name__wrapper__title">(ContractIndexComponent)</p>
+            <p class="issue__report__list____name__label1">chore</p>
+          </div>
+          <p class="issue__report__list____tag">#1418 opened 2 hours ago by hatoya</p>
+        </div>
+        <img src="./hamster.png" alt="" class="issue__report__list__image">
+      </div>
+      <div class="issue__report__list">
+        <input type="checkbox" class="issue__report__list__checkbox">
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list____name">
+          <div class="issue__report__list____name__wrapper">
+            <p class="issue__report__list____name__wrapper__title">Dosusign連帯バグ</p>
+            <p class="issue__report__list____name__label2">bug</p>
+          </div>
+          <p class="issue__report__list____tag">#1416 opened 3 days ago by hatoya</p>
+        </div>
+        <div class="issue__report__list____name__pull">
+          <i class="fa-solid fa-code-pull-request"></i>
+          <p class="issue__report__list____name__pull__value">1</p>
+        </div>
+        <img src="./hamster.png" alt="" class="issue__report__list__image">
       </div>
     </div>
   </div>
