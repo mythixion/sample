@@ -8,7 +8,7 @@
   <style>
     body {
       margin: 0px;
-
+      background-color: #0F1116;
     }
     .github {
       background-color: #020409;
@@ -233,103 +233,282 @@
       align-items: center;
     }
     .issue__wrapper {
-
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 15px;
     }
     .issue__wrapper__button {
-
+      background-color: #6F7680;
+      width: 15px;
+      height: 15px;
+      line-height: 12px;
+      margin: 0px;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+      padding: 2px;
+      border-radius: 6px;
     }
     .issue__wrapper__description {
-
+      margin: 0px;
+      color: #868D96;
+      font-size: 14px;
     }
     .issue__list {
-
+      width: 1210px;
+      border: 1px solid #31363B;
+      border-radius: 6px;
+      margin-top: 15px;
     }
     .issue__list__head {
-
-    }
-    .issue__list__head__checkbox {
-
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      background-color: #171B22;
+      justify-content: space-between;
     }
     .issue__list__head__wrapper {
-
+      display: flex;
+      gap: 10px;
     }
-    .fa-circle-dot {
-
+    .issue__list__head__wrapper__checkbox {
+      padding-right: 10px;
     }
-    .issue__list__head__wrapper__open {
-
+    .issue__list__head__wrapper__input {
+      margin: 0px;
+    }
+    .issue__list__head__wrapper__title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .issue__list__head__wrapper__dot {
+      color: #E6EDF1;
+    }
+    .issue__list__head__wrapper__title__open {
+      margin: 0px;
+      color: #E6EDF1;
+      font-size: 14px;
     }
     .fa-check {
-
+      color: #868D96;
     }
-    .issue__list__head__wrapper__close {
-
+    .issue__list__head__wrapper__title__close {
+      margin: 0px;
+      color: #868D96;
+      font-size: 14px;
     }
     .issue__list__head__select {
-
+      display: flex;
+      gap: 30px;
     }
     .issue__list__head__select__wrapper {
-
+      display: flex;
+      align-items: center;
+      gap: 4px;
     }
     .issue__list__head__select__name {
-
+      margin: 0px;
+      font-size: 14px;
+      color: #868D96;
     }
     .fa-caret-down {
-
+      color: #868D96;
     }
     .issue__report__list {
-
+      display: flex;
+      padding: 10px 15px;
+      align-items: flex-start;
+      gap: 10px;
+      border-top: 1px solid #262B30;
     }
     .issue__report__list__checkbox {
-
+      padding-right: 10px;
+    }
+    .issue__report__list__input {
+      margin: 0px;
+      display: block;
     }
     .issue__report__list__dot {
-
+      color: #68DD4A;
     }
     .issue__report__list__name {
 
     }
     .issue__report__list__name__wrapper {
-
+      display: flex;
+      gap: 5px;
+    }
+    .issue__report__list__name__wrapper.-on {
+      gap: 10px;
     }
     .issue__report__list__name__wrapper__title {
-
+      margin: 0px;
+      color: #E6EDF1;
+      font-size: 14px;
     }
     .issue__report__list__name__label1 {
-
+      margin: 0px;
+      width: 50px;
+      height: 20px;
+      background-color: #16261A;
+      color: #68DD4A;
+      border: 1px solid #2F5E29;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
     }
     .issue__report__list__name__made {
+      margin: 0px;
+      color: #868D96;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+    .fa-circle {
+      color: #28416E;
+    }
+    .issue__report__list__icon {
 
     }
-    .issue__report__list__image {
-
+    .issue__report__list__icon__image {
+      width: 20px;
+      height: 20px;
+      border-radius: 15px;
     }
-    .issue__report__list____name {
-
+    .issue__report__list__name__label2 {
+      margin: 0px;
+      background-color: #2F1B20;
+      color: #DF9FA6;
+      border: 1px solid #644349;
+      border-radius: 12px;
+      font-size: 12px;
+      width: 40px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    .issue__report__list____name__wrapper {
-
-    }
-    .issue__report__list____name__wrapper__title {
-
-    }
-    .issue__report__list____name__label1 {
-
-    }
-    .issue__report__list____tag {
-
-    }
-    .issue__report__list____name__label2 {
-
-    }
-    .issue__report__list____name__pull {
-
+    .issue__report__list__name__pull {
+      display: flex;
+      gap: 4px;
+      align-items: flex-end;
     }
     .fa-code-pull-request {
-
+      color: #868D96;
     }
-    .issue__report__list____name__pull__value {
-
+    .issue__report__list__name__pull__value {
+      margin: 0px;
+      color: #868D96;
+      font-size: 12px;
+    }
+    .issue__report__list__icon__message {
+      display: flex;
+      gap: 4px;
+      align-items: flex-end;
+    }
+    .fa-message {
+      color: #868D96;
+    }
+    .issue__report__list__icon__message__value {
+      color: #868D96;
+      margin: 0px;
+      font-size: 12px;
+    }
+    .issue__report__list__name__number {
+      margin-top: 4px;
+      display: flex;
+      gap: 5px;
+    }
+    .issue__report__list__name__number__made {
+      margin: 0px;
+      color: #868D96;
+      font-size: 12px;
+    }
+    .fa-clipboard-check {
+      color: #868D96;
+    }
+    .issue__report__list__name__number__made__task {
+      color: #868D96;
+      margin: 0px;
+      font-size: 12px;
+    }
+    .issue__report__list__name__label3 {
+      background-color: #111D35;
+      color: #7AA7F7;
+      border: 1px solid #314770;
+      border-radius: 12px;
+      margin: 0px;
+      width: 55px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+    }
+    .issue__mention {
+      display: flex;
+      padding: 0px 355px;
+      gap: 5px;
+      align-items: center;
+      margin-top: 35px;
+    }
+    .fa-lightbulb {
+      color: #868D96;
+    }
+    .issue__mention__protip {
+      margin: 0px;
+      color: #E6EDF1;
+      font-size: 14px;
+    }
+    .issue__mention__team {
+      margin: 0px;
+      color: #868D96;
+      font-size: 14px;
+    }
+    .issue__mention__team__name {
+      margin: 0px;
+      color: #5991F1;
+      border-bottom: 1px solid #5991F1;
+    }
+    .issue__tag {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0px 194px;
+      margin-top: 65px;
+    }
+    .issue__tag__github {
+      color: #868D96;
+      font-size: 25px;
+    }
+    .issue__tag__icon {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      padding-right: 2px;
+    }
+    .issue__tag__icon__copyright {
+      color: #868D96;
+      font-size: 12px;
+    }
+    .issue__tag__icon__creation {
+      margin: 0px;
+      color: #868D96;
+      font-size: 12px;
+    }
+    .issue__tag__label {
+      margin: 0px;
+      color: #868D96;
+      font-size: 12px;
+    }
+    .issue__tag__description {
+      margin: 0px;
+      color: #868D96;
+      font-size: 12px;
     }
   </style>
 </head>
@@ -437,14 +616,18 @@
     </div>
     <div class="issue__list">
       <div class="issue__list__head">
-        <input type="checkbox" class="issue__list__head__checkbox">
         <div class="issue__list__head__wrapper">
-          <i class="fa-solid fa-circle-dot"></i>
-          <p class="issue__list__head__wrapper__open">18 Open</p>
-        </div>
-        <div class="issue__list__head__wrapper">
-          <i class="fa-solid fa-check"></i>
-          <p class="issue__list__head__wrapper__close">360 Closed</p>
+          <div class="issue__list__head__wrapper__checkbox">
+            <input type="checkbox" class="issue__list__head__wrapper__input">
+          </div>
+          <div class="issue__list__head__wrapper__title">
+            <i class="fa-solid fa-circle-dot issue__list__head__wrapper__dot"></i>
+            <p class="issue__list__head__wrapper__title__open">18 Open</p>
+          </div>
+          <div class="issue__list__head__wrapper__title">
+            <i class="fa-solid fa-check"></i>
+            <p class="issue__list__head__wrapper__title__close">360 Closed</p>
+          </div>
         </div>
         <div class="issue__list__head__select">
           <div class="issue__list__head__select__wrapper">
@@ -474,47 +657,350 @@
         </div>
       </div>
       <div class="issue__report__list">
-        <input type="checkbox" class="issue__report__list__checkbox">
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
+        </div>
         <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
         <div class="issue__report__list__name">
-          <div class="issue__report__list__name__wrapper">
+          <div class="issue__report__list__name__wrapper -on">
             <p class="issue__report__list__name__wrapper__title">Signals対応</p>
             <p class="issue__report__list__name__wrapper__title">(AccountIndexComponent • PartnerIndexComponent)</p>
             <p class="issue__report__list__name__label1">chore</p>
           </div>
           <p class="issue__report__list__name__made">#1419 opened 2 hours ago by hatoya</p>
         </div>
-        <img src="./hamster.png" alt="" class="issue__report__list__image">
+        <div class="issue__report__list__icon">
+          <img src="./hamster.png" alt="" class="issue__report__list__icon__image">
+        </div>
       </div>
       <div class="issue__report__list">
-        <input type="checkbox" class="issue__report__list__checkbox">
-        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
-        <div class="issue__report__list____name">
-          <div class="issue__report__list____name__wrapper">
-            <p class="issue__report__list____name__wrapper__title">Signals対応</p>
-            <p class="issue__report__list____name__wrapper__title">(ContractIndexComponent)</p>
-            <p class="issue__report__list____name__label1">chore</p>
-          </div>
-          <p class="issue__report__list____tag">#1418 opened 2 hours ago by hatoya</p>
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
         </div>
-        <img src="./hamster.png" alt="" class="issue__report__list__image">
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper -on">
+            <p class="issue__report__list__name__wrapper__title">Signals対応</p>
+            <p class="issue__report__list__name__wrapper__title">(ContractIndexComponent)</p>
+            <p class="issue__report__list__name__label1">chore</p>
+          </div>
+          <p class="issue__report__list__name__made">#1418 opened 2 hours ago by hatoya</p>
+        </div>
+        <div class="issue__report__list__icon">
+          <img src="./hamster.png" alt="" class="issue__report__list__icon__image">
+        </div>
       </div>
       <div class="issue__report__list">
-        <input type="checkbox" class="issue__report__list__checkbox">
-        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
-        <div class="issue__report__list____name">
-          <div class="issue__report__list____name__wrapper">
-            <p class="issue__report__list____name__wrapper__title">Dosusign連帯バグ</p>
-            <p class="issue__report__list____name__label2">bug</p>
-          </div>
-          <p class="issue__report__list____tag">#1416 opened 3 days ago by hatoya</p>
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
         </div>
-        <div class="issue__report__list____name__pull">
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper">
+            <p class="issue__report__list__name__wrapper__title">Dosusign連帯バグ</p>
+            <p class="issue__report__list__name__label2">bug</p>
+          </div>
+          <p class="issue__report__list__name__made">#1416 opened 3 days ago by hatoya</p>
+        </div>
+        <div class="issue__report__list__name__pull">
           <i class="fa-solid fa-code-pull-request"></i>
-          <p class="issue__report__list____name__pull__value">1</p>
+          <p class="issue__report__list__name__pull__value">1</p>
         </div>
-        <img src="./hamster.png" alt="" class="issue__report__list__image">
+        <div class="issue__report__list__icon">
+          <img src="./hamster.png" alt="" class="issue__report__list__icon__image">
+        </div>
       </div>
+      <div class="issue__report__list">
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
+        </div>
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper -on">
+            <p class="issue__report__list__name__wrapper__title">Signals対応</p>
+            <p class="issue__report__list__name__wrapper__title">(ProjectIndexComponent)</p>
+            <p class="issue__report__list__name__label1">chore</p>
+          </div>
+          <p class="issue__report__list__name__made">#1411 opened 4 days ago by hatoya</p>
+        </div>
+        <div class="issue__report__list__name__pull">
+          <i class="fa-solid fa-code-pull-request"></i>
+          <p class="issue__report__list__name__pull__value">1</p>
+        </div>
+        <div class="issue__report__list__icon">
+          <img src="./hamster.png" alt="" class="issue__report__list__icon__image">
+        </div>
+      </div>
+      <div class="issue__report__list">
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
+        </div>
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper -on">
+            <p class="issue__report__list__name__wrapper__title">Signals対応</p>
+            <p class="issue__report__list__name__wrapper__title">(ProjectBapComponent • ProjectCategoryComponent)</p>
+            <p class="issue__report__list__name__label1">chore</p>
+          </div>
+          <p class="issue__report__list__name__made">#1410 opened 4 days ago by hatoya</p>
+        </div>
+        <div class="issue__report__list__name__pull">
+          <i class="fa-solid fa-code-pull-request"></i>
+          <p class="issue__report__list__name__pull__value">1</p>
+        </div>
+        <div class="issue__report__list__icon">
+          <img src="./hamster.png" alt="" class="issue__report__list__icon__image">
+        </div>
+      </div>
+      <div class="issue__report__list">
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
+        </div>
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper">
+            <p class="issue__report__list__name__wrapper__title">MailerSendで複数メールが送信されてしまう</p>
+            <p class="issue__report__list__name__label2">bug</p>
+          </div>
+          <p class="issue__report__list__name__made">#1408 opened 5 days ago by hatoya</p>
+        </div>
+        <div class="issue__report__list__name__pull">
+          <i class="fa-solid fa-code-pull-request"></i>
+          <p class="issue__report__list__name__pull__value">1</p>
+        </div>
+        <div class="issue__report__list__icon">
+          <img src="./hamster.png" alt="" class="issue__report__list__icon__image">
+        </div>
+        <div class="issue__report__list__icon__message">
+          <i class="fa-solid fa-message"></i>
+          <p class="issue__report__list__icon__message__value">1</p>
+        </div>
+      </div>
+      <div class="issue__report__list">
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
+        </div>
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper -on">
+            <p class="issue__report__list__name__wrapper__title">Signals対応</p>
+            <p class="issue__report__list__name__wrapper__title">(ProjectCreateComponent • ProjectDetailComponent • ProjectAboutComponent)</p>
+            <p class="issue__report__list__name__label1">chore</p>
+          </div>
+          <p class="issue__report__list__name__made">#1405 opened last week by hatoya</p>
+        </div>
+        <div class="issue__report__list__name__pull">
+          <i class="fa-solid fa-code-pull-request"></i>
+          <p class="issue__report__list__name__pull__value">1</p>
+        </div>
+        <div class="issue__report__list__icon">
+          <img src="./hamster.png" alt="" class="issue__report__list__icon__image">
+        </div>
+      </div>
+      <div class="issue__report__list">
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
+        </div>
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper">
+            <p class="issue__report__list__name__wrapper__title">Jest対応</p>
+            <p class="issue__report__list__name__label1">chore</p>
+          </div>
+          <div class="issue__report__list__name__number">
+            <p class="issue__report__list__name__number__made">#1402 opened 2 weeks ago by hatoya</p>
+            <i class="fa-solid fa-clipboard-check"></i>
+            <p class="issue__report__list__name__number__made__task">1 task</p>
+          </div>
+        </div>
+        <div class="issue__report__list__icon">
+          <img src="./hamster.png" alt="" class="issue__report__list__icon__image">
+        </div>
+      </div>
+      <div class="issue__report__list">
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
+        </div>
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper">
+            <p class="issue__report__list__name__wrapper__title">Signals対応</p>
+            <p class="issue__report__list__name__label1">chore</p>
+          </div>
+          <div class="issue__report__list__name__number">
+            <p class="issue__report__list__name__number__made">#1399 opened 2 weeks ago by hatoya</p>
+            <i class="fa-solid fa-circle"></i>
+            <p class="issue__report__list__name__number__made__task">2 of 10 tasks</p>
+          </div>
+        </div>
+        <div class="issue__report__list__icon">
+          <img src="./hamster.png" alt="" class="issue__report__list__icon__image">
+        </div>
+      </div>
+      <div class="issue__report__list">
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
+        </div>
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper">
+            <p class="issue__report__list__name__wrapper__title">Cypress対応</p>
+            <p class="issue__report__list__name__label1">chore</p>
+          </div>
+          <div class="issue__report__list__name__number">
+            <p class="issue__report__list__name__number__made">#1398 opened 2 weeks ago by hatoya</p>
+            <i class="fa-solid fa-clipboard-check"></i>
+            <p class="issue__report__list__name__number__made__task">2 tasks</p>
+          </div>
+        </div>
+        <div class="issue__report__list__icon">
+          <img src="./hamster.png" alt="" class="issue__report__list__icon__image">
+        </div>
+      </div>
+      <div class="issue__report__list">
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
+        </div>
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper">
+            <p class="issue__report__list__name__wrapper__title">契約晝一覧改修</p>
+            <p class="issue__report__list__name__label3">feature</p>
+          </div>
+            <p class="issue__report__list__name__made">#1386 opened 3 weeks ago by hatoya</p>
+        </div>
+      </div>
+      <div class="issue__report__list">
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
+        </div>
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper">
+            <p class="issue__report__list__name__wrapper__title">新規施策承認完了メール</p>
+            <p class="issue__report__list__name__label3">feature</p>
+          </div>
+            <p class="issue__report__list__name__made">#1355 opened on Mar 11 by hatoya</p>
+        </div>
+      </div>
+      <div class="issue__report__list">
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
+        </div>
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper">
+            <p class="issue__report__list__name__wrapper__title">WBS自動採番</p>
+            <p class="issue__report__list__name__label3">feature</p>
+          </div>
+            <p class="issue__report__list__name__made">#1354 opened on Mar 11 by hatoya</p>
+        </div>
+      </div>
+      <div class="issue__report__list">
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
+        </div>
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper">
+            <p class="issue__report__list__name__wrapper__title">子会社対応</p>
+            <p class="issue__report__list__name__label3">feature</p>
+          </div>
+            <p class="issue__report__list__name__made">#1351 opened on Mar 7 by hatoya</p>
+        </div>
+      </div>
+      <div class="issue__report__list">
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
+        </div>
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper">
+            <p class="issue__report__list__name__wrapper__title">AppCheck構成</p>
+            <p class="issue__report__list__name__label3">feature</p>
+          </div>
+            <p class="issue__report__list__name__made">#1333 opened on Feb 22 by hatoya</p>
+        </div>
+        <div class="issue__report__list__icon">
+          <img src="./hamster.png" alt="" class="issue__report__list__icon__image">
+        </div>
+      </div>
+      <div class="issue__report__list">
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
+        </div>
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper">
+            <p class="issue__report__list__name__wrapper__title">デプロイキーをサービスアカウントに切り替え</p>
+            <p class="issue__report__list__name__label3">feature</p>
+          </div>
+            <p class="issue__report__list__name__made">#1332 opened on Feb 22 by hatoya</p>
+        </div>
+        <div class="issue__report__list__icon">
+          <img src="./hamster.png" alt="" class="issue__report__list__icon__image">
+        </div>
+      </div>
+      <div class="issue__report__list">
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
+        </div>
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper">
+            <p class="issue__report__list__name__wrapper__title">2段階認証</p>
+            <p class="issue__report__list__name__label3">feature</p>
+          </div>
+            <p class="issue__report__list__name__made">#1020 opened on Feb 13, 2023 by hatoya</p>
+        </div>
+        <div class="issue__report__list__name__pull">
+          <i class="fa-solid fa-code-pull-request"></i>
+          <p class="issue__report__list__name__pull__value">1</p>
+        </div>
+        <div class="issue__report__list__icon">
+          <img src="./hamster.png" alt="" class="issue__report__list__icon__image">
+        </div>
+      </div>
+      <div class="issue__report__list">
+        <div class="issue__report__list__checkbox">
+          <input type="checkbox" class="issue__report__list__input">
+        </div>
+        <i class="fa-solid fa-circle-dot issue__report__list__dot"></i>
+        <div class="issue__report__list__name">
+          <div class="issue__report__list__name__wrapper">
+            <p class="issue__report__list__name__wrapper__title">◎ 外部パートナー改修</p>
+            <p class="issue__report__list__name__label3">feature</p>
+          </div>
+            <p class="issue__report__list__name__made">#975 opened on Nov 29, 2022 by hatoya</p>
+        </div>
+        <div class="issue__report__list__name__pull">
+          <i class="fa-solid fa-code-pull-request"></i>
+          <p class="issue__report__list__name__pull__value">1</p>
+        </div>
+        <div class="issue__report__list__icon">
+          <img src="./hamster.png" alt="" class="issue__report__list__icon__image">
+        </div>
+      </div>
+    </div>
+    <div class="issue__mention">
+      <i class="fa-solid fa-lightbulb"></i>
+      <p class="issue__mention__protip">Protip!</p>
+      <p class="issue__mention__team">Check team mentions with <span class="issue__mention__team__name">team:logos-pathos/bandw</span>.</p>
+    </div>
+    <div class="issue__tag">
+      <i class="fa-brands fa-github issue__tag__github"></i>
+      <div class="issue__tag__icon">
+        <i class="fa-regular fa-copyright issue__tag__icon__copyright"></i>
+        <p class="issue__tag__icon__creation">2024 GitHub, Inc.</p>
+      </div>
+      <p class="issue__tag__label">Terms</p>
+      <p class="issue__tag__label">Privacy</p>
+      <p class="issue__tag__label">Security</p>
+      <p class="issue__tag__label">Status</p>
+      <p class="issue__tag__label">Docs</p>
+      <p class="issue__tag__label">Contact</p>
+      <p class="issue__tag__label">Manage cookies</p>
+      <p class="issue__tag__description">Do not share my personal information</p>
     </div>
   </div>
 </body>
