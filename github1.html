@@ -38,14 +38,20 @@
       font-size: 40px;
     }
     .github__head__wrapper__conpany {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+    .github__head__wrapper__conpany__name {
       color: #E6EDF1;
       margin: 0px;
     }
-    .github__head__wrapper__conpany__span {
+    .github__head__wrapper__conpany__name__span {
       color: #858C95;
     }
     .fa-user {
       color: #E6EDF1;
+      font-size: 12px;
     }
     .github__head__wrapper__input {
       width: 350px;
@@ -55,12 +61,15 @@
       border: 1px solid #31363B;
       border-radius: 6px;
       color: #868D96;
+      background-color: #020409;
     }
     .github__head__wrapper__select {
       padding: 15px;
       height: 30px;
       border: 1px solid #31363B;
       border-radius: 6px;
+      background-color: #020409;
+      color: #868D96;
     }
     .github__head__wrapper__icon {
       width: 30px;
@@ -196,9 +205,6 @@
     .issue__head__tag__wrapper__icon {
 
     }
-    .fa-solid {
-      color: #E6EDF1;
-    }
     .fa-tag {
       color: #E6EDF1;
     }
@@ -217,7 +223,7 @@
       height: 17px;
     }
     .fa-pen {
-
+      color: #E6EDF1;
     }
     .issue__head__button {
       margin: 0px;
@@ -316,6 +322,7 @@
     }
     .fa-caret-down {
       color: #868D96;
+      font-size: 12px;
     }
     .issue__report__list {
       display: flex;
@@ -493,7 +500,7 @@
     }
     .issue__tag__icon__copyright {
       color: #868D96;
-      font-size: 12px;
+      font-size: 10px;
     }
     .issue__tag__icon__creation {
       margin: 0px;
@@ -520,8 +527,10 @@
           <i class="fa-solid fa-bars"></i>
         </div>
         <i class="fa-brands fa-github"></i>
-        <p class="github__head__wrapper__conpany">logos-pathos <span class="github__head__wrapper__conpany__span">/</span> canna</p>
-        <i class="fa-solid fa-user"></i>
+        <div class="github__head__wrapper__conpany">
+          <p class="github__head__wrapper__conpany__name">logos-pathos <span class="github__head__wrapper__conpany__name__span">/</span> canna</p>
+          <i class="fa-solid fa-user"></i>
+        </div>
       </div>
       <div class="github__head__wrapper2">
         <input type="text" placeholder="Type / to search" class="github__head__wrapper__input">
