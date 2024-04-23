@@ -168,7 +168,7 @@
       color: #858C96;
     }
     .issue {
-      padding: 25px 150px 40px;
+      padding: 25px 0px 40px;
       display: flex;
       justify-content: center;
     }
@@ -236,7 +236,7 @@
       background-color: #438440;
       padding: 10px;
       font-size: 14px;
-      width: 72px;
+      white-space: nowrap;
       height: 17px;
       border-radius: 6px;
       display: flex;
@@ -338,6 +338,7 @@
     }
     .issue__form__report__list__checkbox {
       width: 23px;
+      padding-top: 2px;
     }
     .issue__form__report__list__input {
       margin: 0px;
@@ -345,6 +346,7 @@
     }
     .issue__form__report__list__dot {
       color: #68DD4A;
+      padding-top: 2px;
     }
     .issue__form__report__list__name {
       width: 100%;
@@ -404,7 +406,7 @@
       justify-content: center;
       align-items: center;
     }
-    .issue__form__report__list__name__pull {
+    .issue__form__report__list__pull {
       display: flex;
       gap: 4px;
       align-items: flex-end;
@@ -413,7 +415,7 @@
     .fa-code-pull-request {
       color: #868D96;
     }
-    .issue__form__report__list__name__pull__value {
+    .issue__form__report__list__pull__value {
       margin: 0px;
       color: #868D96;
       font-size: 12px;
@@ -465,7 +467,7 @@
     }
     .issue__form__mention {
       display: flex;
-      padding: 0px 355px;
+      justify-content: center;
       gap: 5px;
       align-items: center;
       margin-top: 35px;
@@ -490,9 +492,9 @@
     }
     .issue__form__tag {
       display: flex;
+      justify-content: center;
       align-items: center;
       gap: 12px;
-      padding: 0px 194px;
       margin-top: 65px;
     }
     .issue__form__tag__github {
@@ -524,6 +526,93 @@
       color: #868D96;
       font-size: 12px;
     }
+    @media only screen and (max-width: 600px) {
+      .issue__form {
+        width: 100%;
+      }
+      .issue__form__list {
+        width: 100%;
+      }
+      .github__head__wrapper__icon.-off {
+        display: none;
+      }
+      .github__head__wrapper__select {
+        display: none;
+      }
+      .github__head__wrapper__input {
+        display: none;
+      }
+      .issue__form__head {
+        display: flex;
+        justify-content: space-between;
+      }
+      .issue__form__head__tag__wrapper__button {
+        display: none;
+      }
+      .issue__form__report__list {
+        padding: 10px 21px;
+      }
+      .issue__form__wrapper {
+        display: none;
+      }
+      .issue__form__report__list__checkbox {
+        display: none;
+      }
+      .issue__form__head {
+        padding: 12px;
+      }
+      .issue__form__head__input {
+        display: none;
+      }
+      .issue__form__list__head {
+        display: block;
+        padding: 15px 24px;
+      }
+      .issue__form__list__head__select {
+        padding: 0px 24px;
+        gap: 55px;
+        margin-top: 30px;
+      }
+      .issue__form__list__head__select__wrapper.-no {
+        display: none;
+      }
+      .github__menu__wrapper.-none {
+        display: none;
+      }
+      .issue__form__report__list__pull {
+        display: none;
+      }
+      .issue__form__report__list__icon {
+        display: none;
+      }
+      .issue__form__report__list__message {
+        display: none;
+      }
+      .issue__form__list__head__wrapper__checkbox {
+        display: none;
+      }
+      .fa-caret-down {
+        display: none;
+      }
+      .issue__form__report__list__name__number__made__task {
+        display: none;
+      }
+      .fa-circle {
+        display: none;
+      }
+      .fa-clipboard-check {
+        display: none;
+      }
+      .issue__form__mention__team {
+        white-space: nowrap;
+      }
+      .issue__form__tag {
+        flex-wrap: wrap;
+      }
+      .issue__form__report__list__name__wrapper {
+        display: block;
+      }
+    }
   </style>
 </head>
 <body>
@@ -545,7 +634,7 @@
         <div class="github__head__wrapper__icon">
           <i class="fa-solid fa-circle-dot github__head__wrapper__icon__dot"></i>
         </div>
-        <div class="github__head__wrapper__icon">
+        <div class="github__head__wrapper__icon -off">
           <i class="fa-solid fa-code-pull-request"></i>
         </div>
         <div class="github__head__wrapper__icon">
@@ -570,7 +659,7 @@
           <p class="github__menu__wrapper__button__value">18</p>
         </div>
       </div>
-      <div class="github__menu__wrapper">
+      <div class="github__menu__wrapper -none">
         <div class="github__menu__wrapper__icon">
           <i class="fa-solid fa-code-pull-request"></i>
         </div>
@@ -579,25 +668,25 @@
           <p class="github__menu__wrapper__button__value">8</p>
         </div>
       </div>
-      <div class="github__menu__wrapper">
+      <div class="github__menu__wrapper -none">
         <div class="github__menu__wrapper__icon">
           <i class="fa-solid fa-circle-play"></i>
         </div>
         <div class="github__menu__wrapper__label">Actions</div>
       </div>
-      <div class="github__menu__wrapper">
+      <div class="github__menu__wrapper -none">
         <div class="github__menu__wrapper__icon">
           <i class="fa-solid fa-shield"></i>
         </div>
         <p class="github__menu__wrapper__label">Security</p>
       </div>
-      <div class="github__menu__wrapper">
+      <div class="github__menu__wrapper -none">
         <div class="github__menu__wrapper__icon">
           <i class="fa-solid fa-chart-line"></i>
         </div>
         <p class="github__menu__wrapper__label">Insights</p>
       </div>
-      <div class="github__menu__wrapper">
+      <div class="github__menu__wrapper -none">
         <div class="github__menu__wrapper__icon">
           <i class="fa-solid fa-gear"></i>
         </div>
@@ -608,7 +697,7 @@
   <div class="issue">
     <div class="issue__form">
       <div class="issue__form__head">
-        <input type="text" placeholder="is:open is:issue__form" class="issue__form__head__input">
+        <input type="text" placeholder="is:open is:issue" class="issue__form__head__input">
         <div class="issue__form__head__tag">
           <div class="issue__form__head__tag__wrapper1">
             <div class="issue__form__head__tag__wrapper__icon">
@@ -655,11 +744,11 @@
               <p class="issue__form__list__head__select__name">Label</p>
               <i class="fa-solid fa-caret-down"></i>
             </div>
-            <div class="issue__form__list__head__select__wrapper">
+            <div class="issue__form__list__head__select__wrapper -no">
               <p class="issue__form__list__head__select__name">Projects</p>
               <i class="fa-solid fa-caret-down"></i>
             </div>
-            <div class="issue__form__list__head__select__wrapper">
+            <div class="issue__form__list__head__select__wrapper -no">
               <p class="issue__form__list__head__select__name">Milestones</p>
               <i class="fa-solid fa-caret-down"></i>
             </div>
@@ -680,17 +769,16 @@
           <i class="fa-solid fa-circle-dot issue__form__report__list__dot"></i>
           <div class="issue__form__report__list__name">
             <div class="issue__form__report__list__name__wrapper -on">
-              <p class="issue__form__report__list__name__wrapper__title">Signals対応</p>
-              <p class="issue__form__report__list__name__wrapper__title">(AccountIndexComponent • PartnerIndexComponent)</p>
+              <p class="issue__form__report__list__name__wrapper__title">Signals対応 (AccountIndexComponent • PartnerIndexComponent)</p>
               <p class="issue__form__report__list__name__label1">chore</p>
             </div>
             <p class="issue__form__report__list__name__made">#1419 opened 2 hours ago by hatoya</p>
           </div>
-          <div class="issue__form__report__list__name__pull"></div>
+          <div class="issue__form__report__list__pull"></div>
           <div class="issue__form__report__list__icon">
             <img src="./hamster.png" alt="" class="issue__form__report__list__icon__image">
           </div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -699,17 +787,16 @@
           <i class="fa-solid fa-circle-dot issue__form__report__list__dot"></i>
           <div class="issue__form__report__list__name">
             <div class="issue__form__report__list__name__wrapper -on">
-              <p class="issue__form__report__list__name__wrapper__title">Signals対応</p>
-              <p class="issue__form__report__list__name__wrapper__title">(ContractIndexComponent)</p>
+              <p class="issue__form__report__list__name__wrapper__title">Signals対応 (ContractIndexComponent)</p>
               <p class="issue__form__report__list__name__label1">chore</p>
             </div>
             <p class="issue__form__report__list__name__made">#1418 opened 2 hours ago by hatoya</p>
           </div>
-          <div class="issue__form__report__list__name__pull"></div>
+          <div class="issue__form__report__list__pull"></div>
           <div class="issue__form__report__list__icon">
             <img src="./hamster.png" alt="" class="issue__form__report__list__icon__image">
           </div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list_message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -723,14 +810,14 @@
             </div>
             <p class="issue__form__report__list__name__made">#1416 opened 3 days ago by hatoya</p>
           </div>
-          <div class="issue__form__report__list__name__pull">
+          <div class="issue__form__report__list__pull">
             <i class="fa-solid fa-code-pull-request"></i>
-            <p class="issue__form__report__list__name__pull__value">1</p>
+            <p class="issue__form__report__list__pull__value">1</p>
           </div>
           <div class="issue__form__report__list__icon">
             <img src="./hamster.png" alt="" class="issue__form__report__list__icon__image">
           </div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -739,20 +826,19 @@
           <i class="fa-solid fa-circle-dot issue__form__report__list__dot"></i>
           <div class="issue__form__report__list__name">
             <div class="issue__form__report__list__name__wrapper -on">
-              <p class="issue__form__report__list__name__wrapper__title">Signals対応</p>
-              <p class="issue__form__report__list__name__wrapper__title">(ProjectIndexComponent)</p>
+              <p class="issue__form__report__list__name__wrapper__title">Signals対応 (ProjectIndexComponent)</p>
               <p class="issue__form__report__list__name__label1">chore</p>
             </div>
             <p class="issue__form__report__list__name__made">#1411 opened 4 days ago by hatoya</p>
           </div>
-          <div class="issue__form__report__list__name__pull">
+          <div class="issue__form__report__list__pull">
             <i class="fa-solid fa-code-pull-request"></i>
-            <p class="issue__form__report__list__name__pull__value">1</p>
+            <p class="issue__form__report__list__pull__value">1</p>
           </div>
           <div class="issue__form__report__list__icon">
             <img src="./hamster.png" alt="" class="issue__form__report__list__icon__image">
           </div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -761,20 +847,19 @@
           <i class="fa-solid fa-circle-dot issue__form__report__list__dot"></i>
           <div class="issue__form__report__list__name">
             <div class="issue__form__report__list__name__wrapper -on">
-              <p class="issue__form__report__list__name__wrapper__title">Signals対応</p>
-              <p class="issue__form__report__list__name__wrapper__title">(ProjectBapComponent • ProjectCategoryComponent)</p>
+              <p class="issue__form__report__list__name__wrapper__title">Signals対応 (ProjectBapComponent • ProjectCategoryComponent)</p>
               <p class="issue__form__report__list__name__label1">chore</p>
             </div>
             <p class="issue__form__report__list__name__made">#1410 opened 4 days ago by hatoya</p>
           </div>
-          <div class="issue__form__report__list__name__pull">
+          <div class="issue__form__report__list__pull">
             <i class="fa-solid fa-code-pull-request"></i>
-            <p class="issue__form__report__list__name__pull__value">1</p>
+            <p class="issue__form__report__list__pull__value">1</p>
           </div>
           <div class="issue__form__report__list__icon">
             <img src="./hamster.png" alt="" class="issue__form__report__list__icon__image">
           </div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -788,16 +873,16 @@
             </div>
             <p class="issue__form__report__list__name__made">#1408 opened 5 days ago by hatoya</p>
           </div>
-          <div class="issue__form__report__list__name__pull">
+          <div class="issue__form__report__list__pull">
             <i class="fa-solid fa-code-pull-request"></i>
-            <p class="issue__form__report__list__name__pull__value">1</p>
+            <p class="issue__form__report__list__pull__value">1</p>
           </div>
           <div class="issue__form__report__list__icon">
             <img src="./hamster.png" alt="" class="issue__form__report__list__icon__image">
           </div>
-          <div class="issue__form__report__list__icon__message">
+          <div class="issue__form__report__list__message">
             <i class="fa-solid fa-message"></i>
-            <p class="issue__form__report__list__icon__message__value">1</p>
+            <p class="issue__form__report__list__message__value">1</p>
           </div>
         </div>
         <div class="issue__form__report__list">
@@ -807,20 +892,19 @@
           <i class="fa-solid fa-circle-dot issue__form__report__list__dot"></i>
           <div class="issue__form__report__list__name">
             <div class="issue__form__report__list__name__wrapper -on">
-              <p class="issue__form__report__list__name__wrapper__title">Signals対応</p>
-              <p class="issue__form__report__list__name__wrapper__title">(ProjectCreateComponent • ProjectDetailComponent • ProjectAboutComponent)</p>
+              <p class="issue__form__report__list__name__wrapper__title">Signals対応 (ProjectCreateComponent • ProjectDetailComponent • ProjectAboutComponent)</p>
               <p class="issue__form__report__list__name__label1">chore</p>
             </div>
             <p class="issue__form__report__list__name__made">#1405 opened last week by hatoya</p>
           </div>
-          <div class="issue__form__report__list__name__pull">
+          <div class="issue__form__report__list__pull">
             <i class="fa-solid fa-code-pull-request"></i>
-            <p class="issue__form__report__list__name__pull__value">1</p>
+            <p class="issue__form__report__list__pull__value">1</p>
           </div>
           <div class="issue__form__report__list__icon">
             <img src="./hamster.png" alt="" class="issue__form__report__list__icon__image">
           </div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -838,11 +922,11 @@
               <p class="issue__form__report__list__name__number__made__task">1 task</p>
             </div>
           </div>
-          <div class="issue__form__report__list__name__pull"></div>
+          <div class="issue__form__report__list__pull"></div>
           <div class="issue__form__report__list__icon">
             <img src="./hamster.png" alt="" class="issue__form__report__list__icon__image">
           </div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -860,11 +944,11 @@
               <p class="issue__form__report__list__name__number__made__task">2 of 10 tasks</p>
             </div>
           </div>
-          <div class="issue__form__report__list__name__pull"></div>
+          <div class="issue__form__report__list__pull"></div>
           <div class="issue__form__report__list__icon">
             <img src="./hamster.png" alt="" class="issue__form__report__list__icon__image">
           </div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -882,11 +966,11 @@
               <p class="issue__form__report__list__name__number__made__task">2 tasks</p>
             </div>
           </div>
-          <div class="issue__form__report__list__name__pull"></div>
+          <div class="issue__form__report__listpull"></div>
           <div class="issue__form__report__list__icon">
             <img src="./hamster.png" alt="" class="issue__form__report__list__icon__image">
           </div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -900,9 +984,9 @@
             </div>
               <p class="issue__form__report__list__name__made">#1386 opened 3 weeks ago by hatoya</p>
           </div>
-          <div class="issue__form__report__list__name__pull"></div>
+          <div class="issue__form__report__list__pull"></div>
           <div class="issue__form__report__list__icon"></div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -916,9 +1000,9 @@
             </div>
               <p class="issue__form__report__list__name__made">#1355 opened on Mar 11 by hatoya</p>
           </div>
-          <div class="issue__form__report__list__name__pull"></div>
+          <div class="issue__form__report__list__pull"></div>
           <div class="issue__form__report__list__icon"></div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -932,9 +1016,9 @@
             </div>
               <p class="issue__form__report__list__name__made">#1354 opened on Mar 11 by hatoya</p>
           </div>
-          <div class="issue__form__report__list__name__pull"></div>
+          <div class="issue__form__report__list__pull"></div>
           <div class="issue__form__report__list__icon"></div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -948,9 +1032,9 @@
             </div>
               <p class="issue__form__report__list__name__made">#1351 opened on Mar 7 by hatoya</p>
           </div>
-          <div class="issue__form__report__list__name__pull"></div>
+          <div class="issue__form__report__list__pull"></div>
           <div class="issue__form__report__list__icon"></div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -964,11 +1048,11 @@
             </div>
               <p class="issue__form__report__list__name__made">#1333 opened on Feb 22 by hatoya</p>
           </div>
-          <div class="issue__form__report__list__name__pull"></div>
+          <div class="issue__form__report__list__pull"></div>
           <div class="issue__form__report__list__icon">
             <img src="./hamster.png" alt="" class="issue__form__report__list__icon__image">
           </div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -982,11 +1066,11 @@
             </div>
               <p class="issue__form__report__list__name__made">#1332 opened on Feb 22 by hatoya</p>
           </div>
-          <div class="issue__form__report__list__name__pull"></div>
+          <div class="issue__form__report__list__pull"></div>
           <div class="issue__form__report__list__icon">
             <img src="./hamster.png" alt="" class="issue__form__report__list__icon__image">
           </div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -1000,14 +1084,14 @@
             </div>
               <p class="issue__form__report__list__name__made">#1020 opened on Feb 13, 2023 by hatoya</p>
           </div>
-          <div class="issue__form__report__list__name__pull">
+          <div class="issue__form__report__list__pull">
             <i class="fa-solid fa-code-pull-request"></i>
-            <p class="issue__form__report__list__name__pull__value">1</p>
+            <p class="issue__form__report__list__pull__value">1</p>
           </div>
           <div class="issue__form__report__list__icon">
             <img src="./hamster.png" alt="" class="issue__form__report__list__icon__image">
           </div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -1021,14 +1105,14 @@
             </div>
               <p class="issue__form__report__list__name__made">#975 opened on Nov 29, 2022 by hatoya</p>
           </div>
-          <div class="issue__form__report__list__name__pull">
+          <div class="issue__form__report__list__pull">
             <i class="fa-solid fa-code-pull-request"></i>
-            <p class="issue__form__report__list__name__pull__value">1</p>
+            <p class="issue__form__report__list__pull__value">1</p>
           </div>
           <div class="issue__form__report__list__icon">
             <img src="./hamster.png" alt="" class="issue__form__report__list__icon__image">
           </div>
-          <div class="issue__form__report__list__icon__message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
       </div>
       <div class="issue__form__mention">
