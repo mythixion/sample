@@ -501,32 +501,26 @@
       color: #868D96;
       font-size: 25px;
     }
-    .issue__form__tag__icon {
-      display: flex;
-      gap: 4px;
-      align-items: center;
-      padding-right: 2px;
-    }
     .issue__form__tag__icon__copyright {
       color: #868D96;
       font-size: 10px;
     }
-    .issue__form__tag__icon__creation {
+    .issue__form__tag__creation {
       margin: 0px;
       color: #868D96;
       font-size: 12px;
     }
-    .issue__form__tag__label {
+    .issue__form__tag__name__label {
       margin: 0px;
       color: #868D96;
       font-size: 12px;
     }
-    .issue__form__tag__description {
+    .issue__form__tag__name__description {
       margin: 0px;
       color: #868D96;
       font-size: 12px;
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 430px) {
       .issue__form {
         width: 100%;
       }
@@ -542,9 +536,16 @@
       .github__head__wrapper__input {
         display: none;
       }
+      .github__head__wrapper__conpany__name {
+        padding-right: 30px;
+      }
+      .github__head__wrapper__conpany__name .-logos {
+        color: #7A838A;
+      }
       .issue__form__head {
         display: flex;
         justify-content: space-between;
+        padding: 0px 22px;
       }
       .issue__form__head__tag__wrapper__button {
         display: none;
@@ -558,20 +559,27 @@
       .issue__form__report__list__checkbox {
         display: none;
       }
-      .issue__form__head {
-        padding: 12px;
-      }
       .issue__form__head__input {
         display: none;
       }
+      .issue__form__list {
+        border: 0px;
+      }
       .issue__form__list__head {
         display: block;
-        padding: 15px 24px;
+        padding: 0px;
+        background-color: #0E1116;
+      }
+      .issue__form__list__head__wrapper {
+        padding-left: 22px;
       }
       .issue__form__list__head__select {
-        padding: 0px 24px;
+        padding: 5px 36px;
         gap: 55px;
-        margin-top: 30px;
+        margin-top: 35px;
+        height: 40px;
+        background-color: #181A20;
+        border-top: 1px solid #31363C;
       }
       .issue__form__list__head__select__wrapper.-no {
         display: none;
@@ -606,11 +614,35 @@
       .issue__form__mention__team {
         white-space: nowrap;
       }
-      .issue__form__tag {
-        flex-wrap: wrap;
-      }
       .issue__form__report__list__name__wrapper {
         display: block;
+      }
+      .issue__form__mention {
+        color: #848C95;
+        text-align: center;
+        display: block;
+        margin: 0px;
+        margin-top: 25px;
+      }
+      .issue__form__mention span.-protip {
+        color: #E7EDF2;
+      }
+      .issue__form__mention span.-team {
+        color: #588FEE;
+      }
+      .issue__form__tag {
+        flex-direction: column-reverse;
+        padding: 0px 48px;
+      }
+      .issue__form__tag__name {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .issue__form__tag__github {
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
       }
     }
   </style>
@@ -624,8 +656,7 @@
         </div>
         <i class="fa-brands fa-github"></i>
         <div class="github__head__wrapper__conpany">
-          <p class="github__head__wrapper__conpany__name">logos-pathos <span class="github__head__wrapper__conpany__name__span">/</span> canna</p>
-          <i class="fa-solid fa-user"></i>
+          <p class="github__head__wrapper__conpany__name"><span class="-logos">logos-pathos</span> <span class="github__head__wrapper__conpany__name__span">/</span> canna <i class="fa-solid fa-user"></i></p>
         </div>
       </div>
       <div class="github__head__wrapper2">
@@ -1115,25 +1146,19 @@
           <div class="issue__form__report__list__message"></div>
         </div>
       </div>
-      <div class="issue__form__mention">
-        <i class="fa-solid fa-lightbulb"></i>
-        <p class="issue__form__mention__protip">Protip!</p>
-        <p class="issue__form__mention__team">Check team mentions with <span class="issue__form__mention__team__name">team:logos-pathos/bandw</span>.</p>
-      </div>
+      <p class="issue__form__mention"><i class="fa-solid fa-lightbulb"></i> <span class="-protip">Protip!</span> Check team mentions with <span class="-team">team:logos-pathos/bandw</span>.</p>
       <div class="issue__form__tag">
-        <i class="fa-brands fa-github issue__form__tag__github"></i>
-        <div class="issue__form__tag__icon">
-          <i class="fa-regular fa-copyright issue__form__tag__icon__copyright"></i>
-          <p class="issue__form__tag__icon__creation">2024 GitHub, Inc.</p>
+        <p class="issue__form__tag__creation"><i class="fa-brands fa-github issue__form__tag__github"></i> ©︎ 2024 GitHub, Inc.</p>
+        <div class="issue__form__tag__name">
+          <p class="issue__form__tag__name__label">Terms</p>
+          <p class="issue__form__tag__name__label">Privacy</p>
+          <p class="issue__form__tag__name__label">Security</p>
+          <p class="issue__form__tag__name__label">Status</p>
+          <p class="issue__form__tag__name__label">Docs</p>
+          <p class="issue__form__tag__name__label">Contact</p>
+          <p class="issue__form__tag__name__label">Manage cookies</p>
+          <p class="issue__form__tag__name__description">Do not share my personal information</p>
         </div>
-        <p class="issue__form__tag__label">Terms</p>
-        <p class="issue__form__tag__label">Privacy</p>
-        <p class="issue__form__tag__label">Security</p>
-        <p class="issue__form__tag__label">Status</p>
-        <p class="issue__form__tag__label">Docs</p>
-        <p class="issue__form__tag__label">Contact</p>
-        <p class="issue__form__tag__label">Manage cookies</p>
-        <p class="issue__form__tag__description">Do not share my personal information</p>
       </div>
     </div>
   </div>
