@@ -10,8 +10,24 @@
       background-color: white;
       margin: 0px;
     }
+    .background1 {
+      display: flex;
+      justify-content: center;
+      padding: 15px 0px 30px;
+    }
+    .background2 {
+      background-color: #071B3E;
+      display: flex;
+      justify-content: center;
+    }
+    .background3 {
+      background-color: #F0F1F3;
+      display: flex;
+      justify-content: center;
+    }
     .global {
       padding: 20px 20px 34px 20px;
+      width: 1100px;
     }
     .global .fa-flag {
       color: #618CD1;
@@ -27,13 +43,14 @@
     }
     .global__menu__select {
       display: flex;
-      gap: 40px;
+      gap: 37px;
       align-items: center;
     }
     .global__menu__select__label {
       margin: 0px;
       align-items: center;
       color: #636D88;
+      white-space: nowrap;
     }
     .global__menu .fa-magnifying-glass {
       color: #636D88;
@@ -94,6 +111,7 @@
     .form {
       background-color: #071B3E;
       padding: 65px 20px 0px 20px;
+      width: 1100px;
     }
     .form__status {
       display: flex;
@@ -216,6 +234,7 @@
     .head {
       background-color: #F0F1F3;
       padding: 60px 18px 18px 18px;
+      width: 1100px;
     }
     .head__status {
       background-color: white;
@@ -281,6 +300,7 @@
       display: flex;
       justify-content: space-between;
       margin-top: 20px;
+      gap: 30px;
     }
     .head__status__billing__form__wrapper2 {
       display: flex;
@@ -302,6 +322,11 @@
       border-radius: 6px;
       color: #326BB8;
       padding: 10px;
+      height: 20px;
+      white-space: nowrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .head__status__billing__form__date__label {
       margin: 0px;
@@ -323,95 +348,248 @@
       color: #626C88;
       font-size: 14px;
     }
+    .metered {
+      background-color: white;
+      margin-top: 50px;
+      border-radius: 8px;
+    }
+    .metered__title {
+      margin: 0px;
+      padding: 20px;
+      font-weight: bold;
+    }
+    .metered__form {
+      padding: 20px;
+      border-top: 1px dotted #F0F1F3;
+    }
+    .metered__form__billing {
+      display: flex;
+      background-color: #D5EAFD;
+      border: 1px solid #0051AF;
+      border-radius: 8px;
+      padding: 20px;
+      gap: 15px;
+    }
+    .metered__form__billing__wrapper {
+
+    }
+    .fa-circle-info {
+      color: #346CB8;
+    }
+    .metered__form__billing__wrapper__title {
+      margin: 0px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #1A2C4D;
+    }
+    .metered__form__billing__description {
+      margin: 0px;
+      font-size: 12px;
+      color: #000C43;
+      margin-top: 5px;
+    }
+    .metered__form__description {
+      display: flex;
+      margin-top: 35px;
+      gap: 386px;
+    }
+    .metered__form__description__text {
+      margin: 0px;
+      font-size: 12px;
+      color: #6F7685;
+    }
+    .metered__form__description__button {
+      margin: 0px;
+      color: #005BB4;
+      height: 0px;
+      border: 1px solid #C2C4CF;
+      border-radius: 6px;
+      font-size: 12px;
+      white-space: nowrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+    }
+    .metered__form__plan {
+
+    }
+    .metered__form__plan__wrapper {
+
+    }
+    .metered__form__plan__wrapper__name {
+
+    }
+    .metered__form__plan__wrapper__icon {
+
+    }
+    .fa-box {
+
+    }
+    .metered__form__plan__wrapper__icon__description {
+
+    }
+    .fa-signal {
+
+    }
+    .metered__form__plan__wrapper__button {
+
+    }
+    .metered__form__plan__wrapper__limit {
+
+    }
+    .metered__form__plan__wrapper__limit__question {
+
+    }.metered__form__plan__wrapper__limit__name {
+
+    }
   </style>
 </head>
 <body>
-  <div class="global">
-    <div class="global__menu">
-      <div class="global__menu__select">
-        <i class="fa-solid fa-flag"></i>
-        <p class="global__menu__select__label">Your Kits</p>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <p class="global__menu__select__label">Icons</p>
-        <p class="global__menu__select__label">Docs</p>
-        <p class="global__menu__select__label">Plans</p>
-        <p class="global__menu__select__label">Support</p>
-        <p class="global__menu__select__label">Podcast</p>
+  <div class="background1">
+    <div class="global">
+      <div class="global__menu">
+        <div class="global__menu__select">
+          <i class="fa-solid fa-flag"></i>
+          <p class="global__menu__select__label">Your Kits</p>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <p class="global__menu__select__label">Icons</p>
+          <p class="global__menu__select__label">Docs</p>
+          <p class="global__menu__select__label">Plans</p>
+          <p class="global__menu__select__label">Support</p>
+          <p class="global__menu__select__label">Podcast</p>
+        </div>
+        <i class="fa-regular fa-circle-user"></i>
       </div>
-      <i class="fa-regular fa-circle-user"></i>
-    </div>
-    <div class="global__head">
-      <div class="global__wrapper">
-        <i class="fa-solid fa-crown"></i>
-        <p class="global__wrapper__description"><span class="description">Introducing Web Awesome,</span> the biggest and best open-source library of web components.</p>
-      </div>
-      <div class="global__wrapper__button">
-        <i class="fa-solid fa-microphone"></i>
-        <p class="global__wrapper__button__title">Live on kickstarter!</p>
+      <div class="global__head">
+        <div class="global__wrapper">
+          <i class="fa-solid fa-crown"></i>
+          <p class="global__wrapper__description"><span class="description">Introducing Web Awesome,</span> the biggest and best open-source library of web components.</p>
+        </div>
+        <div class="global__wrapper__button">
+          <i class="fa-solid fa-microphone"></i>
+          <p class="global__wrapper__button__title">Live on kickstarter!</p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="form">
-    <div class="form__status">
-      <div class="form__status__head">
-        <i class="fa-solid fa-rocket"></i>
-        <div class="form__status__wrapper">
-          <p class="form__status__wrapper__address">hatoyab@gamil.com</p>
-          <p class="form__status__wrapper__name">Hi there, Hayato Wada</p>
-          <p class="form__status__wrapper__creation">Thanks for using Font Awesome since 2014!</p>
+  <div class="background2">
+    <div class="form">
+      <div class="form__status">
+        <div class="form__status__head">
+          <i class="fa-solid fa-rocket"></i>
+          <div class="form__status__wrapper">
+            <p class="form__status__wrapper__address">hatoyab@gamil.com</p>
+            <p class="form__status__wrapper__name">Hi there, Hayato Wada</p>
+            <p class="form__status__wrapper__creation">Thanks for using Font Awesome since 2014!</p>
+          </div>
+        </div>
+        <div class="form__status__button">
+          <p class="form__status__button__name">sign Out</p>
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
         </div>
       </div>
-      <div class="form__status__button">
-        <p class="form__status__button__name">sign Out</p>
-        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-      </div>
-    </div>
-    <div class="form__select">
-      <div class="form__select__wrapper -right">
-        <i class="fa-solid fa-basket-shopping"></i>
-        <p class="form__select__wrapper__label">General</p>
-      </div>
-      <div class="form__select__wrapper">
-        <i class="fa-solid fa-file"></i>
-        <p class="form__select__wrapper__label">License and seats</p>
-      </div>
-      <div class="form__select__wrapper -on">
-        <i class="fa-solid fa-file-invoice-dollar"></i>
-        <p class="form__select__wrapper__label">Billing and Subscription</p>
-      </div>
-      <div class="form__select__wrapper">
-        <i class="fa-solid fa-gear"></i>
-        <p class="form__select__wrapper__label">Settings</p>
+      <div class="form__select">
+        <div class="form__select__wrapper -right">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <p class="form__select__wrapper__label">General</p>
+        </div>
+        <div class="form__select__wrapper">
+          <i class="fa-solid fa-file"></i>
+          <p class="form__select__wrapper__label">License and seats</p>
+        </div>
+        <div class="form__select__wrapper -on">
+          <i class="fa-solid fa-file-invoice-dollar"></i>
+          <p class="form__select__wrapper__label">Billing and Subscription</p>
+        </div>
+        <div class="form__select__wrapper">
+          <i class="fa-solid fa-gear"></i>
+          <p class="form__select__wrapper__label">Settings</p>
+        </div>
       </div>
     </div>
   </div>
-  <div class="head">
-    <div class="head__status">
-      <div class="head__status__form">
-        <div class="head__status__form__subscription">
-          <p class="head__status__form__subscription__label">SUBSCRIPTION</p>
-          <p class="head__status__form__subscription__button">ACTIVE</p>
-        </div>
-        <div class="head__status__form__plan">
-          <div class="head__status__form__plan__wrapper">
-            <i class="fa-brands fa-first-order-alt"></i>
-            <p class="head__status__form__plan__wrapper__value">$99/yr Pro Plan</p>
+  <div class="background3">
+    <div class="head">
+      <div class="head__status">
+        <div class="head__status__form">
+          <div class="head__status__form__subscription">
+            <p class="head__status__form__subscription__label">SUBSCRIPTION</p>
+            <p class="head__status__form__subscription__button">ACTIVE</p>
           </div>
-        <p class="head__status__form__plan__label">Renews on Sep 15, 2024</p>
-        </div>
-      </div>
-      <div class="head__status__billing">
-        <div class="head__status__billing__form">
-          <div class="head__status__billing__form__wrapper1">
-            <p class="head__status__billing__form__wrapper__description">Grants you access to the latest Font Awesome Pro styles + icons,Pro services, and Actual Human Support.</p>
-            <p class="head__status__billing__form__wrapper__button1">Manage Subscription in Stripe</p>
-          </div>
-          <div class="head__status__billing__form__wrapper2">
-            <div class="head__status__billing__form__date">
-              <p class="head__status__billing__form__date__label">Last billed on Sep15, 2023</p>
-              <p class="head__status__billing__form__date__button2">?</p>
+          <div class="head__status__form__plan">
+            <div class="head__status__form__plan__wrapper">
+              <i class="fa-brands fa-first-order-alt"></i>
+              <p class="head__status__form__plan__wrapper__value">$99/yr Pro Plan</p>
             </div>
-          <p class="head__status__billing__form__date__label">Get invoices,renew, cancel, or update payment info</p>
+          <p class="head__status__form__plan__label">Renews on Sep 15, 2024</p>
+          </div>
+        </div>
+        <div class="head__status__billing">
+          <div class="head__status__billing__form">
+            <div class="head__status__billing__form__wrapper1">
+              <p class="head__status__billing__form__wrapper__description">Grants you access to the latest Font Awesome Pro styles + icons,Pro services, and Actual Human Support.</p>
+              <p class="head__status__billing__form__wrapper__button1">Manage Subscription in Stripe</p>
+            </div>
+            <div class="head__status__billing__form__wrapper2">
+              <div class="head__status__billing__form__date">
+                <p class="head__status__billing__form__date__label">Last billed on Sep15, 2023</p>
+                <p class="head__status__billing__form__date__button2">?</p>
+              </div>
+            <p class="head__status__billing__form__date__label">Get invoices,renew, cancel, or update payment info</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="metered">
+        <p class="metered__title">Metered Billing</p>
+        <div class="metered__form">
+          <div class="metered__form__billing">
+            <i class="fa-solid fa-circle-info"></i>
+            <div class="metered__form__billing__wrapper">
+              <p class="metered__form__billing__wrapper__title">You now have control over how services are billed.</p>
+              <p class="metered__form__billing__description">Metered Billing is being released in phases - you can set your billing preferences now. When we fully release Metered Billing, we'll let you know and then begin charging for overages.</p>
+            </div>
+          </div>
+          <div class="metered__form__description">
+            <p class="metered__form__description__text">If you use a service and reach your purchased Plan's monthly limit, Metered Billing allows you to continue using that service by paying an additional monthly fee.</p>
+            <p class="metered__form__description__button">Change Metered Billing Settings</p>
+          </div>
+          <div class="metered__form__plan">
+            <div class="metered__form__plan__wrapper">
+              <p class="metered__form__plan__wrapper__name">SERVICE</p>
+              <div class="metered__form__plan__wrapper__icon">
+                <i class="fa-solid fa-box"></i>
+                <p class="metered__form__plan__wrapper__icon__description">Package Bandwidth</p>
+              </div>
+              <div class="metered__form__plan__wrapper__icon">
+                <i class="fa-solid fa-signal"></i>
+                <p class="metered__form__plan__wrapper__icon__description">Kit Pageviews</p>
+              </div>
+            </div>
+            <div class="metered__form__plan__wrapper">
+              <p class="metered__form__plan__wrapper__name">METERED BILLING</p>
+              <p class="metered__form__plan__wrapper__button">ENABLED</p>
+              <p class="metered__form__plan__wrapper__button">ENABLED</p>
+            </div>
+            <div class="metered__form__plan__wrapper">
+              <p class="metered__form__plan__wrapper__name">INCLUDED IN PLAN</p>
+              <p class="metered__form__plan__wrapper__button">4.00 GB per month + $1.00 per extra GB</p>
+              <p class="metered__form__plan__wrapper__button">1,000,000 pageviews per month</p>
+            </div>
+            <div class="metered__form__plan__wrapper">
+              <p class="metered__form__plan__wrapper__name">USED</p>
+              <p class="metered__form__plan__wrapper__button">2.27 GB</p>
+              <p class="metered__form__plan__wrapper__button">0 pageviews</p>
+            </div>
+            <div class="metered__form__plan__wrapper">
+              <div class="metered__form__plan__wrapper__limit">
+                <p class="metered__form__plan__wrapper__limit__question">?</p>
+                <p class="metered__form__plan__wrapper__limit__name">BILLING LIMIT</p>
+              </div>
+              <p class="metered__form__plan__wrapper__button">No limit per month</p>
+              <p class="metered__form__plan__wrapper__button">No limit per month</p>
+            </div>
           </div>
         </div>
       </div>
