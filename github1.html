@@ -420,7 +420,7 @@
       color: #868D96;
       font-size: 12px;
     }
-    .issue__form__report__list__icon__message {
+    .issue__form__report__list__message {
       display: flex;
       gap: 4px;
       align-items: flex-end;
@@ -429,7 +429,7 @@
     .fa-message {
       color: #868D96;
     }
-    .issue__form__report__list__icon__message__value {
+    .issue__form__report__list__message__value {
       color: #868D96;
       margin: 0px;
       font-size: 12px;
@@ -471,6 +471,15 @@
       gap: 5px;
       align-items: center;
       margin-top: 35px;
+      color: #868D96;
+      font-size: 14px;
+    }
+    .-protip {
+      color: #E6EDF1;
+    }
+    .-team {
+      color: #5991F1;
+      border-bottom: 1px solid #5991F1;
     }
     .fa-lightbulb {
       color: #868D96;
@@ -485,21 +494,16 @@
       color: #868D96;
       font-size: 14px;
     }
-    .issue__form__mention__team__name {
-      margin: 0px;
-      color: #5991F1;
-      border-bottom: 1px solid #5991F1;
-    }
     .issue__form__tag {
       display: flex;
       justify-content: center;
-      align-items: center;
       gap: 12px;
       margin-top: 65px;
+      align-items: flex-end;
     }
     .issue__form__tag__github {
       color: #868D96;
-      font-size: 25px;
+      font-size: 18px;
     }
     .issue__form__tag__icon__copyright {
       color: #868D96;
@@ -514,6 +518,10 @@
       margin: 0px;
       color: #868D96;
       font-size: 12px;
+    }
+    .issue__form__tag__name {
+      display: flex;
+      gap: 10px;
     }
     .issue__form__tag__name__description {
       margin: 0px;
@@ -564,6 +572,7 @@
       }
       .issue__form__list {
         border: 0px;
+        border-bottom: 1px solid #31363C;
       }
       .issue__form__report__list.-back {
         background-color: #181A20;
@@ -636,6 +645,7 @@
         display: block;
         margin: 0px;
         margin-top: 25px;
+        padding: 0px 10px;
       }
       .issue__form__mention span.-protip {
         color: #E7EDF2;
@@ -645,7 +655,8 @@
       }
       .issue__form__tag {
         flex-direction: column-reverse;
-        padding: 0px 42px;
+        padding: 0px 10px;
+        align-items: center;
       }
       .issue__form__tag__name {
         display: flex;
@@ -841,7 +852,7 @@
           <div class="issue__form__report__list__icon">
             <img src="./hamster.png" alt="" class="issue__form__report__list__icon__image">
           </div>
-          <div class="issue__form__report__list_message"></div>
+          <div class="issue__form__report__list__message"></div>
         </div>
         <div class="issue__form__report__list">
           <div class="issue__form__report__list__checkbox">
@@ -1011,7 +1022,7 @@
               <p class="issue__form__report__list__name__number__made__task">2 tasks</p>
             </div>
           </div>
-          <div class="issue__form__report__listpull"></div>
+          <div class="issue__form__report__list__pull"></div>
           <div class="issue__form__report__list__icon">
             <img src="./hamster.png" alt="" class="issue__form__report__list__icon__image">
           </div>
@@ -1160,7 +1171,7 @@
           <div class="issue__form__report__list__message"></div>
         </div>
       </div>
-      <p class="issue__form__mention"><i class="fa-solid fa-lightbulb"></i> <span class="-protip">Protip!</span> Check team mentions with <span class="-team">team:logos-pathos/bandw</span>.</p>
+      <p class="issue__form__mention"><i class="fa-solid fa-lightbulb"></i> <span class="-protip">Protip! </span> Check team mentions with <span class="-team">team:logos-pathos/bandw</span>.</p>
       <div class="issue__form__tag">
         <p class="issue__form__tag__creation"><i class="fa-brands fa-github issue__form__tag__github"></i> ©︎ 2024 GitHub, Inc.</p>
         <div class="issue__form__tag__name">
