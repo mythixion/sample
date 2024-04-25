@@ -62,11 +62,29 @@
     .global__head {
       background-color: #E2714F;
       display: flex;
-      justify-content: space-between;
+      gap: 15px;
       padding: 20px;
       align-items: center;
       border-radius: 10px;
       margin-top: 45px;
+      position: relative;
+    }
+    .global__head::before {
+      content: '13 HOURS LEFT!';
+      position: absolute;
+      background-color: #1E3050;
+      border: 1px solid #000022;
+      color: white;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      font-weight: bold;
+      width: 110px;
+      height: 20px;
+      top: -10px;
+      left: 480px;
     }
     .global__wrapper {
       display: flex;
@@ -81,6 +99,7 @@
       margin: 0px;
       color: white;
       margin-left: 15px;
+      white-space: nowrap;
     }
     .description {
       font-weight: bold;
@@ -93,7 +112,6 @@
       padding: 10px 15px;
       border-radius: 6px;
       border: 2px solid #1E3050;
-      margin-left: 95px;
       gap: 10px;
       box-shadow: 0px 6px 0px #1E3050;
     }
@@ -107,6 +125,7 @@
       font-size: 12px;
       font-weight: bold;
       color: #192C4E;
+      white-space: nowrap;
     }
     .form {
       background-color: #071B3E;
@@ -187,30 +206,6 @@
       border-right: 2px solid #071B3E;
       position: relative;
     }
-    .form__select__wrapper.-on::after {
-      content: '';
-      display: block;
-      width: 10px;
-      height: 10px;
-      background-color: #1E3050;
-      transform: rotate(45deg);
-      top: -12px;
-      left: 128px;
-      position: absolute;
-    }
-    .form__select__wrapper.-on::before {
-      content: 'Billing and Subscription';
-      background-color: #1E3050;
-      color: white;
-      width: 140px;
-      margin: 0px;
-      font-size: 12px;
-      padding: 10px;
-      border-radius: 2px;
-      top: -45px;
-      left: 54px;
-      position: absolute;
-    }
     .form__select__wrapper .fa-basket-shopping {
       color: #1E3050;
       font-size: 18px;
@@ -233,7 +228,7 @@
     }
     .head {
       background-color: #F0F1F3;
-      padding: 60px 18px 18px 18px;
+      padding: 50px 0px 120px;
       width: 1100px;
     }
     .head__status {
@@ -412,36 +407,88 @@
       padding: 15px;
     }
     .metered__form__plan {
-
+      background-color: #F0F1F3;
+      padding: 0px 15px;
+      border-radius: 8px;
+      margin-top: 25px;
     }
     .metered__form__plan__wrapper {
-
+      display: flex;
+      padding: 10px 0px;
+      border-bottom: 1px solid #FDFDFE;
+      justify-content: space-between;
+    }
+    .metered__form__plan__wrapper.-off {
+      border-bottom: 0px;
     }
     .metered__form__plan__wrapper__name {
-
+      margin: 0px;
+      font-size: 12px;
+      width: 190px;
+      color: #646D88;
     }
     .metered__form__plan__wrapper__icon {
-
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      width: 340px;
     }
     .fa-box {
-
+      font-size: 14px;
     }
     .metered__form__plan__wrapper__icon__description {
-
+      margin: 0px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #1E3050;
     }
     .fa-signal {
-
+      font-size: 14px;
     }
     .metered__form__plan__wrapper__button {
-
+      background-color: #8BE3C1;
+      padding: 5px 10px;
+      border-radius: 12px;
+      margin-right: 270px;
+    }
+    .metered__form__plan__wrapper__button__name {
+      margin: 0px;
+      font-size: 10px;
+      color: #000045;
+      font-weight: bold;
     }
     .metered__form__plan__wrapper__limit {
-
+      display: flex;
+      width: 190px;
+      gap: 10px;
     }
     .metered__form__plan__wrapper__limit__question {
-
-    }.metered__form__plan__wrapper__limit__name {
-
+      margin: 0px;
+      font-size: 12px;
+      width: 15px;
+      height: 15px;
+      background-color: #C3C6D0;
+      color: #F0F1F3;
+      border-radius: 15px;
+      text-align: center;
+      font-size: 10px;
+    }
+    .metered__form__plan__wrapper__limit__name {
+      margin: 0px;
+      font-size: 12px;
+      color: #646D88;
+    }
+    .metered__form__plan__wrapper__value {
+      margin: 0px;
+      font-size: 12px;
+      width: 340px;
+      color: #1E3050;
+    }
+    .metered__form__plan__wrapper__deadline {
+      margin: 0px;
+      font-size: 12px;
+      width: 340px;
+      color: #1E3050;
     }
   </style>
 </head>
@@ -464,7 +511,7 @@
       <div class="global__head">
         <div class="global__wrapper">
           <i class="fa-solid fa-crown"></i>
-          <p class="global__wrapper__description"><span class="description">Introducing Web Awesome,</span> the biggest and best open-source library of web components.</p>
+          <p class="global__wrapper__description"><span class="description">Check out the all-new Web Awesome</span> AND get an exclusive lifetime discount on Font Awesome Pro!</p>
         </div>
         <div class="global__wrapper__button">
           <i class="fa-solid fa-microphone"></i>
@@ -569,26 +616,30 @@
             </div>
             <div class="metered__form__plan__wrapper">
               <p class="metered__form__plan__wrapper__name">METERED BILLING</p>
-              <p class="metered__form__plan__wrapper__button">ENABLED</p>
-              <p class="metered__form__plan__wrapper__button">ENABLED</p>
+              <div class="metered__form__plan__wrapper__button">
+                <p class="metered__form__plan__wrapper__button__name">ENABLED</p>
+              </div>
+              <div class="metered__form__plan__wrapper__button">
+                <p class="metered__form__plan__wrapper__button__name">ENABLED</p>
+              </div>
             </div>
             <div class="metered__form__plan__wrapper">
               <p class="metered__form__plan__wrapper__name">INCLUDED IN PLAN</p>
-              <p class="metered__form__plan__wrapper__button">4.00 GB per month + $1.00 per extra GB</p>
-              <p class="metered__form__plan__wrapper__button">1,000,000 pageviews per month</p>
+              <p class="metered__form__plan__wrapper__value">4.00 GB per month + $1.00 per extra GB</p>
+              <p class="metered__form__plan__wrapper__value">1,000,000 pageviews per month</p>
             </div>
             <div class="metered__form__plan__wrapper">
               <p class="metered__form__plan__wrapper__name">USED</p>
-              <p class="metered__form__plan__wrapper__button">2.27 GB</p>
-              <p class="metered__form__plan__wrapper__button">0 pageviews</p>
+              <p class="metered__form__plan__wrapper__value">2.27 GB</p>
+              <p class="metered__form__plan__wrapper__value">0 pageviews</p>
             </div>
-            <div class="metered__form__plan__wrapper">
+            <div class="metered__form__plan__wrapper -off">
               <div class="metered__form__plan__wrapper__limit">
-                <p class="metered__form__plan__wrapper__limit__question">?</p>
                 <p class="metered__form__plan__wrapper__limit__name">BILLING LIMIT</p>
+                <p class="metered__form__plan__wrapper__limit__question">?</p>
               </div>
-              <p class="metered__form__plan__wrapper__button">No limit per month</p>
-              <p class="metered__form__plan__wrapper__button">No limit per month</p>
+              <p class="metered__form__plan__wrapper__deadline">No limit per month</p>
+              <p class="metered__form__plan__wrapper__deadline">No limit per month</p>
             </div>
           </div>
         </div>
