@@ -13,7 +13,6 @@
     .background1 {
       display: flex;
       justify-content: center;
-      padding: 15px 0px 30px;
     }
     .background2 {
       background-color: #071B3E;
@@ -27,6 +26,7 @@
     }
     .global {
       padding: 20px 20px 34px 20px;
+      color: white;
       width: 1100px;
     }
     .global .fa-flag {
@@ -62,7 +62,7 @@
     .global__head {
       background-color: #E2714F;
       display: flex;
-      gap: 15px;
+      justify-content: space-around;
       padding: 20px;
       align-items: center;
       border-radius: 10px;
@@ -89,6 +89,7 @@
     .global__wrapper {
       display: flex;
       align-items: center;
+      gap: 25px;
     }
     .global__wrapper .fa-crown {
       display: block;
@@ -98,8 +99,7 @@
     .global__wrapper__description {
       margin: 0px;
       color: white;
-      margin-left: 15px;
-      white-space: nowrap;
+      font-size: 15px;
     }
     .description {
       font-weight: bold;
@@ -107,7 +107,6 @@
     .global__wrapper__button {
       background-color: white;
       display: flex;
-      width: 155px;
       align-items: center;
       padding: 10px 15px;
       border-radius: 6px;
@@ -495,6 +494,7 @@
     .introduction {
       width: 1100px;
       padding: 35px 0px;
+      color: #071B3E;
     }
     .introduction__head {
       display: flex;
@@ -563,6 +563,90 @@
       margin: 0px;
       color: #C6C9D4;
       font-size: 12px;
+    }
+    @media only screen and (max-width: 430px) {
+      .background1 {
+        display: block;
+      }
+      .background2 {
+        display: block;
+      }
+      .background3 {
+        display: block;
+      }
+      .global {
+        width: 100%;
+      }
+      .global__menu {
+        display: flex;
+      }
+      .global__menu__select__label {
+        display: none;
+      }
+      .global__head {
+        display: block;
+      }
+      .global__head::before {
+        left: 160px;
+      }
+      .global__wrapper {
+        display: block;
+      }
+      .global__wrapper .fa-crown {
+        text-align: center;
+      }
+      .global__wrapper__description {
+        font-size: 12px;
+      }
+      .global__wrapper__button {
+        justify-content: center;
+        margin-top: 15px;
+      }
+      .form {
+        width: 100%;
+      }
+      .form__status {
+        display: block;
+        text-align: center;
+      }
+      .form__status__head {
+        display: block;
+      }
+      .form__select {
+        width: 230px;
+      }
+      .form__select__wrapper__label {
+        display: none;
+      }
+      .head {
+        width: 100%;
+        padding: 35px 20px 95px;
+      }
+      .introduction {
+        width: 100%;
+        padding: 25px 15px;
+      }
+      .introduction__head {
+        display: block;
+      }
+      .metered__form__description {
+        display: block;
+      }
+      .metered__form__plan__wrapper__name {
+        width: 100%;
+      }
+      .metered__form__plan__wrapper__button {
+        margin-right: 0px;
+      }
+      .metered__form__plan__wrapper__value {
+        width: 100%;
+      }
+      .metered__form__plan__wrapper__limit {
+        width: 138px;
+      }
+      .metered__form__plan__wrapper__deadline {
+        width: 110px;
+      }
     }
   </style>
 </head>
