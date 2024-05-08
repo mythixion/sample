@@ -24,6 +24,11 @@
       display: flex;
       justify-content: center;
     }
+    .background4 {
+      background-color: #071B3E;
+      display: flex;
+      justify-content: center;
+    }
     .global {
       padding: 20px 20px 34px 20px;
       color: white;
@@ -38,7 +43,6 @@
     .global__menu {
       display: flex;
       align-items: center;
-      gap: 40px;
       justify-content: space-between;
     }
     .global__menu__select {
@@ -56,8 +60,8 @@
       color: #636D88;
     }
     .global .fa-circle-user {
-      margin-left: 390px;
       font-size: 20px;
+      color: #00002D;
     }
     .global__head {
       background-color: #E2714F;
@@ -237,10 +241,10 @@
     .head__status__form {
       padding: 20px;
       border-bottom: 1px dotted #F0F1F3;
-    }
-    .head__status__form__subscription {
       display: flex;
       justify-content: space-between;
+    }
+    .head__status__form__subscription {
       align-items: center;
     }
     .head__status__form__subscription__label {
@@ -258,53 +262,57 @@
       padding: 10px 15px;
       border-radius: 20px;
       font-weight: bold;
+      width: 45px;
+      margin-left: auto;
     }
     .head__status__form__plan {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 15px;
+      text-align: left;
     }
     .head__status__form__plan__wrapper {
       display: flex;
       align-items: center;
       gap: 10px;
+      margin-top: 15px;
     }
     .head__status__form__plan__wrapper .fa-first-order-alt {
-      font-size: 24px;
+      font-size: 30px;
       color: #1E3050;
     }
     .head__status__form__plan__wrapper__value {
       margin: 0px;
       color: #1E3050;
       font-weight: bold;
+      font-size: 20px;
     }
     .head__status__form__plan__label {
       margin: 0px;
       color: #6D7690;
       font-size: 14px;
+      margin-top: 15px;
     }
     .head__status__billing {
 
     }
     .head__status__billing__form {
       padding: 0px 20px 20px 20px;
+      display: flex;
+      justify-content: space-between;
     }
     .head__status__billing__form__wrapper1 {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 20px;
+      margin-top: 25px;
       gap: 30px;
+      width: 100%;
     }
     .head__status__billing__form__wrapper2 {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 18px;
+      margin-top: 20px;
+      width: 100%;
+      text-align: right;
     }
     .head__status__billing__form__date {
       display: flex;
       gap: 10px;
       align-items: center;
+      margin-top: 5px;
     }
     .head__status__billing__form__wrapper__description {
       margin: 0px;
@@ -316,16 +324,19 @@
       border-radius: 6px;
       color: #326BB8;
       padding: 10px;
-      height: 20px;
+      width: 250px;
+      line-height: 20px;
       white-space: nowrap;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-left: auto;
     }
     .head__status__billing__form__date__label {
       margin: 0px;
       color: #6D7690;
       font-size: 14px;
+      margin-top: 20px;
     }
     .head__status__billing__form__date__button2 {
       margin: 0px;
@@ -336,11 +347,7 @@
       border-radius: 20px;
       font-size: 10px;
       text-align: center;
-    }
-    .head__status__billing__form__date__label {
-      margin: 0px;
-      color: #626C88;
-      font-size: 14px;
+      margin-top: 20px;
     }
     .metered {
       background-color: white;
@@ -423,15 +430,25 @@
     .metered__form__plan__wrapper__name {
       margin: 0px;
       font-size: 12px;
-      width: 190px;
+      width: 50%;
       color: #646D88;
       font-weight: bold;
+    }
+    .metered__form__plan__wrapper__status {
+      margin: 0px;
+      background-color: #86E0BD;
+      color: #18234E;
+      border-radius: 8px;
+      font-size: 12px;
+      padding: 5px;
+      font-weight: bold;
+      margin-right: 276px;
     }
     .metered__form__plan__wrapper__icon {
       display: flex;
       gap: 10px;
       align-items: center;
-      width: 340px;
+      width: 50%;
     }
     .fa-box {
       font-size: 14px;
@@ -459,7 +476,7 @@
     }
     .metered__form__plan__wrapper__limit {
       display: flex;
-      width: 190px;
+      width: 50%;
       gap: 10px;
     }
     .metered__form__plan__wrapper__limit__question {
@@ -482,13 +499,13 @@
     .metered__form__plan__wrapper__value {
       margin: 0px;
       font-size: 12px;
-      width: 340px;
+      width: 50%;
       color: #1E3050;
     }
     .metered__form__plan__wrapper__deadline {
       margin: 0px;
       font-size: 12px;
-      width: 340px;
+      width: 50%;
       color: #1E3050;
     }
     .introduction {
@@ -517,7 +534,7 @@
       margin: 0px;
       margin-top: 15px;
       color: white;
-      font-size: 14px;
+      font-size: 13px;
     }
     .introduction__head__tag {
       display: flex;
@@ -574,8 +591,11 @@
       .background3 {
         display: block;
       }
+      .background4 {
+        display: block;
+      }
       .global {
-        width: 100%;
+        width: auto;
       }
       .global__menu {
         display: flex;
@@ -597,13 +617,15 @@
       }
       .global__wrapper__description {
         font-size: 12px;
+        margin-top: 20px;
       }
       .global__wrapper__button {
         justify-content: center;
         margin-top: 15px;
       }
       .form {
-        width: 100%;
+        width: auto;
+        padding-top: 45px;
       }
       .form__status {
         display: block;
@@ -612,6 +634,17 @@
       .form__status__head {
         display: block;
       }
+      .form__status__wrapper__address {
+        margin-top: 15px;
+      }
+      .form__status__button {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5px;
+        margin-top: 30px;
+      }
       .form__select {
         width: 230px;
       }
@@ -619,33 +652,74 @@
         display: none;
       }
       .head {
-        width: 100%;
+        width: auto;
         padding: 35px 20px 95px;
       }
-      .introduction {
-        width: 100%;
-        padding: 25px 15px;
-      }
-      .introduction__head {
+      .head__status__billing__form {
         display: block;
+      }
+      .head__status__billing__form__wrapper2 {
+        text-align: left;
+      }
+      .head__status__billing__form__wrapper__button1 {
+        margin: 0px;
       }
       .metered__form__description {
         display: block;
       }
+      .metered__form__description__button {
+        display: inline-block;
+        line-height: 0px;
+        margin-top: 20px;
+      }
+      .metered__form__plan__wrapper__icon {
+        display: block;
+        width: 30%;
+      }
+      .metered__form__plan__wrapper {
+        gap: 28px;
+        align-items: center;
+      }
       .metered__form__plan__wrapper__name {
-        width: 100%;
+        width: 50%;
+      }
+      .metered__form__plan__wrapper__status {
+        margin: 0px;
       }
       .metered__form__plan__wrapper__button {
         margin-right: 0px;
       }
       .metered__form__plan__wrapper__value {
-        width: 100%;
+        width: 31%;
       }
       .metered__form__plan__wrapper__limit {
-        width: 138px;
+        width: 82%;
       }
       .metered__form__plan__wrapper__deadline {
-        width: 110px;
+        width: 50%;
+      }
+      .introduction {
+        width: auto;
+        padding: 25px 13px;
+      }
+      .introduction__head {
+        display: block;
+      }
+      .introduction__head__tag {
+        flex-wrap: wrap;
+        gap: 10px 80px;
+      }
+      .introduction__tag {
+        display: block;
+      }
+      .introduction__tag__label {
+        margin-top: 20px;
+      }
+      .introduction__tag__wrapper {
+        display: block;
+      }
+      .introduction__tag__wrapper__label {
+        margin-top: 15px;
       }
     }
   </style>
@@ -720,13 +794,13 @@
         <div class="head__status__form">
           <div class="head__status__form__subscription">
             <p class="head__status__form__subscription__label">SUBSCRIPTION</p>
-            <p class="head__status__form__subscription__button">ACTIVE</p>
-          </div>
-          <div class="head__status__form__plan">
             <div class="head__status__form__plan__wrapper">
               <i class="fa-brands fa-first-order-alt"></i>
               <p class="head__status__form__plan__wrapper__value">$99/yr Pro Plan</p>
             </div>
+          </div>
+          <div class="head__status__form__plan">
+            <p class="head__status__form__subscription__button">ACTIVE</p>
           <p class="head__status__form__plan__label">Renews on Sep 15, 2024</p>
           </div>
         </div>
@@ -734,13 +808,13 @@
           <div class="head__status__billing__form">
             <div class="head__status__billing__form__wrapper1">
               <p class="head__status__billing__form__wrapper__description">Grants you access to the latest Font Awesome Pro styles + icons,Pro services, and Actual Human Support.</p>
-              <p class="head__status__billing__form__wrapper__button1">Manage Subscription in Stripe</p>
-            </div>
-            <div class="head__status__billing__form__wrapper2">
               <div class="head__status__billing__form__date">
                 <p class="head__status__billing__form__date__label">Last billed on Sep15, 2023</p>
                 <p class="head__status__billing__form__date__button2">?</p>
               </div>
+            </div>
+            <div class="head__status__billing__form__wrapper2">
+              <p class="head__status__billing__form__wrapper__button1">Manage Subscription in Stripe</p>
             <p class="head__status__billing__form__date__label">Get invoices,renew, cancel, or update payment info</p>
             </div>
           </div>
@@ -774,12 +848,8 @@
             </div>
             <div class="metered__form__plan__wrapper">
               <p class="metered__form__plan__wrapper__name">METERED BILLING</p>
-              <div class="metered__form__plan__wrapper__button">
-                <p class="metered__form__plan__wrapper__button__name">ENABLED</p>
-              </div>
-              <div class="metered__form__plan__wrapper__button">
-                <p class="metered__form__plan__wrapper__button__name">ENABLED</p>
-              </div>
+              <p class="metered__form__plan__wrapper__status">ENABLED</p>
+              <p class="metered__form__plan__wrapper__status">ENABLED</p>
             </div>
             <div class="metered__form__plan__wrapper">
               <p class="metered__form__plan__wrapper__name">INCLUDED IN PLAN</p>
@@ -804,7 +874,7 @@
       </div>
     </div>
   </div>
-  <div class="background2">
+  <div class="background4">
     <div class="introduction">
       <div class="introduction__head">
         <div class="introduction__head__wrapper">
