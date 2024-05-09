@@ -25,7 +25,7 @@
       justify-content: center;
     }
     .background4 {
-      background-color: #071B3E;
+      background-color: #1E3050;
       display: flex;
       justify-content: center;
     }
@@ -33,6 +33,9 @@
       padding: 20px 20px 34px 20px;
       color: white;
       width: 1100px;
+    }
+    .fa-bars {
+      display: none;
     }
     .global .fa-flag {
       color: #618CD1;
@@ -204,7 +207,7 @@
       border-right: 2px solid #071B3E;
     }
     .form__select__wrapper.-on {
-      background-color: white;
+      background-color: #F0F1F3;
       border-left: 2px solid #071B3E;
       border-right: 2px solid #071B3E;
       position: relative;
@@ -262,7 +265,7 @@
       padding: 10px 15px;
       border-radius: 20px;
       font-weight: bold;
-      width: 45px;
+      width: 50px;
       margin-left: auto;
     }
     .head__status__form__plan {
@@ -366,7 +369,7 @@
     .metered__form__billing {
       display: flex;
       background-color: #D5EAFD;
-      border: 1px solid #0051AF;
+      border: 2px solid #0051AF;
       border-radius: 8px;
       padding: 20px;
       gap: 15px;
@@ -420,7 +423,7 @@
     }
     .metered__form__plan__wrapper {
       display: flex;
-      padding: 10px 0px;
+      padding: 15px 0px;
       border-bottom: 1px solid #FDFDFE;
       justify-content: space-between;
     }
@@ -435,14 +438,20 @@
       font-weight: bold;
     }
     .metered__form__plan__wrapper__status {
+      width: 50%;
+    }
+    .metered__form__plan__wrapper__status__label {
       margin: 0px;
       background-color: #86E0BD;
       color: #18234E;
       border-radius: 8px;
       font-size: 12px;
-      padding: 5px;
+      padding: 5px 10px;
+      width: 75px;
+      text-align: center;
       font-weight: bold;
-      margin-right: 276px;
+      line-height: 15px;
+      letter-spacing: 1px;
     }
     .metered__form__plan__wrapper__icon {
       display: flex;
@@ -594,14 +603,22 @@
       .background4 {
         display: block;
       }
+      .fa-bars {
+        display: block;
+        color: #646D88;
+      }
       .global {
         width: auto;
       }
       .global__menu {
         display: flex;
+        padding: 0px 12px;
       }
       .global__menu__select {
-        gap: 135px;
+        gap: 160px;
+      }
+      .global__menu .fa-magnifying-glass {
+        display: none;
       }
       .global__menu__select__label {
         display: none;
@@ -657,6 +674,7 @@
       }
       .form__status__wrapper__creation {
         font-size: 10px;
+        margin-top: 5px;
       }
       .form__select__wrapper__label {
         display: none;
@@ -718,9 +736,12 @@
       }
       .metered__form__plan__wrapper__status {
         margin: 0px;
+        width: 30%;
+      }
+      .metered__form__plan__wrapper__status__label {
+        width: 50px;
         font-size: 8px;
-        padding: 5px 8px;
-        margin-right: 14px;
+        padding: 4px 8px;
       }
       .metered__form__plan__wrapper__button {
         margin-right: 0px;
@@ -766,6 +787,7 @@
     <div class="global">
       <div class="global__menu">
         <div class="global__menu__select">
+          <i class="fa-solid fa-bars"></i>
           <i class="fa-solid fa-flag"></i>
           <p class="global__menu__select__label">Your Kits</p>
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -885,8 +907,12 @@
             </div>
             <div class="metered__form__plan__wrapper">
               <p class="metered__form__plan__wrapper__name">METERED BILLING</p>
-              <p class="metered__form__plan__wrapper__status">ENABLED</p>
-              <p class="metered__form__plan__wrapper__status">ENABLED</p>
+              <div class="metered__form__plan__wrapper__status">
+                <p class="metered__form__plan__wrapper__status__label">ENABLED</p>
+              </div>
+              <div class="metered__form__plan__wrapper__status">
+                <p class="metered__form__plan__wrapper__status__label">ENABLED</p>
+              </div>
             </div>
             <div class="metered__form__plan__wrapper">
               <p class="metered__form__plan__wrapper__name">INCLUDED IN PLAN</p>
