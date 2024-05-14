@@ -10,26 +10,11 @@
       background-color: white;
       margin: 0px;
     }
-    .background1 {
+    .header {
       display: flex;
       justify-content: center;
     }
-    .background2 {
-      background-color: #071B3E;
-      display: flex;
-      justify-content: center;
-    }
-    .background3 {
-      background-color: #F0F1F3;
-      display: flex;
-      justify-content: center;
-    }
-    .background4 {
-      background-color: #1E3050;
-      display: flex;
-      justify-content: center;
-    }
-    .global {
+    .header__wrapper {
       padding: 20px 20px 34px 20px;
       color: white;
       width: 1100px;
@@ -37,36 +22,36 @@
     .fa-bars {
       display: none;
     }
-    .global .fa-flag {
+    .header__wrapper__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header__wrapper__head__tag {
+      display: flex;
+      gap: 37px;
+      align-items: center;
+    }
+    .header__wrapper__head__tag__flag {
       color: #618CD1;
       margin-right: 30px;
       display: block;
       font-size: 20px;
     }
-    .global__menu {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .global__menu__select {
-      display: flex;
-      gap: 37px;
-      align-items: center;
-    }
-    .global__menu__select__label {
+    .header__wrapper__head__tag__name {
       margin: 0px;
       align-items: center;
       color: #636D88;
       white-space: nowrap;
     }
-    .global__menu .fa-magnifying-glass {
+    .header__wrapper__head__tag__glass {
       color: #636D88;
     }
-    .global .fa-circle-user {
+    .header__wrapper__head__user {
       font-size: 20px;
       color: #00002D;
     }
-    .global__head {
+    .header__wrapper__footer {
       background-color: #E2714F;
       display: flex;
       justify-content: space-around;
@@ -76,7 +61,7 @@
       margin-top: 45px;
       position: relative;
     }
-    .global__head::before {
+    .header__wrapper__footer::before {
       content: '13 HOURS LEFT!';
       position: absolute;
       background-color: #1E3050;
@@ -93,17 +78,17 @@
       top: -10px;
       left: 480px;
     }
-    .global__wrapper {
+    .header__wrapper__footer__wrapper {
       display: flex;
       align-items: center;
       gap: 25px;
     }
-    .global__wrapper .fa-crown {
+    .header__wrapper__footer__wrapper__crown {
       display: block;
       font-size: 32px;
       color: #1F3051;
     }
-    .global__wrapper__description {
+    .header__wrapper__footer__wrapper__description {
       margin: 0px;
       color: white;
       font-size: 15px;
@@ -111,7 +96,7 @@
     .description {
       font-weight: bold;
     }
-    .global__wrapper__button {
+    .header__wrapper__footer__button {
       background-color: white;
       display: flex;
       align-items: center;
@@ -121,58 +106,63 @@
       gap: 10px;
       box-shadow: 0px 6px 0px #1E3050;
     }
-    .global__wrapper__button .fa-microphone {
+    .header__wrapper__footer__button__microphone {
       font-size: 20px;
       display: block;
       color: #1E3050;
     }
-    .global__wrapper__button__title {
+    .header__wrapper__footer__button__label {
       margin: 0px;
       font-size: 12px;
       font-weight: bold;
       color: #192C4E;
       white-space: nowrap;
     }
-    .form {
+    .profile {
+      background-color: #071B3E;
+      display: flex;
+      justify-content: center;
+    }
+    .profile__wrapper {
       background-color: #071B3E;
       padding: 65px 20px 0px 20px;
       width: 1100px;
     }
-    .form__status {
+    .profile__wrapper__account {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    .form__status__head {
+    .profile__wrapper__account__user {
       display: flex;
     }
-    .form__status .fa-rocket {
+    .profile__wrapper__account__user__icon {
       color: #86BEF7;
       font-size: 70px;
       margin-right: 25px;
     }
-    .form__status__wrapper {
+    .profile__wrapper__account__user__wrapper {
 
     }
-    .form__status__wrapper__address {
+    .profile__wrapper__account__user__wrapper__address {
       margin: 0px;
       color: #F3F4F6;
       font-size: 14px;
       font-weight: bold;
     }
-    .form__status__wrapper__name {
+    .profile__wrapper__account__user__wrapper__name {
       margin: 0px;
       color: #F0F1F3;
       font-size: 30px;
       font-weight: bold;
     }
-    .form__status__wrapper__creation {
+    .profile__wrapper__account__user__wrapper__date {
       margin: 0px;
       color: #86BEF7;
       font-size: 14px;
       font-weight: bold;
     }
-    .form__status__button {
+    .profile__wrapper__account__button {
       background-color: #545E79;
       display: flex;
       border-radius: 8px;
@@ -182,81 +172,87 @@
       height: 20px;
       gap: 20px;
     }
-    .form__status__button__name {
+    .profile__wrapper__account__button__name {
       margin: 0px;
       color: #F0F1F3;
       font-weight: bold;
     }
-    .form__status__button .fa-arrow-right-from-bracket {
+    .profile__wrapper__account__button .fa-arrow-right-from-bracket {
       color: #F2F3F5;
     }
-    .form__select {
-      background-color: #C4C6D0;
-      border-radius: 4px 4px 0px 0px;
+    .profile__wrapper__tab {
       display: flex;
       width: 770px;
       margin-top: 60px;
+      gap: 2px;
     }
-    .form__select__wrapper {
+    .profile__wrapper__tab__wrapper {
+      background-color: #C4C6D0;
       display: flex;
       align-items: center;
       gap: 10px;
       padding: 10px 20px;
     }
-    .form__select__wrapper.-right {
-      border-right: 2px solid #071B3E;
+    .profile__wrapper__tab__wrapper.-boder1 {
+      border-radius: 4px 0px 0px 0px;
     }
-    .form__select__wrapper.-on {
+    .profile__wrapper__tab__wrapper.-boder2 {
+      border-radius: 0px 4px 0px 0px;
+    }
+    .profile__wrapper__tab__wrapper.-on {
       background-color: #F0F1F3;
-      border-left: 2px solid #071B3E;
-      border-right: 2px solid #071B3E;
       position: relative;
     }
-    .form__select__wrapper .fa-basket-shopping {
+    .profile__wrapper__tab__wrapper .fa-basket-shopping {
       color: #1E3050;
       font-size: 18px;
     }
-    .form__select__wrapper .fa-file {
+    .profile__wrapper__tab__wrapper .fa-file {
       color: #1E3050;
       font-size: 18px;
     }
-    .form__select__wrapper .fa-file-invoice-dollar {
+    .profile__wrapper__tab__wrapper .fa-file-invoice-dollar {
       color: #1E3050;
       font-size: 18px;
     }
-    .form__select__wrapper .fa-gear {
+    .profile__wrapper__tab__wrapper .fa-gear {
       color: #1E3050;
       font-size: 18px;
     }
-    .form__select__wrapper__label {
+    .profile__wrapper__tab__wrapper__label {
       margin: 0px;
       font-weight: bold;
     }
-    .head {
+    .body {
+      background-color: #F0F1F3;
+      display: flex;
+      justify-content: center;
+    }
+    .body__wrapper {
       background-color: #F0F1F3;
       padding: 50px 0px 120px;
       width: 1100px;
     }
-    .head__status {
+    .subscription {
       background-color: white;
       border-radius: 8px;
     }
-    .head__status__form {
+    .subscription__header {
       padding: 20px;
       border-bottom: 1px dotted #F0F1F3;
       display: flex;
       justify-content: space-between;
     }
-    .head__status__form__subscription {
+    .subscription__header__wrapper {
       align-items: center;
     }
-    .head__status__form__subscription__label {
+    .subscription__header__wrapper__name {
       color: #C5C7D1;
       font-weight: bold;
       font-size: 12px;
       margin: 0px
     }
-    .head__status__form__subscription__button {
+    .subscription__header__wrapper__status {
       background-color: #87E3C0;
       margin: 0px;
       font-size: 12px;
@@ -268,60 +264,66 @@
       width: 50px;
       margin-left: auto;
     }
-    .head__status__form__plan {
-      text-align: left;
-    }
-    .head__status__form__plan__wrapper {
+    .subscription__header__wrapper__label {
       display: flex;
       align-items: center;
       gap: 10px;
       margin-top: 15px;
     }
-    .head__status__form__plan__wrapper .fa-first-order-alt {
+    .subscription__header__wrapper__label .fa-first-order-alt {
       font-size: 30px;
       color: #1E3050;
     }
-    .head__status__form__plan__wrapper__value {
+    .subscription__header__wrapper__label__value {
       margin: 0px;
       color: #1E3050;
       font-weight: bold;
       font-size: 20px;
     }
-    .head__status__form__plan__label {
+    .subscription__header__wrapper__date {
       margin: 0px;
       color: #6D7690;
       font-size: 14px;
       margin-top: 15px;
     }
-    .head__status__billing {
-
-    }
-    .head__status__billing__form {
+    .subscription__footer {
       padding: 0px 20px 20px 20px;
       display: flex;
       justify-content: space-between;
     }
-    .head__status__billing__form__wrapper1 {
+    .subscription__footer__wrapper {
       margin-top: 25px;
       gap: 30px;
       width: 100%;
     }
-    .head__status__billing__form__wrapper2 {
-      margin-top: 20px;
-      width: 100%;
-      text-align: right;
+    .subscription__footer__wrapper__description {
+      margin: 0px;
+      color: #10274A;
     }
-    .head__status__billing__form__date {
+    .subscription__footer__wrapper__date {
       display: flex;
       gap: 10px;
       align-items: center;
       margin-top: 5px;
     }
-    .head__status__billing__form__wrapper__description {
+    .subscription__footer__wrapper__date__label {
       margin: 0px;
-      color: #10274A;
+      color: #6D7690;
+      font-size: 14px;
+      margin-top: 20px;
     }
-    .head__status__billing__form__wrapper__button1 {
+    .subscription__footer__wrapper__date__question {
+      margin: 0px;
+      background-color: #C4C6D0;
+      color: white;
+      height: 15px;
+      width: 15px;
+      border-radius: 20px;
+      font-size: 10px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .subscription__footer__wrapper__button {
       margin: 0px;
       border: 2px solid #C4C6D0;
       border-radius: 6px;
@@ -335,38 +337,27 @@
       align-items: center;
       margin-left: auto;
     }
-    .head__status__billing__form__date__label {
+    .subscription__footer__wrapper__label {
       margin: 0px;
-      color: #6D7690;
-      font-size: 14px;
-      margin-top: 20px;
+      color: #9096A8;
+      margin-top: 15px;
+      text-align: end;
     }
-    .head__status__billing__form__date__button2 {
-      margin: 0px;
-      background-color: #C4C6D0;
-      color: white;
-      height: 15px;
-      width: 15px;
-      border-radius: 20px;
-      font-size: 10px;
-      text-align: center;
-      margin-top: 20px;
-    }
-    .metered {
+    .billing {
       background-color: white;
       margin-top: 50px;
       border-radius: 8px;
     }
-    .metered__title {
+    .billing__title {
       margin: 0px;
       padding: 20px;
       font-weight: bold;
     }
-    .metered__form {
+    .billing__wrapper {
       padding: 20px;
       border-top: 1px dotted #F0F1F3;
     }
-    .metered__form__billing {
+    .billing__wrapper__information {
       display: flex;
       background-color: #D5EAFD;
       border: 2px solid #0051AF;
@@ -374,73 +365,73 @@
       padding: 20px;
       gap: 15px;
     }
-    .metered__form__billing__wrapper {
+    .billing__wrapper__information__wrapper {
 
     }
     .fa-circle-info {
       color: #346CB8;
+      font-size: 20px;
     }
-    .metered__form__billing__wrapper__title {
+    .billing__wrapper__information__wrapper__title {
       margin: 0px;
       font-size: 12px;
       font-weight: bold;
       color: #1A2C4D;
     }
-    .metered__form__billing__description {
+    .billing__wrapper__information__wrapper__description {
       margin: 0px;
       font-size: 12px;
       color: #000C43;
       margin-top: 5px;
     }
-    .metered__form__description {
+    .billing__wrapper__service {
       display: flex;
       margin-top: 35px;
       gap: 386px;
     }
-    .metered__form__description__text {
+    .billing__wrapper__service__description {
       margin: 0px;
       font-size: 12px;
       color: #6F7685;
     }
-    .metered__form__description__button {
+    .billing__wrapper__service__button {
       margin: 0px;
-      color: #005BB4;
-      height: 0px;
-      border: 1px solid #C2C4CF;
+      border: 2px solid #C4C6D0;
       border-radius: 6px;
-      font-size: 12px;
+      color: #326BB8;
+      padding: 10px 15px;
+      width: 270px;
+      height: 20px;
       white-space: nowrap;
       display: flex;
-      justify-content: center;
       align-items: center;
-      padding: 15px;
     }
-    .metered__form__plan {
+    .billing__wrapper__plan {
       background-color: #F0F1F3;
       padding: 0px 15px;
       border-radius: 8px;
       margin-top: 25px;
     }
-    .metered__form__plan__wrapper {
+    .billing__wrapper__plan__wrapper {
       display: flex;
       padding: 15px 0px;
       border-bottom: 1px solid #FDFDFE;
       justify-content: space-between;
     }
-    .metered__form__plan__wrapper.-off {
+    .billing__wrapper__plan__wrapper.-off {
       border-bottom: 0px;
     }
-    .metered__form__plan__wrapper__name {
+    .billing__wrapper__plan__wrapper__name {
       margin: 0px;
       font-size: 12px;
       width: 50%;
       color: #646D88;
       font-weight: bold;
     }
-    .metered__form__plan__wrapper__status {
+    .billing__wrapper__plan__wrapper__status {
       width: 50%;
     }
-    .metered__form__plan__wrapper__status__label {
+    .billing__wrapper__plan__wrapper__status__label {
       margin: 0px;
       background-color: #86E0BD;
       color: #18234E;
@@ -453,7 +444,7 @@
       line-height: 15px;
       letter-spacing: 1px;
     }
-    .metered__form__plan__wrapper__icon {
+    .billing__wrapper__plan__wrapper__icon {
       display: flex;
       gap: 10px;
       align-items: center;
@@ -462,7 +453,7 @@
     .fa-box {
       font-size: 14px;
     }
-    .metered__form__plan__wrapper__icon__description {
+    .billing__wrapper__plan__wrapper__icon__description {
       margin: 0px;
       font-size: 12px;
       font-weight: bold;
@@ -471,24 +462,24 @@
     .fa-signal {
       font-size: 14px;
     }
-    .metered__form__plan__wrapper__button {
+    .billing__wrapper__plan__wrapper__button {
       background-color: #8BE3C1;
       padding: 5px 10px;
       border-radius: 12px;
       margin-right: 270px;
     }
-    .metered__form__plan__wrapper__button__name {
+    .billing__wrapper__plan__wrapper__button__name {
       margin: 0px;
       font-size: 10px;
       color: #000045;
       font-weight: bold;
     }
-    .metered__form__plan__wrapper__limit {
+    .billing__wrapper__plan__wrapper__limit {
       display: flex;
       width: 50%;
       gap: 10px;
     }
-    .metered__form__plan__wrapper__limit__question {
+    .billing__wrapper__plan__wrapper__limit__question {
       margin: 0px;
       font-size: 12px;
       width: 15px;
@@ -499,58 +490,63 @@
       text-align: center;
       font-size: 10px;
     }
-    .metered__form__plan__wrapper__limit__name {
+    .billing__wrapper__plan__wrapper__limit__name {
       margin: 0px;
       font-size: 12px;
       color: #646D88;
       font-weight: bold;
     }
-    .metered__form__plan__wrapper__value {
+    .billing__wrapper__plan__wrapper__value {
       margin: 0px;
       font-size: 12px;
       width: 50%;
       color: #1E3050;
     }
-    .metered__form__plan__wrapper__deadline {
+    .billing__wrapper__plan__wrapper__deadline {
       margin: 0px;
       font-size: 12px;
       width: 50%;
       color: #1E3050;
     }
-    .introduction {
+    .footer {
+      background-color: #1E3050;
+      display: flex;
+      justify-content: center;
+    }
+    .awesome {
       width: 1100px;
       padding: 35px 0px;
       color: #071B3E;
     }
-    .introduction__head {
+    .awesome__wrapper {
       display: flex;
       gap: 151px;
     }
-    .introduction__head__wrapper {
+    .awesome__wrapper__create {
 
     }
-    .introduction__head__wrapper__flag {
+    .awesome__wrapper__create__flag {
       color: white;
     }
-    .introduction__head__wrapper__title {
+    .awesome__wrapper__create__title {
       margin: 0px;
       margin-top: 30px;
       color: white;
       font-weight: bold;
       font-size: 14px;
     }
-    .introduction__head__wrapper__description {
+    .awesome__wrapper__create__description {
       margin: 0px;
       margin-top: 15px;
       color: white;
       font-size: 13px;
     }
-    .introduction__head__tag {
+    .awesome__wrapper__tag {
       display: flex;
       gap: 45px;
       padding-right: 30px;
     }
-    .introduction__head__tag__name {
+    .awesome__wrapper__tag__wrapper {
 
     }
     .fa-heart {
@@ -559,109 +555,107 @@
     .fa-smoking {
 
     }
-    .introduction__head__tag__name {
-
-    }
-    .introduction__head__tag__name__label {
+    .awesome__wrapper__tag__wrapper__name {
       margin: 0px;
       color: white;
       white-space: nowrap;
       margin-top: 12px;
       font-size: 14px;
     }
-    .introduction__head__tag__name__label.-color {
+    .awesome__wrapper__tag__wrapper__name.-color {
       color: #646C87;
     }
-    .introduction__tag {
+    .awesome__tag {
       display: flex;
       justify-content: space-between;
       margin-top: 25px;
     }
-    .introduction__tag__wrapper {
+    .awesome__tag__wrapper {
       display: flex;
     }
-    .introduction__tag__wrapper__label {
+    .awesome__tag__wrapper__label {
       margin: 0px;
       color: white;
       font-size: 14px;
     }
-    .introduction__tag__label {
+    .awesome__tag__label {
       margin: 0px;
       color: #C6C9D4;
       font-size: 12px;
     }
     @media only screen and (max-width: 430px) {
-      .background1 {
-        display: block;
-      }
-      .background2 {
-        display: block;
-      }
-      .background3 {
-        display: block;
-      }
-      .background4 {
+      .footer {
         display: block;
       }
       .fa-bars {
         display: block;
         color: #646D88;
       }
-      .global {
+      .header {
+        display: block;
+      }
+      .header__wrapper {
         width: auto;
       }
-      .global__menu {
+      .header__wrapper__head {
         display: flex;
         padding: 0px 12px;
       }
-      .global__menu__select {
+      .header__wrapper__head__tag {
         gap: 160px;
       }
-      .global__menu .fa-magnifying-glass {
+      .header__wrapper__head__tag__glass {
         display: none;
       }
-      .global__menu__select__label {
+      .header__wrapper__head__tag__name {
         display: none;
       }
-      .global__head {
+      .header__wrapper__footer {
         display: block;
       }
-      .global__head::before {
+      .header__wrapper__footer::before {
         left: 140px;
       }
-      .global__wrapper {
+      .header__wrapper__footer__wrapper {
         display: block;
       }
-      .global__wrapper .fa-crown {
+      .header__wrapper__footer__wrapper__crown {
         text-align: center;
       }
-      .global__wrapper__description {
+      .header__wrapper__footer__wrapper__description {
         font-size: 12px;
         margin-top: 20px;
       }
-      .global__wrapper__button {
+      .header__wrapper__footer__button  {
         justify-content: center;
         margin-top: 15px;
       }
-      .form {
+      .profile {
+        display: block;
+      }
+      .profile__wrapper {
         width: auto;
         padding-top: 45px;
       }
-      .form__status {
+      .profile__wrapper__account {
         display: block;
         text-align: center;
       }
-      .form__status__head {
+      .profile__wrapper__account__user {
         display: block;
       }
-      .form__status__wrapper__name {
+      .profile__wrapper__account__user__wrapper__name {
         font-size: 22px;
       }
-      .form__status__wrapper__address {
+      .profile__wrapper__account__user__wrapper__address {
         margin-top: 15px;
         font-size: 12px;
       }
-      .form__status__button {
+      .profile__wrapper__account__user__wrapper__date {
+        font-size: 10px;
+        margin-top: 5px;
+      }
+      .profile__wrapper__account__button {
         width: auto;
         display: flex;
         justify-content: center;
@@ -669,316 +663,325 @@
         height: 5px;
         margin-top: 30px;
       }
-      .form__select {
+      .profile__wrapper__tab {
         width: 230px;
       }
-      .form__status__wrapper__creation {
-        font-size: 10px;
-        margin-top: 5px;
-      }
-      .form__select__wrapper__label {
+      .profile__wrapper__tab__wrapper__label {
         display: none;
       }
-      .head {
+      .body {
+        display: block;
+      }
+      .body__wrapper {
         width: auto;
         padding: 35px 20px 95px;
       }
-      .head__status__form {
+      .subscription {
         display: block;
       }
-      .head__status__form__plan {
+      .subscription__header {
         text-align: right;
       }
-      .head__status__billing__form {
+      .subscription__header__wrapper {
         display: block;
+      }
+      .subscription__header__wrapper__name {
+        text-align: start;
       }
       .head__status__form__subscription__label {
         font-size: 10px;
       }
-      .head__status__form__plan__wrapper__value {
+      .subscription__header__wrapper__label__value {
         font-size: 15px;
       }
-      .head__status__form__plan__label {
+      .subscription__header__wrapper__date {
         font-size: 12px;
       }
-      .head__status__billing__form__wrapper__description {
+      .subscription__footer__wrapper__date {
+        margin: 0px;
+      }
+      .subscription__footer__wrapper__date__label {
+        font-size: 11px;
+        margin-top: 15px;
+      }
+      .subscription__footer__wrapper__description {
         font-size: 11px;
       }
-      .head__status__billing__form__wrapper2 {
-        text-align: left;
+      .subscription__footer__wrapper__date__question {
+        margin-top: 15px;
       }
-      .head__status__billing__form__wrapper__button1 {
+      .subscription__footer__wrapper__button {
         margin: 0px;
         font-size: 12px;
         display: inline;
       }
-      .head__status__billing__form__date__label {
-        font-size: 11px;
+      .subscription__footer__wrapper__label {
+        font-size: 12px;
+        text-align: left;
       }
-      .metered__form__description {
+      .subscription__footer {
         display: block;
       }
-      .metered__form__description__button {
-        display: inline-block;
-        line-height: 0px;
+      .billing__wrapper__service {
+        display: block
+      }
+      .billing__wrapper__service__button {
         margin-top: 20px;
       }
-      .metered__form__plan__wrapper__icon {
+      .billing__wrapper__plan__wrapper__icon {
         display: block;
         width: 30%;
       }
-      .metered__form__plan__wrapper {
+      .billing__wrapper__plan__wrapper {
         gap: 28px;
         align-items: center;
       }
-      .metered__form__plan__wrapper__name {
+      .billing__wrapper__plan__wrapper__name {
         width: 50%;
       }
-      .metered__form__plan__wrapper__status {
+      .billing__wrapper__plan__wrapper__status {
         margin: 0px;
         width: 30%;
       }
-      .metered__form__plan__wrapper__status__label {
+      .billing__wrapper__plan__wrapper__status__label {
         width: 50px;
         font-size: 8px;
         padding: 4px 8px;
       }
-      .metered__form__plan__wrapper__button {
+      .billing__wrapper__plan__wrapper__button {
         margin-right: 0px;
       }
-      .metered__form__plan__wrapper__value {
+      .billing__wrapper__plan__wrapper__value {
         width: 31%;
       }
-      .metered__form__plan__wrapper__limit {
+      .billing__wrapper__plan__wrapper__limit {
         width: 82%;
       }
-      .metered__form__plan__wrapper__deadline {
+      .billing__wrapper__plan__wrapper__deadline {
         width: 50%;
       }
-      .introduction {
+      .awesome {
         width: auto;
         padding: 25px 13px;
       }
-      .introduction__head {
+      .awesome__wrapper {
         display: block;
       }
-      .introduction__head__tag {
+      .awesome__wrapper__tag {
         flex-wrap: wrap;
         gap: 10px 80px;
         margin-top: 15px;
       }
-      .introduction__tag {
+      .awesome__tag {
         display: block;
       }
-      .introduction__tag__label {
+      .awesome__tag__label {
         margin-top: 20px;
       }
-      .introduction__tag__wrapper {
+      .awesome__tag__wrapper {
         display: block;
       }
-      .introduction__tag__wrapper__label {
+      .awesome__tag__wrapper__label {
         margin-top: 15px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="background1">
-    <div class="global">
-      <div class="global__menu">
-        <div class="global__menu__select">
+  <div class="header">
+    <div class="header__wrapper">
+      <div class="header__wrapper__head">
+        <div class="header__wrapper__head__tag">
           <i class="fa-solid fa-bars"></i>
-          <i class="fa-solid fa-flag"></i>
-          <p class="global__menu__select__label">Your Kits</p>
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <p class="global__menu__select__label">Icons</p>
-          <p class="global__menu__select__label">Docs</p>
-          <p class="global__menu__select__label">Plans</p>
-          <p class="global__menu__select__label">Support</p>
-          <p class="global__menu__select__label">Podcast</p>
+          <i class="fa-solid fa-flag header__wrapper__head__tag__flag"></i>
+          <p class="header__wrapper__head__tag__name">Your Kits</p>
+          <i class="fa-solid fa-magnifying-glass header__wrapper__head__tag__glass"></i>
+          <p class="header__wrapper__head__tag__name">Icons</p>
+          <p class="header__wrapper__head__tag__name">Docs</p>
+          <p class="header__wrapper__head__tag__name">Plans</p>
+          <p class="header__wrapper__head__tag__name">Support</p>
+          <p class="header__wrapper__head__tag__name">Podcast</p>
         </div>
-        <i class="fa-regular fa-circle-user"></i>
+        <i class="fa-regular fa-circle-user header__wrapper__head__user"></i>
       </div>
-      <div class="global__head">
-        <div class="global__wrapper">
-          <i class="fa-solid fa-crown"></i>
-          <p class="global__wrapper__description"><span class="description">Check out the all-new Web Awesome</span> AND get an exclusive lifetime discount on Font Awesome Pro!</p>
+      <div class="header__wrapper__footer">
+        <div class="header__wrapper__footer__wrapper">
+          <i class="fa-solid fa-crown header__wrapper__footer__wrapper__crown"></i>
+          <p class="header__wrapper__footer__wrapper__description"><span class="description">Check out the all-new Web Awesome</span> AND get an exclusive lifetime discount on Font Awesome Pro!</p>
         </div>
-        <div class="global__wrapper__button">
-          <i class="fa-solid fa-microphone"></i>
-          <p class="global__wrapper__button__title">Live on kickstarter!</p>
+        <div class="header__wrapper__footer__button">
+          <i class="fa-solid fa-microphone header__wrapper__footer__button__microphone"></i>
+          <p class="header__wrapper__footer__button__label">Live on kickstarter!</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="background2">
-    <div class="form">
-      <div class="form__status">
-        <div class="form__status__head">
-          <i class="fa-solid fa-rocket"></i>
-          <div class="form__status__wrapper">
-            <p class="form__status__wrapper__address">hatoyab@gamil.com</p>
-            <p class="form__status__wrapper__name">Hi there, Hayato Wada</p>
-            <p class="form__status__wrapper__creation">Thanks for using Font Awesome since 2014!</p>
+  <div class="profile">
+    <div class="profile__wrapper">
+      <div class="profile__wrapper__account">
+        <div class="profile__wrapper__account__user">
+          <i class="fa-solid fa-rocket profile__wrapper__account__user__icon"></i>
+          <div class="profile__wrapper__account__user__wrapper">
+            <p class="profile__wrapper__account__user__wrapper__address">hatoyab@gamil.com</p>
+            <p class="profile__wrapper__account__user__wrapper__name">Hi there, Hayato Wada</p>
+            <p class="profile__wrapper__account__user__wrapper__date">Thanks for using Font Awesome since 2014!</p>
           </div>
         </div>
-        <div class="form__status__button">
-          <p class="form__status__button__name">sign Out</p>
+        <div class="profile__wrapper__account__button">
+          <p class="profile__wrapper__account__button__name">sign Out</p>
           <i class="fa-solid fa-arrow-right-from-bracket"></i>
         </div>
       </div>
-      <div class="form__select">
-        <div class="form__select__wrapper -right">
+      <div class="profile__wrapper__tab">
+        <div class="profile__wrapper__tab__wrapper -boder1">
           <i class="fa-solid fa-basket-shopping"></i>
-          <p class="form__select__wrapper__label">General</p>
+          <p class="profile__wrapper__tab__wrapper__label">General</p>
         </div>
-        <div class="form__select__wrapper">
+        <div class="profile__wrapper__tab__wrapper">
           <i class="fa-solid fa-file"></i>
-          <p class="form__select__wrapper__label">License and seats</p>
+          <p class="profile__wrapper__tab__wrapper__label">License and seats</p>
         </div>
-        <div class="form__select__wrapper -on">
+        <div class="profile__wrapper__tab__wrapper -on">
           <i class="fa-solid fa-file-invoice-dollar"></i>
-          <p class="form__select__wrapper__label">Billing and Subscription</p>
+          <p class="profile__wrapper__tab__wrapper__label">Billing and Subscription</p>
         </div>
-        <div class="form__select__wrapper">
+        <div class="profile__wrapper__tab__wrapper -boder2">
           <i class="fa-solid fa-gear"></i>
-          <p class="form__select__wrapper__label">Settings</p>
+          <p class="profile__wrapper__tab__wrapper__label">Settings</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="background3">
-    <div class="head">
-      <div class="head__status">
-        <div class="head__status__form">
-          <div class="head__status__form__subscription">
-            <p class="head__status__form__subscription__label">SUBSCRIPTION</p>
-            <div class="head__status__form__plan__wrapper">
+  <div class="body">
+    <div class="body__wrapper">
+      <div class="subscription">
+        <div class="subscription__header">
+          <div class="subscription__header__wrapper">
+            <p class="subscription__header__wrapper__name">SUBSCRIPTION</p>
+            <div class="subscription__header__wrapper__label">
               <i class="fa-brands fa-first-order-alt"></i>
-              <p class="head__status__form__plan__wrapper__value">$99/yr Pro Plan</p>
+              <p class="subscription__header__wrapper__label__value">$99/yr Pro Plan</p>
             </div>
           </div>
-          <div class="head__status__form__plan">
-            <p class="head__status__form__subscription__button">ACTIVE</p>
-          <p class="head__status__form__plan__label">Renews on Sep 15, 2024</p>
+          <div class="subscription__header__wrapper">
+            <p class="subscription__header__wrapper__status">ACTIVE</p>
+            <p class="subscription__header__wrapper__date">Renews on Sep 15, 2024</p>
           </div>
         </div>
-        <div class="head__status__billing">
-          <div class="head__status__billing__form">
-            <div class="head__status__billing__form__wrapper1">
-              <p class="head__status__billing__form__wrapper__description">Grants you access to the latest Font Awesome Pro styles + icons,Pro services, and Actual Human Support.</p>
-              <div class="head__status__billing__form__date">
-                <p class="head__status__billing__form__date__label">Last billed on Sep15, 2023</p>
-                <p class="head__status__billing__form__date__button2">?</p>
+          <div class="subscription__footer">
+            <div class="subscription__footer__wrapper">
+              <p class="subscription__footer__wrapper__description">Grants you access to the latest Font Awesome Pro styles + icons,Pro services, and Actual Human Support.</p>
+              <div class="subscription__footer__wrapper__date">
+                <p class="subscription__footer__wrapper__date__label">Last billed on Sep15, 2023</p>
+                <p class="subscription__footer__wrapper__date__question">?</p>
               </div>
             </div>
-            <div class="head__status__billing__form__wrapper2">
-              <p class="head__status__billing__form__wrapper__button1">Manage Subscription in Stripe</p>
-            <p class="head__status__billing__form__date__label">Get invoices,renew, cancel, or update payment info</p>
+            <div class="subscription__footer__wrapper">
+              <p class="subscription__footer__wrapper__button">Manage Subscription in Stripe</p>
+              <p class="subscription__footer__wrapper__label">Get invoices,renew, cancel, or update payment info</p>
             </div>
           </div>
-        </div>
       </div>
-      <div class="metered">
-        <p class="metered__title">Metered Billing</p>
-        <div class="metered__form">
-          <div class="metered__form__billing">
-            <i class="fa-solid fa-circle-info"></i>
-            <div class="metered__form__billing__wrapper">
-              <p class="metered__form__billing__wrapper__title">You now have control over how services are billed.</p>
-              <p class="metered__form__billing__description">Metered Billing is being released in phases - you can set your billing preferences now. When we fully release Metered Billing, we'll let you know and then begin charging for overages.</p>
+      <div class="billing">
+        <p class="billing__title">Metered Billing</p>
+        <div class="billing__wrapper">
+          <div class="billing__wrapper__information">
+            <i class="fa-solid fa-circle-info billing__wrapper__information__icon"></i>
+            <div class="billing__wrapper__information__wrapper">
+              <p class="billing__wrapper__information__wrapper__title">You now have control over how services are billed.</p>
+              <p class="billing__wrapper__information__wrapper__description">Metered Billing is being released in phases - you can set your billing preferences now. When we fully release Metered Billing, we'll let you know and then begin charging for overages.</p>
             </div>
           </div>
-          <div class="metered__form__description">
-            <p class="metered__form__description__text">If you use a service and reach your purchased Plan's monthly limit, Metered Billing allows you to continue using that service by paying an additional monthly fee.</p>
-            <p class="metered__form__description__button">Change Metered Billing Settings</p>
+          <div class="billing__wrapper__service">
+            <p class="billing__wrapper__service__description">If you use a service and reach your purchased Plan's monthly limit, Metered Billing allows you to continue using that service by paying an additional monthly fee.</p>
+            <p class="billing__wrapper__service__button">Change Metered Billing Settings</p>
           </div>
-          <div class="metered__form__plan">
-            <div class="metered__form__plan__wrapper">
-              <p class="metered__form__plan__wrapper__name">SERVICE</p>
-              <div class="metered__form__plan__wrapper__icon">
+          <div class="billing__wrapper__plan">
+            <div class="billing__wrapper__plan__wrapper">
+              <p class="billing__wrapper__plan__wrapper__name">SERVICE</p>
+              <div class="billing__wrapper__plan__wrapper__icon">
                 <i class="fa-solid fa-box"></i>
-                <p class="metered__form__plan__wrapper__icon__description">Package Bandwidth</p>
+                <p class="billing__wrapper__plan__wrapper__icon__description">Package Bandwidth</p>
               </div>
-              <div class="metered__form__plan__wrapper__icon">
+              <div class="billing__wrapper__plan__wrapper__icon">
                 <i class="fa-solid fa-signal"></i>
-                <p class="metered__form__plan__wrapper__icon__description">Kit Pageviews</p>
+                <p class="billing__wrapper__plan__wrapper__icon__description">Kit Pageviews</p>
               </div>
             </div>
-            <div class="metered__form__plan__wrapper">
-              <p class="metered__form__plan__wrapper__name">METERED BILLING</p>
-              <div class="metered__form__plan__wrapper__status">
-                <p class="metered__form__plan__wrapper__status__label">ENABLED</p>
+            <div class="billing__wrapper__plan__wrapper">
+              <p class="billing__wrapper__plan__wrapper__name">METERED BILLING</p>
+              <div class="billing__wrapper__plan__wrapper__status">
+                <p class="billing__wrapper__plan__wrapper__status__label">ENABLED</p>
               </div>
-              <div class="metered__form__plan__wrapper__status">
-                <p class="metered__form__plan__wrapper__status__label">ENABLED</p>
+              <div class="billing__wrapper__plan__wrapper__status">
+                <p class="billing__wrapper__plan__wrapper__status__label">ENABLED</p>
               </div>
             </div>
-            <div class="metered__form__plan__wrapper">
-              <p class="metered__form__plan__wrapper__name">INCLUDED IN PLAN</p>
-              <p class="metered__form__plan__wrapper__value">4.00 GB per month + $1.00 per extra GB</p>
-              <p class="metered__form__plan__wrapper__value">1,000,000 pageviews per month</p>
+            <div class="billing__wrapper__plan__wrapper">
+              <p class="billing__wrapper__plan__wrapper__name">INCLUDED IN PLAN</p>
+              <p class="billing__wrapper__plan__wrapper__value">4.00 GB per month + $1.00 per extra GB</p>
+              <p class="billing__wrapper__plan__wrapper__value">1,000,000 pageviews per month</p>
             </div>
-            <div class="metered__form__plan__wrapper">
-              <p class="metered__form__plan__wrapper__name">USED</p>
-              <p class="metered__form__plan__wrapper__value">2.27 GB</p>
-              <p class="metered__form__plan__wrapper__value">0 pageviews</p>
+            <div class="billing__wrapper__plan__wrapper">
+              <p class="billing__wrapper__plan__wrapper__name">USED</p>
+              <p class="billing__wrapper__plan__wrapper__value">2.27 GB</p>
+              <p class="billing__wrapper__plan__wrapper__value">0 pageviews</p>
             </div>
-            <div class="metered__form__plan__wrapper -off">
-              <div class="metered__form__plan__wrapper__limit">
-                <p class="metered__form__plan__wrapper__limit__name">BILLING LIMIT</p>
-                <p class="metered__form__plan__wrapper__limit__question">?</p>
+            <div class="billing__wrapper__plan__wrapper -off">
+              <div class="billing__wrapper__plan__wrapper__limit">
+                <p class="billing__wrapper__plan__wrapper__limit__name">BILLING LIMIT</p>
+                <p class="billing__wrapper__plan__wrapper__limit__question">?</p>
               </div>
-              <p class="metered__form__plan__wrapper__deadline">No limit per month</p>
-              <p class="metered__form__plan__wrapper__deadline">No limit per month</p>
+              <p class="billing__wrapper__plan__wrapper__deadline">No limit per month</p>
+              <p class="billing__wrapper__plan__wrapper__deadline">No limit per month</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="background4">
-    <div class="introduction">
-      <div class="introduction__head">
-        <div class="introduction__head__wrapper">
-          <i class="fa-solid fa-flag introduction__head__wrapper__flag"></i>
-          <p class="introduction__head__wrapper__title">Go Make Something Awesome</p>
-          <p class="introduction__head__wrapper__description">Font Awesome is the internet's icon library and toolkit used by millions of designers, developers, and content creators.</p>
-          <p class="introduction__head__wrapper__description">Made with <i class="fa-solid fa-heart"></i> and <i class="fa-solid fa-smoking"></i> in Bentonville, Boston, Chicago, Grand Rapids, Joplin, Kansas City, Seattle, Tampa, and Vergennes.</p>
+  <div class="footer">
+    <div class="awesome">
+      <div class="awesome__wrapper">
+        <div class="awesome__wrapper__create">
+          <i class="fa-solid fa-flag awesome__wrapper__create__flag"></i>
+          <p class="awesome__wrapper__create__title">Go Make Something Awesome</p>
+          <p class="awesome__wrapper__create__description">Font Awesome is the internet's icon library and toolkit used by millions of designers, developers, and content creators.</p>
+          <p class="awesome__wrapper__create__description">Made with <i class="fa-solid fa-heart"></i> and <i class="fa-solid fa-smoking"></i> in Bentonville, Boston, Chicago, Grand Rapids, Joplin, Kansas City, Seattle, Tampa, and Vergennes.</p>
         </div>
-        <div class="introduction__head__tag">
-          <div class="introduction__head__tag__name">
-            <p class="introduction__head__tag__name__label -color">Project</p>
-            <p class="introduction__head__tag__name__label">Download</p>
-            <p class="introduction__head__tag__name__label">Changelog</p>
-            <p class="introduction__head__tag__name__label">Commission Icons</p>
-            <p class="introduction__head__tag__name__label">All Versions</p>
+        <div class="awesome__wrapper__tag">
+          <div class="awesome__wrapper__tag__wrapper">
+            <p class="awesome__wrapper__tag__wrapper__name -color">Project</p>
+            <p class="awesome__wrapper__tag__wrapper__name">Download</p>
+            <p class="awesome__wrapper__tag__wrapper__name">Changelog</p>
+            <p class="awesome__wrapper__tag__wrapper__name">Commission Icons</p>
+            <p class="awesome__wrapper__tag__wrapper__name">All Versions</p>
           </div>
-          <div class="introduction__head__tag__name">
-            <p class="introduction__head__tag__name__label -color">community</p>
-            <p class="introduction__head__tag__name__label">GitHub</p>
-            <p class="introduction__head__tag__name__label">Icon Requests</p>
-            <p class="introduction__head__tag__name__label">Twitter</p>
-            <p class="introduction__head__tag__name__label">Blog Awesome</p>
+          <div class="awesome__wrapper__tag__wrapper">
+            <p class="awesome__wrapper__tag__wrapper__name -color">community</p>
+            <p class="awesome__wrapper__tag__wrapper__name">GitHub</p>
+            <p class="awesome__wrapper__tag__wrapper__name">Icon Requests</p>
+            <p class="awesome__wrapper__tag__wrapper__name">Twitter</p>
+            <p class="awesome__wrapper__tag__wrapper__name">Blog Awesome</p>
           </div>
-          <div class="introduction__head__tag__name">
-            <p class="introduction__head__tag__name__label -color">Help</p>
-            <p class="introduction__head__tag__name__label">Support</p>
-            <p class="introduction__head__tag__name__label">Troubleshooting</p>
-            <p class="introduction__head__tag__name__label">Contact Us</p>
-            <p class="introduction__head__tag__name__label">Status</p>
+          <div class="awesome__wrapper__tag__wrapper">
+            <p class="awesome__wrapper__tag__wrapper__name -color">Help</p>
+            <p class="awesome__wrapper__tag__wrapper__name">Support</p>
+            <p class="awesome__wrapper__tag__wrapper__name">Troubleshooting</p>
+            <p class="awesome__wrapper__tag__wrapper__name">Contact Us</p>
+            <p class="awesome__wrapper__tag__wrapper__name">Status</p>
           </div>
         </div>
       </div>
-      <div class="introduction__tag">
-        <div class="introduction__tag__wrapper">
-          <p class="introduction__tag__wrapper__label">License</p>
-          <p class="introduction__tag__wrapper__label">Terms of Service</p>
-          <p class="introduction__tag__wrapper__label">Privacy Policy</p>
-          <p class="introduction__tag__wrapper__label">Refunds</p>
-          <p class="introduction__tag__wrapper__label">Cookie Preferences</p>
+      <div class="awesome__tag">
+        <div class="awesome__tag__wrapper">
+          <p class="awesome__tag__wrapper__label">License</p>
+          <p class="awesome__tag__wrapper__label">Terms of Service</p>
+          <p class="awesome__tag__wrapper__label">Privacy Policy</p>
+          <p class="awesome__tag__wrapper__label">Refunds</p>
+          <p class="awesome__tag__wrapper__label">Cookie Preferences</p>
         </div>
-        <p class="introduction__tag__label">© Fonticons, Inc.</p>
+        <p class="awesome__tag__label">© Fonticons, Inc.</p>
       </div>
     </div>
   </div>
