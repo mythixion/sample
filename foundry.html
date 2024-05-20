@@ -3,10 +3,571 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <detail>Document</detail>
+  <title>Document</title>
   <script src="https://kit.fontawesome.com/275662334b.js" crossorigin="anonymous"></script>
   <style>
+    body {
+      margin: 0px;
+      background-color: #161616;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 32px;
+      background-color: #1C1C1C;
+      border-top: 1px solid #343434;
+      align-items: center;
+    }
+    .header__wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header_wrapper__icon {
+      color: #EE9363;
+      font-size: 32px;
+    }
+    .header__wrapper__detail {
+      margin: 0px;
+      color: #EDEDED;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-size: 14px;
+    }
+    .header__wrapper__input {
+      color: #707070;
+      width: 320px;
+      height: 35px;
+      border-radius: 10px;
+      border: 1px solid #343434;
+      background-color: #161616;
+    }
+    .header__wrapper__bars {
+      color: #EDEDED;
+      font-size: 20px;
+    }
+    .header__wrapper__image {
+      height: 48px;
+      width: 48px;
+      border: 1px solid #CCCCCC;
+      border-radius: 2px;
+    }
+    .header__wrapper__weapon {
 
+    }
+    .header__wrapper__weapon__name {
+      margin: 0px;
+      color: #EDEDED;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    .header__wrapper__weapon__type {
+      margin: 0px;
+      color: #A0A0A0;
+      font-size: 12px;
+    }
+    .header__wrapper__function {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      border: 1px solid #3E3E3E;
+      padding: 5px 15px;
+      border-radius: 4px;
+    }
+    .fa-code-merge {
+      color: #EDEDED;
+    }
+    .header__wrapper__function__name {
+      margin: 0px;
+      color: #EDEDED;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .fa-camera {
+      color: #EDEDED;
+    }
+    .header__wrapper__button {
+      background-color: #3F8FF7;
+      display: flex;
+      gap: 5px;
+      padding: 5px 20px;
+      border-radius: 4px;
+    }
+    .header__wrapper__buuton__place {
+      margin: 0px;
+      color: white;
+      font-size: 14px;
+    }
+    .header__wrapper__button__name {
+      margin: 0px;
+      color: white;
+      font-size: 14px;
+    }
+    .body {
+      display: flex;
+    }
+    .body__wrapper {
+      padding: 25px 40px 65px 32px;
+    }
+    .type {
+      display: flex;
+      gap: 30px;
+    }
+    .type__wrapper {
+      display: flex;
+      gap: 5px;
+    }
+    .type__wrapper__icon {
+      padding: 3px 18px;
+      border: 1px solid #3E3E3E;
+      border-radius: 4px;
+      background-color: #232323;
+    }
+    .type__wrapper__mode {
+      display: flex;
+    }
+    .type__wrapper__mode__icon {
+      display: flex;
+      padding: 3px 18px;
+      border: 1px solid #3E3E3E;
+      border-radius: 4px;
+      background-color: #232323;
+      gap: 10px;
+    }
+    .-on {
+      border-radius: 4px 0px 0px 4px;
+      border: 1px solid #1E437D;
+      background-color: #182F55;
+      align-items: center;
+    }
+    .-off {
+      border-radius: 0px 4px 4px 0px;
+      align-items: center;
+    }
+    .-right {
+      border-radius: 4px 0px 0px 4px;
+      border: 1px solid #772829;
+      background-color: #4C1F1F;
+    }
+    .-left {
+      border-radius: 0px 4px 4px 0px;
+    }
+    .fa-arrow-rotate-left {
+      color: #A0A0A0;
+      font-size: 14px;
+    }
+    .fa-right-left {
+      color: #A0A0A0;
+      font-size: 14px;
+    }
+    .fa-earth-americas {
+      color: #EDEDED;
+      font-size: 14px;
+    }
+    .fa-ghost {
+      color: #A0A0A0;
+      font-size: 14px;
+    }
+    .fa-hand-holding {
+      color: #FBEDEE;
+      font-size: 14px;
+    }
+    .type__wrapper__mode__icon__name {
+      margin: 0px;
+      color: #FBEDEE;
+      font-size: 14px;
+    }
+    .type__wrapper__mode__icon__name.-color {
+      color: #A0A0A0;
+    }
+    .fa-hand-holding-dollar {
+      color: #A0A0A0;
+      font-size: 14px;
+    }
+    .type__select {
+      padding: 3px 18px;
+      color: #5B5B5B;
+      background-color: #1D1D1D;
+      border: 1px solid #2A2A2A;
+      border-radius: 4px;
+    }
+    .weapon {
+      display: flex;
+      margin-top: 15px;
+    }
+    .weapon__status {
+      border: 1px solid #3E3E3E;
+      border-radius: 6px;
+    }
+    .weapon__status__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #232323;
+    }
+    .weapon__status__wrapper__label {
+      margin: 0px;
+      color: #EDEDED;
+      font-size: 14px;
+    }
+    .fa-arrows-left-right-to-line {
+      color: #A0A0A0;
+      font-size: 14px;
+    }
+    .weapon__status__detail {
+      display: flex;
+      padding: 10px;
+      align-items: center;
+      gap: 10px;
+      background-color: #232323;
+      border-top: 1px solid #323232;
+    }
+    .fa-chevron-down {
+      font-size: 8px;
+      color: #989898;
+    }
+    .weapon__status__detail__label {
+      margin: 0px;
+      color: #989898;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .weapon__status__date {
+      padding: 5px 15px 15px 15px;
+    }
+    .weapon__status__date__list {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    .weapon__status__date__list__label {
+      margin: 0px;
+      font-size: 13px;
+      color: #F1F1F1;
+    }
+    .weapon__status__date__list__wrapper {
+      display: flex;
+      gap: 5px;
+    }
+    .weapon__status__date__list__wrapper__value {
+      margin: 0px;
+      font-size: 14px;
+      color: #EDEDED;
+    }
+    .weapon__status__date__list__wrapper__value.-color {
+      color: #787878;
+    }
+    .weapon__status__date__meter {
+      height: 10px;
+      background-color: #282828;
+      border-radius: 12px;
+      width: 100%;
+    }
+    .weapon__status__date__meter__active {
+      height: 10px;
+      background-color: #EDEDED;
+      width: 84%;
+      border-radius: 12px 0px 0px 12px;
+    }
+    .weapon__status__date__meter__active.-a {
+      width: 41%;
+    }
+    .weapon__status__date__meter__active.-b {
+      width: 57%;
+    }
+    .weapon__status__date__meter__active.-c {
+      width: 45%;
+    }
+    .weapon__status__date__meter__active.-d {
+      width: 54%;
+    }
+    .weapon__status__date__meter__active.-e {
+      width: 79%;
+    }
+    .weapon__status__date__meter__active.-f {
+      width: 14%;
+    }
+    .weapon__status__date__meter__active.-g {
+      width: 20%;
+    }
+    .weapon__status__date__detail {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    .weapon__status__date__detail__label {
+      margin: 0px;
+      color: #F1F1F1;
+      font-size: 13px;
+    }
+    .weapon__status__date__detail__wrapper {
+      display: flex;
+      gap: 5px;
+    }
+    .weapon__status__date__detail__wrapper__value {
+      margin: 0px;
+      font-size: 14px;
+      color: #EDEDED;
+    }
+    .weapon__status__date__detail__wrapper__value.-color {
+      color: #787878;
+    }
+    .weapon__status__profile {
+
+    }
+    .weapon__status__profile__list {
+
+    }
+    .weapon__status__profile__list__wrapper {
+
+    }
+    .weapon__status__profile__list__wrapper__damage {
+
+    }
+    .fa-circle {
+
+    }
+    .weapon__status__profile__list__wrapper__damage__value {
+
+    }
+    .weapon__status__profile__list__wrapper__label {
+
+    }
+    .fa-bullseye {
+
+    }
+    .weapon__status__profile__value {
+
+    }
+    .weapon__status__profile__label {
+
+    }
+    .weapon__status__kill {
+
+    }
+    .weapon__status__kill__label {
+
+    }
+    .weapon__status__kill__time {
+
+    }
+    .weapon__status__kill__time__wrapper {
+
+    }
+    .fa-shield {
+
+    }
+    .weapon__status__kill__time__wrapper__span {
+
+    }
+    .weapon__status__kill__time__value {
+
+    }
+    .weapon__status__kill__time__wrapper__value {
+
+    }
+    .fa-chevron-right {
+
+    }
+    .weapon__customize {
+
+    }
+    .weapon__custamize__ability {
+
+    }
+    .weapon__custamize__ability__detail {
+
+    }
+    .weapon__custamize__ability__detail__wrapper {
+
+    }
+    .weapon__custamize__ability__detail__wrapper__label {
+
+    }
+    .weapon__custamize__ability__detail__wrapper__point {
+
+    }
+    .weapon__custamize__ability__perk {
+
+    }
+    .weapon__custamize__ability__perk__wrapper {
+
+    }
+    .weapon__custamize__ability__perk__wrapper__icon {
+
+    }
+    .fa-brands {
+
+    }
+    .fa-github {
+
+    }
+    .weapon__custamize__masterwork {
+
+    }
+    .weapon__custamize__masterwork__detail {
+
+    }
+    .weapon__custamize__masterwork__detail__label {
+
+    }
+    .weapon__custamize__masterwork__wrapper {
+
+    }
+    .weapon__custamize__masterwork__wrapper__icon {
+
+    }
+    .fa-square {
+
+    }
+    .weapon__custamize__masterwork__wrapper__square {
+
+    }
+    .weapon__custamize__mod {
+
+    }
+    .weapon__custamize__mod__detail {
+
+    }
+    .weapon__custamize__mod__detail__label {
+
+    }
+    .weapon__custamize__mod__wrapper {
+
+    }
+    .weapon__custamize__mod__wrapper__icon {
+
+    }
+    .weapon__custamize__mod__wrapper__icon__square {
+
+    }
+    .weapon__custamize__effect {
+
+    }
+    .weapon__custamize__effect__detail {
+
+    }
+    .weapon__custamize__effect__detail__label {
+
+    }
+    .weapon__custamize__effect__adapt {
+
+    }
+    .weapon__custamize__effect__adapt__item {
+
+    }
+    .weapon__custamize__effect__adapt__item__square {
+
+    }
+    .weapon__custamize__effect__adapt__item__wrapper {
+
+    }
+    .weapon__custamize__effect__adapt__item__wrapper__label {
+
+    }
+    .weapon__custamize__effect__adapt__item__wrapper__description {
+
+    }
+    .weapon__custamize__effect__adapt__status {
+
+    }
+    .weapon__custamize__effect__adapt__status__circle {
+
+    }
+    .weapon__custamize__effect__adapt__status__label {
+
+    }
+    .weapon__custamize__effect__select {
+
+    }
+    .weapon__custamize__effect__select__label {
+
+    }
+    .weapon__custamize__effect__select__place {
+
+    }
+    .lunashowl {
+
+    }
+    .lunashowl__image {
+
+    }
+    .lunashowl__description {
+
+    }
+    .lunashowl__wrapper {
+
+    }
+    .fa-fire-flame-simple {
+
+    }
+    .lunashowl__wrapper__label {
+
+    }
+    .fa-gun {
+
+    }
+    .fa-globe {
+
+    }
+    .fa-film {
+
+    }
+    .lunashowl__wrapper__frame {
+
+    }
+    .lunashowl__wrapper__frame__label {
+
+    }
+    .lunashowl__wrapper__frame__description {
+
+    }
+    .middle {
+
+    }
+    .history {
+
+    }
+    .history__wrapper {
+
+    }
+    .fa-regular {
+
+    }
+    .fa-clock {
+
+    }
+    .history__wrapper__label {
+
+    }
+    .history__date {
+
+    }
+    .footer {
+
+    }
+    .foundry {
+
+    }
+    .fa-hand {
+
+    }
+    .foundry__wrapper {
+
+    }
+    .foundry__wrapper__label {
+
+    }
+    .foundry__wrapper__description {
+
+    }
+    .foundry__wrapper__description__span {
+
+    }
+    .fa-heart {
+
+    }
   </style>
 </head>
 <body>
@@ -53,26 +614,30 @@
           </div>
         </div>
         <div class="type__wrapper">
-          <div class="type__wrapper__icon">
-            <i class="fa-solid fa-earth-americas"></i>
-          </div>
-          <div class="type__wrapper__icon">
-            <i class="fa-solid fa-ghost"></i>
+          <div class="type__wrapper__mode">
+            <div class="type__wrapper__mode__icon -on">
+              <i class="fa-solid fa-earth-americas"></i>
+            </div>
+            <div class="type__wrapper__mode__icon -off">
+              <i class="fa-solid fa-ghost"></i>
+            </div>
           </div>
         </div>
         <div class="type__wrapper">
-          <div class="type__wrapper__icon">
-            <i class="fa-solid fa-hand-holding"></i>
-            <p class="type__wrapper__icon__mode">PvP</p>
+          <div class="type__wrapper__mode">
+            <div class="type__wrapper__mode__icon -right">
+              <i class="fa-solid fa-hand-holding"></i>
+              <p class="type__wrapper__mode__icon__name">PvP</p>
+            </div>
+            <div class="type__wrapper__mode__icon -left">
+              <i class="fa-solid fa-hand-holding"></i>
+              <p class="type__wrapper__mode__icon__name -color">PvE</p>
+            </div>
           </div>
-          <div class="type__wrapper__icon">
-            <i class="fa-solid fa-hand-holding-dollar"></i>
-            <p class="type__wrapper__icon__mode">PvE</p>
-          </div>
-        </div>
-        <select name="" id="" class="type__select">
+          <select name="" id="" class="type__select">
           <option value="">Strike - Boss</option>
         </select>
+        </div>
       </div>
       <div class="weapon">
         <div class="weapon__status">
@@ -85,121 +650,105 @@
             <p class="weapon__status__detail__label">Basic</p>
           </div>
           <div class="weapon__status__date">
-            <div class="weapon__status__date__detail">
-              <div class="weapon__status__date__detail__list">
-                <p class="weapon__status__date__detail__list__label">Impact</p>
-                <div class="weapon__status__date__detail__list__wrapper">
-                  <p class="weapon__status__date__detail__list__wrapper__value">84</p>
-                  <p class="weapon__status__date__detail__list__wrapper__value">00</p>
+              <div class="weapon__status__date__list">
+                <p class="weapon__status__date__list__label">Impact</p>
+                <div class="weapon__status__date__list__wrapper">
+                  <p class="weapon__status__date__list__wrapper__value">84</p>
+                  <p class="weapon__status__date__list__wrapper__value -color">00</p>
                 </div>
               </div>
-              <div class="weapon__status__date__detail__meter">
-                <div class="weapon__status__date__detail__meter__active"></div>
+              <div class="weapon__status__date__meter">
+                <div class="weapon__status__date__meter__active"></div>
               </div>
-            </div>
-            <div class="weapon__status__date__detail">
-              <div class="weapon__status__date__detail__list">
-                <p class="weapon__status__date__detail__list__label">Range</p>
-                <div class="weapon__status__date__detail__list__wrapper">
-                  <p class="weapon__status__date__detail__list__wrapper__value">41</p>
-                  <p class="weapon__status__date__detail__list__wrapper__value">00</p>
+              <div class="weapon__status__date__list">
+                <p class="weapon__status__date__list__label">Range</p>
+                <div class="weapon__status__date__list__wrapper">
+                  <p class="weapon__status__date__list__wrapper__value">41</p>
+                  <p class="weapon__status__date__list__wrapper__value -color">00</p>
                 </div>
               </div>
-              <div class="weapon__status__date__detail__meter">
-                <div class="weapon__status__date__detail__meter__active"></div>
+              <div class="weapon__status__date__meter">
+                <div class="weapon__status__date__meter__active -a"></div>
               </div>
-            </div>
-            <div class="weapon__status__date__detail">
-              <div class="weapon__status__date__detail__list">
-                <p class="weapon__status__date__detail__list__label">Stability</p>
-                <div class="weapon__status__date__detail__list__wrapper">
-                  <p class="weapon__status__date__detail__list__wrapper__value">57</p>
-                  <p class="weapon__status__date__detail__list__wrapper__value">00</p>
+              <div class="weapon__status__date__list">
+                <p class="weapon__status__date__list__label">Stability</p>
+                <div class="weapon__status__date__list__wrapper">
+                  <p class="weapon__status__date__list__wrapper__value">57</p>
+                  <p class="weapon__status__date__list__wrapper__value -color">00</p>
                 </div>
               </div>
-              <div class="weapon__status__date__detail__meter">
-                <div class="weapon__status__date__detail__meter__active"></div>
+              <div class="weapon__status__date__meter">
+                <div class="weapon__status__date__meter__active -b"></div>
               </div>
-            </div>
-            <div class="weapon__status__date__detail">
-              <div class="weapon__status__date__detail__list">
-                <p class="weapon__status__date__detail__list__label">Handling</p>
-                <div class="weapon__status__date__detail__list__wrapper">
-                  <p class="weapon__status__date__detail__list__wrapper__value">45</p>
-                  <p class="weapon__status__date__detail__list__wrapper__value">00</p>
+              <div class="weapon__status__date__list">
+                <p class="weapon__status__date__list__label">Handling</p>
+                <div class="weapon__status__date__list__wrapper">
+                  <p class="weapon__status__date__list__wrapper__value">45</p>
+                  <p class="weapon__status__date__list__wrapper__value -color">00</p>
                 </div>
               </div>
-              <div class="weapon__status__date__detail__meter">
-                <div class="weapon__status__date__detail__meter__active"></div>
+              <div class="weapon__status__date__meter">
+                <div class="weapon__status__date__meter__active -c"></div>
               </div>
-            </div>
-            <div class="weapon__status__date__detail">
-              <div class="weapon__status__date__detail__list">
-                <p class="weapon__status__date__detail__list__label">Reload Speed</p>
-                <div class="weapon__status__date__detail__list__wrapper">
-                  <p class="weapon__status__date__detail__list__wrapper__value">54</p>
-                  <p class="weapon__status__date__detail__list__wrapper__value">00</p>
+              <div class="weapon__status__date__list">
+                <p class="weapon__status__date__list__label">Reload Speed</p>
+                <div class="weapon__status__date__list__wrapper">
+                  <p class="weapon__status__date__list__wrapper__value">54</p>
+                  <p class="weapon__status__date__list__wrapper__value -color">00</p>
                 </div>
               </div>
-              <div class="weapon__status__date__detail__meter">
-                <div class="weapon__status__date__detail__meter__active"></div>
+              <div class="weapon__status__date__meter">
+                <div class="weapon__status__date__meter__active -d"></div>
               </div>
-            </div>
-            <div class="weapon__status__date__detail">
-              <div class="weapon__status__date__detail__list">
-                <p class="weapon__status__date__detail__list__label">Aim Assistance</p>
-                <div class="weapon__status__date__detail__list__wrapper">
-                  <p class="weapon__status__date__detail__list__wrapper__value">79</p>
-                  <p class="weapon__status__date__detail__list__wrapper__value">00</p>
+              <div class="weapon__status__date__list">
+                <p class="weapon__status__date__list__label">Aim Assistance</p>
+                <div class="weapon__status__date__list__wrapper">
+                  <p class="weapon__status__date__list__wrapper__value">79</p>
+                  <p class="weapon__status__date__list__wrapper__value -color">00</p>
                 </div>
               </div>
-              <div class="weapon__status__date__detail__meter">
-                <div class="weapon__status__date__detail__meter__active"></div>
+              <div class="weapon__status__date__meter">
+                <div class="weapon__status__date__meter__active -e"></div>
               </div>
-            </div>
-            <div class="weapon__status__date__detail">
-              <div class="weapon__status__date__detail__list">
-                <p class="weapon__status__date__detail__list__label">Zoom</p>
-                <div class="weapon__status__date__detail__list__wrapper">
-                  <p class="weapon__status__date__detail__list__wrapper__value">14</p>
-                  <p class="weapon__status__date__detail__list__wrapper__value">00</p>
+              <div class="weapon__status__date__list">
+                <p class="weapon__status__date__list__label">Zoom</p>
+                <div class="weapon__status__date__list__wrapper">
+                  <p class="weapon__status__date__list__wrapper__value">14</p>
+                  <p class="weapon__status__date__list__wrapper__value -color">00</p>
                 </div>
               </div>
-              <div class="weapon__status__date__detail__meter">
-                <div class="weapon__status__date__detail__meter__active"></div>
+              <div class="weapon__status__date__meter">
+                <div class="weapon__status__date__meter__active -f"></div>
               </div>
-            </div>
-            <div class="weapon__status__date__detail">
-              <div class="weapon__status__date__detail__list">
-                <p class="weapon__status__date__detail__list__label">Airborne Effectiveness</p>
-                <div class="weapon__status__date__detail__list__wrapper">
-                  <p class="weapon__status__date__detail__list__wrapper__value">45</p>
-                  <p class="weapon__status__date__detail__list__wrapper__value">00</p>
+              <div class="weapon__status__date__list">
+                <p class="weapon__status__date__list__label">Airborne Effectiveness</p>
+                <div class="weapon__status__date__list__wrapper">
+                  <p class="weapon__status__date__list__wrapper__value">20</p>
+                  <p class="weapon__status__date__list__wrapper__value -color">00</p>
                 </div>
               </div>
-              <div class="weapon__status__date__detail__meter">
-                <div class="weapon__status__date__detail__meter__active"></div>
+              <div class="weapon__status__date__meter">
+                <div class="weapon__status__date__meter__active -g"></div>
               </div>
-            </div>
             <div class="weapon__status__date__detail">
               <p class="weapon__status__date__detail__label">Rounds Per Minute</p>
               <div class="weapon__status__date__detail__wrapper">
                 <p class="weapon__status__date__detail__wrapper__value">140</p>
-                <p class="weapon__status__date__detail__wrapper__value">00</p>
+                <p class="weapon__status__date__detail__wrapper__value -color">00</p>
               </div>
             </div>
             <div class="weapon__status__date__detail">
               <p class="weapon__status__date__detail__label">Magazine</p>
               <div class="weapon__status__date__detail__wrapper">
                 <p class="weapon__status__date__detail__wrapper__value">10</p>
-                <p class="weapon__status__date__detail__wrapper__value">00</p>
+                <p class="weapon__status__date__detail__wrapper__value -color">00</p>
               </div>
             </div>
             <div class="weapon__status__date__detail">
               <p class="weapon__status__date__detail__label">Recoil Direction</p>
               <div class="weapon__status__date__detail__wrapper">
                 <p class="weapon__status__date__detail__wrapper__value">95</p>
-                <p class="weapon__status__date__detail__wrapper__value">00</p>
+                <p class="weapon__status__date__detail__wrapper__value -color">00</p>
               </div>
             </div>
           </div>
@@ -487,7 +1036,9 @@
               </div>
             </div>
           </div>
-          <div class="weapon__custamize__effect">
+
+        </div>
+        <div class="weapon__custamize__effect">
             <div class="weapon__custamize__effect__detail">
               <p class="weapon__custamize__effect__detail__label">Effects</p>
             </div>
@@ -517,29 +1068,28 @@
               <p class="weapon__custamize__effect__select__place">＋</p>
             </div>
           </div>
-        </div>
       </div>
-      <div class="lunashowl">
-        <img src="./runashowl.png" alt="" class="lunashowl__image">
-        <p class="lunashowl__description">"Guardians never die. But we don't forget those who do." —Lord Shaxx</p>
-        <div class="lunashowl__wrapper">
-          <i class="fa-solid fa-fire-flame-simple"></i>
-          <p class="lunashowl__wrapper__label">Solar</p>
-        </div>
-        <div class="lunashowl__wrapper">
-          <i class="fa-solid fa-gun"></i>
-          <p class="lunashowl__wrapper__label">Primary</p>
-        </div>
-        <div class="lunashowl__wrapper">
-          <i class="fa-solid fa-globe"></i>
-          <p class="lunashowl__wrapper__label">Into the Light</p>
-        </div>
-        <div class="lunashowl__wrapper">
-          <i class="fa-solid fa-film"></i>
-          <div class="lunashowl__wrapper__frame">
-            <p class="lunashowl__wrapper__frame__label">Precision Frame</p>
-            <p class="lunashowl__wrapper__frame__description">Recoil pattern on this weapon is more predictably vertical. Fires quickly with high accuracy.</p>
-          </div>
+    </div>
+    <div class="lunashowl">
+      <img src="./runashowl.png" alt="" class="lunashowl__image">
+      <p class="lunashowl__description">"Guardians never die. But we don't forget those who do." —Lord Shaxx</p>
+      <div class="lunashowl__wrapper">
+        <i class="fa-solid fa-fire-flame-simple"></i>
+        <p class="lunashowl__wrapper__label">Solar</p>
+      </div>
+      <div class="lunashowl__wrapper">
+        <i class="fa-solid fa-gun"></i>
+        <p class="lunashowl__wrapper__label">Primary</p>
+      </div>
+      <div class="lunashowl__wrapper">
+        <i class="fa-solid fa-globe"></i>
+        <p class="lunashowl__wrapper__label">Into the Light</p>
+      </div>
+      <div class="lunashowl__wrapper">
+        <i class="fa-solid fa-film"></i>
+        <div class="lunashowl__wrapper__frame">
+          <p class="lunashowl__wrapper__frame__label">Precision Frame</p>
+          <p class="lunashowl__wrapper__frame__description">Recoil pattern on this weapon is more predictably vertical. Fires quickly with high accuracy.</p>
         </div>
       </div>
     </div>
