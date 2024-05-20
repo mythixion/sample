@@ -194,6 +194,7 @@
     .weapon {
       display: flex;
       margin-top: 15px;
+      gap: 25px;
     }
     .weapon__status {
       border: 1px solid #3E3E3E;
@@ -314,133 +315,237 @@
       color: #787878;
     }
     .weapon__status__profile {
-
+      padding: 15px;
     }
     .weapon__status__profile__list {
-
+      display: flex;
+      gap: 80px;
+      border-bottom: 1px solid #232323;
+      padding-bottom: 15px;
+      padding-right: 70px;
     }
     .weapon__status__profile__list__wrapper {
 
     }
     .weapon__status__profile__list__wrapper__damage {
-
+      display: flex;
+      align-items: center;
+      gap: 5px;
     }
     .fa-circle {
-
+      color: #ECECEC;
+      font-size: 12px;
     }
     .weapon__status__profile__list__wrapper__damage__value {
-
+      margin: 0px;
+      color: #F3F3F3;
+      font-size: 20px;
     }
     .weapon__status__profile__list__wrapper__label {
-
+      margin: 0px;
+      color: #979797;
+      font-size: 12px;
     }
     .fa-bullseye {
-
+      color: #ECECEC;
     }
     .weapon__status__profile__value {
-
+      margin: 0px;
+      padding-top: 15px;
+      color: #F4F4F4;
+      font-size: 18px;
     }
     .weapon__status__profile__label {
-
+      margin: 0px;
+      color: #9B9B9B;
+      font-size: 12px;
     }
     .weapon__status__kill {
-
+      padding: 20px;
     }
     .weapon__status__kill__label {
-
+      margin: 0px;
+      color: #717171;
+      font-size: 14px;
     }
     .weapon__status__kill__time {
-
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .weapon__status__kill__time__under {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      width: 42%;
     }
     .weapon__status__kill__time__wrapper {
-
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      width: 10%;
     }
     .fa-shield {
-
+      color: #EFEFEF;
+      font-size: 14px;
     }
-    .weapon__status__kill__time__wrapper__span {
-
+    .weapon__status__kill__time__wrapper__label {
+      margin: 0px;
+      color: #EAEAEA;
+      font-size: 14px;
+    }
+    .weapon__status__kill__time__wrapper__label span {
+      color: #E7E7E7;
     }
     .weapon__status__kill__time__value {
+      margin: 0px;
+      color: #EAEAEA;
 
     }
     .weapon__status__kill__time__wrapper__value {
-
+      margin: 0px;
+      color: #EFEFEF;
     }
     .fa-chevron-right {
-
+      font-size: 8px;
+      color: #989898;
     }
     .weapon__customize {
 
     }
     .weapon__custamize__ability {
-
+      border: 1px solid #414141;
+      border-radius: 6px;
     }
     .weapon__custamize__ability__detail {
-
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 15px;
+      align-items: center;
+      border-bottom: 1px solid #363636;
+      background-color: #232323;
     }
     .weapon__custamize__ability__detail__wrapper {
-
+      display: flex;
+      gap: 20px;
     }
     .weapon__custamize__ability__detail__wrapper__label {
-
+      margin: 0px;
+      font-size: 14px;
+      color: #F0F0F0;
+    }
+    .weapon__custamize__ability__detail__wrapper__label.-color {
+      color: #868686;
     }
     .weapon__custamize__ability__detail__wrapper__point {
-
+      margin: 0px;
+      color: #A1A1A1;
+      font-size: 12px;
     }
     .weapon__custamize__ability__perk {
-
+      display: flex;
+      padding: 7px 9px 15px;
     }
     .weapon__custamize__ability__perk__wrapper {
-
+      border-right: 1px solid #2C2C2C;
+      padding-right: 9px;
+      padding-left: 9px;
+    }
+    .weapon__custamize__ability__perk__wrapper.-boder {
+      border: 0px;
     }
     .weapon__custamize__ability__perk__wrapper__icon {
-
+      border: 1px solid #707070;
+      border-radius: 25px;
+      padding: 10px;
+      background-color: #161616;
+      text-align: center;
+      margin-top: 10px;
+      position: relative;
+    }
+    .weapon__custamize__ability__perk__wrapper__icon.-on::after{
+      content: '-';
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      padding: 5px;
+      border: 1px solid #3C3C3C;
+      border-radius: 16px;
+      background-color: #222222;
+      color: #AAAAAA;
+      position: absolute;
+      top: 30px;
+      left: 28px;
     }
     .fa-brands {
 
     }
     .fa-github {
-
+      color: white;
+      font-size: 30px;
     }
     .weapon__custamize__masterwork {
-
+      border: 1px solid #414141;
+      border-radius: 6px;
+      margin-top: 18px;
     }
     .weapon__custamize__masterwork__detail {
-
+      padding: 12px;
+      border-bottom: 1px solid #363636;
+      background-color: #232323;
     }
     .weapon__custamize__masterwork__detail__label {
-
+      margin: 0px;
+      font-size: 14px;
+      color: #F2F2F2;
     }
     .weapon__custamize__masterwork__wrapper {
-
+      display: flex;
+      gap: 8px;
+      padding: 16px;
     }
     .weapon__custamize__masterwork__wrapper__icon {
-
+      padding: 15px;
+      border: 1px solid #F4F4F4;
+      border-radius: 6px;
+      background-color: #212026;
     }
     .fa-square {
-
+      font-size: 24px;
+      color: #C1AA5A;
     }
     .weapon__custamize__masterwork__wrapper__square {
 
     }
     .weapon__custamize__mod {
-
+      border: 1px solid #414141;
+      border-radius: 6px;
+      margin-top: 18px;
     }
     .weapon__custamize__mod__detail {
-
+      padding: 12px;
+      border-bottom: 1px solid #363636;
+      background-color: #232323;
     }
     .weapon__custamize__mod__detail__label {
-
+      margin: 0px;
+      font-size: 14px;
+      color: #F2F2F2;
     }
     .weapon__custamize__mod__wrapper {
-
+      display: flex;
+      padding: 15px ;
+      gap: 7px;
+      flex-wrap: wrap;
     }
     .weapon__custamize__mod__wrapper__icon {
-
+      padding: 15px;
+      border: 1px solid #939393;
+      border-radius: 6px;
+      background-color: #494A49;
     }
     .weapon__custamize__mod__wrapper__icon__square {
-
+      color: #E9E9E9;
     }
     .weapon__custamize__effect {
 
@@ -491,7 +596,7 @@
 
     }
     .lunashowl__image {
-
+      height: 30px;
     }
     .lunashowl__description {
 
@@ -562,7 +667,7 @@
     .foundry__wrapper__description {
 
     }
-    .foundry__wrapper__description__span {
+    .foundry__wrapper__description span {
 
     }
     .fa-heart {
@@ -783,9 +888,9 @@
           <div class="weapon__status__kill">
             <p class="weapon__status__kill__label">OPTIMAL TTK</p>
             <div class="weapon__status__kill__time">
-              <div class="weapon__status__kill__time__wrapper">
+              <div class="weapon__status__kill__time__under">
                 <i class="fa-solid fa-shield"></i>
-                <p class="">T10 <span class="weapon__status__kill__time__wrapper__span">and under</span></p>
+                <p class="weapon__status__kill__time__wrapper__label">T10 <span>and under</span></p>
               </div>
               <p class="weapon__status__kill__time__value">0.87s</p>
               <div class="weapon__status__kill__time__wrapper">
@@ -798,12 +903,13 @@
               </div>
             </div>
           </div>
+          <div class="we"></div>
           <div class="weapon__status__kill">
             <p class="weapon__status__kill__label">BODY SHOT TTK</p>
             <div class="weapon__status__kill__time">
-              <div class="weapon__status__kill__time__wrapper">
+              <div class="weapon__status__kill__time__under">
                 <i class="fa-solid fa-shield"></i>
-                <p class="">T10 <span class="weapon__status__kill__time__wrapper__span">to</span> T7</p>
+                <p class="weapon__status__kill__time__wrapper__label">T10 <span>to</span> T7</p>
               </div>
               <p class="weapon__status__kill__time__value">2.17s</p>
               <div class="weapon__status__kill__time__wrapper">
@@ -813,9 +919,9 @@
               <div class="weapon__status__kill__time__wrapper"></div>
             </div>
             <div class="weapon__status__kill__time">
-              <div class="weapon__status__kill__time__wrapper">
+              <div class="weapon__status__kill__time__under">
                 <i class="fa-solid fa-shield"></i>
-                <p class="">T6 <span class="weapon__status__kill__time__wrapper__span">and under</span></p>
+                <p class="weapon__status__kill__time__wrapper__label">T6 <span>and under</span></p>
               </div>
               <p class="weapon__status__kill__time__value">1.73s</p>
               <div class="weapon__status__kill__time__wrapper">
@@ -847,7 +953,7 @@
             <div class="weapon__custamize__ability__detail">
               <div class="weapon__custamize__ability__detail__wrapper">
                 <p class="weapon__custamize__ability__detail__wrapper__label">Perks</p>
-                <p class="weapon__custamize__ability__detail__wrapper__label">Curated</p>
+                <p class="weapon__custamize__ability__detail__wrapper__label -color">Curated</p>
               </div>
               <p class="weapon__custamize__ability__detail__wrapper__point">・・・</p>
             </div>
@@ -885,7 +991,7 @@
                 <div class="weapon__custamize__ability__perk__wrapper__icon">
                   <i class="fa-brands fa-github"></i>
                 </div>
-                <div class="weapon__custamize__ability__perk__wrapper__icon">
+                <div class="weapon__custamize__ability__perk__wrapper__icon -on">
                   <i class="fa-brands fa-github"></i>
                 </div>
                 <div class="weapon__custamize__ability__perk__wrapper__icon">
@@ -908,7 +1014,19 @@
                 </div>
               </div>
               <div class="weapon__custamize__ability__perk__wrapper">
-                <div class="weapon__custamize__ability__perk__wrapper__icon">
+                <div class="weapon__custamize__ability__perk__wrapper__icon -on">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="weapon__custamize__ability__perk__wrapper__icon -on">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="weapon__custamize__ability__perk__wrapper__icon -on">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="weapon__custamize__ability__perk__wrapper__icon -on">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="weapon__custamize__ability__perk__wrapper__icon -on">
                   <i class="fa-brands fa-github"></i>
                 </div>
                 <div class="weapon__custamize__ability__perk__wrapper__icon">
@@ -917,19 +1035,6 @@
                 <div class="weapon__custamize__ability__perk__wrapper__icon">
                   <i class="fa-brands fa-github"></i>
                 </div>
-                <div class="weapon__custamize__ability__perk__wrapper__icon">
-                  <i class="fa-brands fa-github"></i>
-                </div>
-                <div class="weapon__custamize__ability__perk__wrapper__icon">
-                  <i class="fa-brands fa-github"></i>
-                </div>
-                <div class="weapon__custamize__ability__perk__wrapper__icon">
-                  <i class="fa-brands fa-github"></i>
-                </div>
-                <div class="weapon__custamize__ability__perk__wrapper__icon">
-                  <i class="fa-brands fa-github"></i>
-                </div>
-                <div class="weapon__custamize__ability__perk__wrapper__icon"></div>
               </div>
               <div class="weapon__custamize__ability__perk__wrapper">
                 <div class="weapon__custamize__ability__perk__wrapper__icon">
@@ -938,24 +1043,23 @@
                 <div class="weapon__custamize__ability__perk__wrapper__icon">
                   <i class="fa-brands fa-github"></i>
                 </div>
-                <div class="weapon__custamize__ability__perk__wrapper__icon">
+                <div class="weapon__custamize__ability__perk__wrapper__icon -on">
                   <i class="fa-brands fa-github"></i>
                 </div>
-                <div class="weapon__custamize__ability__perk__wrapper__icon">
+                <div class="weapon__custamize__ability__perk__wrapper__icon -on">
                   <i class="fa-brands fa-github"></i>
                 </div>
-                <div class="weapon__custamize__ability__perk__wrapper__icon">
+                <div class="weapon__custamize__ability__perk__wrapper__icon -on">
                   <i class="fa-brands fa-github"></i>
                 </div>
-                <div class="weapon__custamize__ability__perk__wrapper__icon">
+                <div class="weapon__custamize__ability__perk__wrapper__icon -on">
                   <i class="fa-brands fa-github"></i>
                 </div>
-                <div class="weapon__custamize__ability__perk__wrapper__icon">
+                <div class="weapon__custamize__ability__perk__wrapper__icon -on">
                   <i class="fa-brands fa-github"></i>
                 </div>
-                <div class="weapon__custamize__ability__perk__wrapper__icon"></div>
               </div>
-              <div class="weapon__custamize__ability__perk__wrapper">
+              <div class="weapon__custamize__ability__perk__wrapper -boder">
                 <div class="weapon__custamize__ability__perk__wrapper__icon">
                   <i class="fa-brands fa-github"></i>
                 </div>
@@ -1036,7 +1140,6 @@
               </div>
             </div>
           </div>
-
         </div>
         <div class="weapon__custamize__effect">
             <div class="weapon__custamize__effect__detail">
@@ -1112,7 +1215,7 @@
       <i class="fa-regular fa-hand"></i>
       <div class="foundry__wrapper">
         <p class="foundry__wrapper__label">Foundry</p>
-        <p class="foundry__wrapper__description"><span class="foundry__wrapper__description__span">Made with <i class="fa-solid fa-heart"></i> by </span>gothfemme & contributors.</p>
+        <p class="foundry__wrapper__description"><span>Made with <i class="fa-solid fa-heart"></i> by </span>gothfemme & contributors.</p>
       </div>
     </div>
   </div>
