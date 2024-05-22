@@ -280,22 +280,22 @@
       display: flex;
       justify-content: space-between;
     }
-    .weapon__status__date__list__detail__label {
+    .weapon__status__date__list__detail__head__label {
       margin: 0px;
       font-size: 13px;
       color: #F1F1F1;
     }
-    .weapon__status__date__list__detail__wrapper {
+    .weapon__status__date__list__detail__head__wrapper {
       display: flex;
       align-items: flex-end;
       gap: 5px;
     }
-    .weapon__status__date__list__detail__wrapper__value {
+    .weapon__status__date__list__detail__head__wrapper__value {
       margin: 0px;
       font-size: 14px;
       color: #EDEDED;
     }
-    .weapon__status__date__list__detail__wrapper__value.-color {
+    .weapon__status__date__list__detail__head__wrapper__value.-color {
       color: #787878;
       font-size: 11px;
     }
@@ -334,33 +334,8 @@
     .weapon__status__date__list__detail__meter__active.-h {
       width: 20%;
     }
-    .weapon__status__date__detail {
-      margin-top: 25px;
-    }
-    .weapon__status__date__detail__name {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 5px;
-    }
-    .weapon__status__date__detail__name__label {
-      margin: 0px;
-      color: #F1F1F1;
-      font-size: 13px;
-    }
-    .weapon__status__date__detail__name__wrapper {
-      display: flex;
-      align-items: flex-end;
-      gap: 5px;
-    }
-    .weapon__status__date__detail__name__wrapper__value {
-      margin: 0px;
-      font-size: 14px;
-      color: #EDEDED;
-
-    }
-    .weapon__status__date__detail__name__wrapper__value.-color {
-      color: #787878;
-      font-size: 11px;
+    .weapon__status__date__list__detail {
+      margin-top: 10px;
     }
     .weapon__status__profile {
       padding: 15px;
@@ -409,26 +384,32 @@
       font-size: 12px;
     }
     .weapon__status__kill {
-      padding: 17px;
-      border-top: 1px solid #222222;
+      padding: 0px 15px;
     }
-    .weapon__status__kill__label {
+    .weapon__status__kill__wrapper {
+      border-top: 1px solid #222222;
+      padding: 15px 0px;
+    }
+    .weapon__status__kill__wrapper.-boder {
+      border-top: none;
+    }
+    .weapon__status__kill__wrapper__label {
       margin: 0px;
       color: #717171;
       font-size: 12px;
     }
-    .weapon__status__kill__time {
+    .weapon__status__kill__wrapper__time {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    .weapon__status__kill__time__under {
+    .weapon__status__kill__wrapper__time__under {
       display: flex;
       align-items: center;
       gap: 5px;
       width: 42%;
     }
-    .weapon__status__kill__time__wrapper {
+    .weapon__status__kill__wrapper__time__wrapper {
       display: flex;
       gap: 5px;
       align-items: center;
@@ -438,19 +419,19 @@
       color: #EFEFEF;
       font-size: 14px;
     }
-    .weapon__status__kill__time__wrapper__label {
+    .weapon__status__kill__wrapper__time__wrapper__label {
       margin: 0px;
       color: #EAEAEA;
       font-size: 13px;
     }
-    .weapon__status__kill__time__wrapper__label span {
+    .weapon__status__kill__wrapper__time__wrapper__label span {
       color: #E7E7E7;
     }
-    .weapon__status__kill__time__value {
+    .weapon__status__kill__wrapper__time__value {
       margin: 0px;
       color: #EAEAEA;
     }
-    .weapon__status__kill__time__wrapper__value {
+    .weapon__status__kill__wrapper__time__wrapper__value {
       margin: 0px;
       color: #EFEFEF;
     }
@@ -891,14 +872,18 @@
       .fa-code-merge {
         font-size: 14px;
       }
+      .main__function {
+        margin-top: 10px;
+      }
       .main__function__wrapper__label {
         display: none;
       }
       .body {
-        display: block;
+        flex-direction: column-reverse;
       }
       .body__wrapper {
         padding: 0px;
+        border: none;
       }
       .type {
         flex-wrap: wrap;
@@ -908,9 +893,63 @@
       .weapon {
         display: block;
       }
-      .lunashowl__image {
-        width: 200px;
-        height: 120px;
+      .weapon__status__date__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 35px;
+      }
+      .weapon__status__date__list__detail {
+        width: 44%;
+      }
+      .weapon__status__date__list__detail__label {
+        font-size: 9px;
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+      }
+      .weapon__status__date__list__detail__wrapper__value {
+        font-size: 11px;
+      }
+      .weapon__custamize__masterwork__wrapper__icon {
+        width: 35px;
+        height: 35px;
+      }
+      .weapon__custamize__ability__detail {
+        margin-top: 30px;
+      }
+      .weapon__custamize__mod__wrapper__icon {
+        width: 35px;
+        height: 35px;
+      }
+      .lunashowl {
+        width: 100%;
+        padding: 40px 8px;
+      }
+      .lunashowl__description {
+        font-size: 11px;
+      }
+      .lunashowl__custamize__wrapper__frame__description {
+        font-size: 11px;
+      }
+      .middle {
+        padding: 32px 9px;
+      }
+      .history {
+        padding: 20px ;
+      }
+      .history__wrapper__label {
+        font-size: 12px;
+      }
+      .history__date__description {
+        font-size: 10px;
+      }
+      .footer {
+        padding: 32px 9px;
+      }
+      .footer__wrapper__description {
+        font-size: 12px;
       }
     }
   </style>
@@ -998,10 +1037,10 @@
             <div class="weapon__status__date__list">
               <div class="weapon__status__date__list__detail">
                 <div class="weapon__status__date__list__detail__head">
-                  <p class="weapon__status__date__list__detail__label">Impact</p>
-                  <div class="weapon__status__date__list__detail__wrapper">
-                    <p class="weapon__status__date__list__detail__wrapper__value">84</p>
-                    <p class="weapon__status__date__list__detail__wrapper__value -color">00</p>
+                  <p class="weapon__status__date__list__detail__head__label">Impact</p>
+                  <div class="weapon__status__date__list__detail__head__wrapper">
+                    <p class="weapon__status__date__list__detail__head__wrapper__value">84</p>
+                    <p class="weapon__status__date__list__detail__head__wrapper__value -color">00</p>
                   </div>
                 </div>
                 <div class="weapon__status__date__list__detail__meter">
@@ -1010,10 +1049,10 @@
               </div>
               <div class="weapon__status__date__list__detail">
                 <div class="weapon__status__date__list__detail__head">
-                  <p class="weapon__status__date__list__detail__label">Range</p>
-                  <div class="weapon__status__date__list__detail__wrapper">
-                    <p class="weapon__status__date__list__detail__wrapper__value">41</p>
-                    <p class="weapon__status__date__list__detail__wrapper__value -color">00</p>
+                  <p class="weapon__status__date__list__detail__head__label">Range</p>
+                  <div class="weapon__status__date__list__detail__head__wrapper">
+                    <p class="weapon__status__date__list__detail__head__wrapper__value">41</p>
+                    <p class="weapon__status__date__list__detail__head__wrapper__value -color">00</p>
                   </div>
                 </div>
                 <div class="weapon__status__date__list__detail__meter">
@@ -1022,10 +1061,10 @@
               </div>
               <div class="weapon__status__date__list__detail">
                 <div class="weapon__status__date__list__detail__head">
-                  <p class="weapon__status__date__list__detail__label">Stability</p>
-                  <div class="weapon__status__date__list__detail__wrapper">
-                    <p class="weapon__status__date__list__detail__wrapper__value">57</p>
-                    <p class="weapon__status__date__list__detail__wrapper__value -color">00</p>
+                  <p class="weapon__status__date__list__detail__head__label">Stability</p>
+                  <div class="weapon__status__date__list__detail__head__wrapper">
+                    <p class="weapon__status__date__list__detail__head__wrapper__value">57</p>
+                    <p class="weapon__status__date__list__detail__head__wrapper__value -color">00</p>
                   </div>
                 </div>
                 <div class="weapon__status__date__list__detail__meter">
@@ -1034,10 +1073,10 @@
               </div>
               <div class="weapon__status__date__list__detail">
                 <div class="weapon__status__date__list__detail__head">
-                  <p class="weapon__status__date__list__detail__label">Handling</p>
-                  <div class="weapon__status__date__list__detail__wrapper">
-                    <p class="weapon__status__date__list__detail__wrapper__value">45</p>
-                    <p class="weapon__status__date__list__detail__wrapper__value -color">00</p>
+                  <p class="weapon__status__date__list__detail__head__label">Handling</p>
+                  <div class="weapon__status__date__list__detail__head__wrapper">
+                    <p class="weapon__status__date__list__detail__head__wrapper__value">45</p>
+                    <p class="weapon__status__date__list__detail__head__wrapper__value -color">00</p>
                   </div>
                 </div>
                 <div class="weapon__status__date__list__detail__meter">
@@ -1046,10 +1085,10 @@
               </div>
               <div class="weapon__status__date__list__detail">
                 <div class="weapon__status__date__list__detail__head">
-                  <p class="weapon__status__date__list__detail__label">Reload Speed</p>
-                  <div class="weapon__status__date__list__detail__wrapper">
-                    <p class="weapon__status__date__list__detail__wrapper__value">54</p>
-                    <p class="weapon__status__date__list__detail__wrapper__value -color">00</p>
+                  <p class="weapon__status__date__list__detail__head__label">Reload Speed</p>
+                  <div class="weapon__status__date__list__detail__head__wrapper">
+                    <p class="weapon__status__date__list__detail__head__wrapper__value">54</p>
+                    <p class="weapon__status__date__list__detail__head__wrapper__value -color">00</p>
                   </div>
                 </div>
                 <div class="weapon__status__date__list__detail__meter">
@@ -1058,10 +1097,10 @@
               </div>
               <div class="weapon__status__date__list__detail">
                 <div class="weapon__status__date__list__detail__head">
-                  <p class="weapon__status__date__list__detail__label">Aim Assistance</p>
-                  <div class="weapon__status__date__list__detail__wrapper">
-                    <p class="weapon__status__date__list__detail__wrapper__value">79</p>
-                    <p class="weapon__status__date__list__detail__wrapper__value -color">00</p>
+                  <p class="weapon__status__date__list__detail__head__label">Aim Assistance</p>
+                  <div class="weapon__status__date__list__detail__head__wrapper">
+                    <p class="weapon__status__date__list__detail__head__wrapper__value">79</p>
+                    <p class="weapon__status__date__list__detail__head__wrapper__value -color">00</p>
                   </div>
                 </div>
                 <div class="weapon__status__date__list__detail__meter">
@@ -1070,10 +1109,10 @@
               </div>
               <div class="weapon__status__date__list__detail">
                 <div class="weapon__status__date__list__detail__head">
-                  <p class="weapon__status__date__list__detail__label">Zoom</p>
-                  <div class="weapon__status__date__list__detail__wrapper">
-                    <p class="weapon__status__date__list__detail__wrapper__value">14</p>
-                    <p class="weapon__status__date__list__detail__wrapper__value -color">00</p>
+                  <p class="weapon__status__date__list__detail__head__label">Zoom</p>
+                  <div class="weapon__status__date__list__detail__head__wrapper">
+                    <p class="weapon__status__date__list__detail__head__wrapper__value">14</p>
+                    <p class="weapon__status__date__list__detail__head__wrapper__value -color">00</p>
                   </div>
                 </div>
                 <div class="weapon__status__date__list__detail__meter">
@@ -1082,41 +1121,44 @@
               </div>
               <div class="weapon__status__date__list__detail">
                 <div class="weapon__status__date__list__detail__head">
-                  <p class="weapon__status__date__list__detail__label">Airborne Effectiveness</p>
-                  <div class="weapon__status__date__list__detail__wrapper">
-                    <p class="weapon__status__date__list__detail__wrapper__value">20</p>
-                    <p class="weapon__status__date__list__detail__wrapper__value -color">00</p>
+                  <p class="weapon__status__date__list__detail__head__label">Airborne Effectiveness</p>
+                  <div class="weapon__status__date__list__detail__head__wrapper">
+                    <p class="weapon__status__date__list__detail__head__wrapper__value">20</p>
+                    <p class="weapon__status__date__list__detail__head__wrapper__value -color">00</p>
                   </div>
                 </div>
                 <div class="weapon__status__date__list__detail__meter">
                   <div class="weapon__status__date__list__detail__meter__active -h"></div>
                 </div>
               </div>
+              <div class="weapon__status__date__list__detail">
+                <div class="weapon__status__date__list__detail__head">
+                  <p class="weapon__status__date__list__detail__head__label">Rounds Per Minute</p>
+                  <div class="weapon__status__date__list__detail__head__wrapper">
+                    <p class="weapon__status__date__list__detail__head__wrapper__value">140</p>
+                    <p class="weapon__status__date__list__detail__head__wrapper__value -color">00</p>
+                  </div>
+                </div>
+              </div>
+                <div class="weapon__status__date__list__detail__head">
+                  <p class="weapon__status__date__list__detail__head__label">Magazine</p>
+                  <div class="weapon__status__date__list__detail__head__wrapper">
+                    <p class="weapon__status__date__list__detail__head__wrapper__value">10</p>
+                    <p class="weapon__status__date__list__detail__head__wrapper__value -color">00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="weapon__status__date__list__detail">
+                <div class="weapon__status__date__list__detail__head">
+                  <p class="weapon__status__date__list__detail__head__label">Recoil Direction</p>
+                  <div class="weapon__status__date__list__detail__head__wrapper">
+                    <p class="weapon__status__date__list__detail__head__wrapper__value">95</p>
+                    <p class="weapon__status__date__list__detail__head__wrapper__value -color">00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="weapon__status__date__list__detail">
             </div>
-            <div class="weapon__status__date__detail">
-              <div class="weapon__status__date__detail__name">
-                <p class="weapon__status__date__detail__name__label">Rounds Per Minute</p>
-                <div class="weapon__status__date__detail__name__wrapper">
-                  <p class="weapon__status__date__detail__name__wrapper__value">140</p>
-                  <p class="weapon__status__date__detail__name__wrapper__value -color">00</p>
-                </div>
-              </div>
-              <div class="weapon__status__date__detail__name">
-                <p class="weapon__status__date__detail__name__label">Magazine</p>
-                <div class="weapon__status__date__detail__name__wrapper">
-                  <p class="weapon__status__date__detail__name__wrapper__value">10</p>
-                  <p class="weapon__status__date__detail__name__wrapper__value -color">00</p>
-                </div>
-              </div>
-              <div class="weapon__status__date__detail__name">
-                <p class="weapon__status__date__detail__name__label">Recoil Direction</p>
-                <div class="weapon__status__date__detail__name__wrapper">
-                  <p class="weapon__status__date__detail__name__wrapper__value">95</p>
-                  <p class="weapon__status__date__detail__name__wrapper__value -color">00</p>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="weapon__status__detail">
             <i class="fa-solid fa-chevron-down"></i>
             <p class="weapon__status__detail__label">Damage Profile</p>
@@ -1146,48 +1188,50 @@
             <p class="weapon__status__detail__label">Time-to-Kill</p>
           </div>
           <div class="weapon__status__kill">
-            <p class="weapon__status__kill__label">OPTIMAL TTK</p>
-            <div class="weapon__status__kill__time">
-              <div class="weapon__status__kill__time__under">
-                <i class="fa-solid fa-shield"></i>
-                <p class="weapon__status__kill__time__wrapper__label">T10 <span>and under</span></p>
-              </div>
-              <p class="weapon__status__kill__time__value">0.87s</p>
-              <div class="weapon__status__kill__time__wrapper">
-                <p class="weapon__status__kill__time__wrapper__value">3</p>
-                <i class="fa-solid fa-bullseye"></i>
-              </div>
-              <div class="weapon__status__kill__time__wrapper">
-                <p class="weapon__status__kill__time__wrapper__value">0</p>
-                <i class="fa-solid fa-circle"></i>
+            <div class="weapon__status__kill__wrapper -boder">
+              <p class="weapon__status__kill__wrapper__label">OPTIMAL TTK</p>
+              <div class="weapon__status__kill__wrapper__time">
+                <div class="weapon__status__kill__wrapper__time__under">
+                  <i class="fa-solid fa-shield"></i>
+                  <p class="weapon__status__kill__wrapper__time__wrapper__label">T10 <span>and under</span></p>
+                </div>
+                <p class="weapon__status__kill__wrapper__time__value">0.87s</p>
+                <div class="weapon__status__kill__wrapper__time__wrapper">
+                  <p class="weapon__status__kill__wrapper__time__wrapper__value">3</p>
+                  <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <div class="weapon__status__kill__wrapper__time__wrapper">
+                  <p class="weapon__status__kill__wrapper__time__wrapper__value">0</p>
+                  <i class="fa-solid fa-circle"></i>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="weapon__status__kill">
-            <p class="weapon__status__kill__label">BODY SHOT TTK</p>
-            <div class="weapon__status__kill__time">
-              <div class="weapon__status__kill__time__under">
-                <i class="fa-solid fa-shield"></i>
-                <p class="weapon__status__kill__time__wrapper__label">T10 <span>to</span> T7</p>
+            <div class="weapon__status__kill__wrapper">
+              <p class="weapon__status__kill__wrapper__label">BODY SHOT TTK</p>
+              <div class="weapon__status__kill__wrapper__time">
+                <div class="weapon__status__kill__wrapper__time__under">
+                  <i class="fa-solid fa-shield"></i>
+                  <p class="weapon__status__kill__wrapper__time__wrapper__label">T10 <span>to</span> T7</p>
+                </div>
+                <p class="weapon__status__kill__wrapper__time__value">2.17s</p>
+                <div class="weapon__status__kill__wrapper__time__wrapper">
+                  <p class="weapon__status__kill__wrapper__time__wrapper__value">6</p>
+                  <i class="fa-solid fa-circle"></i>
+                </div>
+                <div class="weapon__status__kill__wrapper__time__wrapper"></div>
               </div>
-              <p class="weapon__status__kill__time__value">2.17s</p>
-              <div class="weapon__status__kill__time__wrapper">
-                <p class="weapon__status__kill__time__wrapper__value">6</p>
-                <i class="fa-solid fa-circle"></i>
+              <div class="weapon__status__kill__wrapper__time">
+                <div class="weapon__status__kill__wrapper__time__under">
+                  <i class="fa-solid fa-shield"></i>
+                  <p class="weapon__status__kill__wrapper__time__wrapper__label">T6 <span>and under</span></p>
+                </div>
+                <p class="weapon__status__kill__wrapper__time__value">1.73s</p>
+                <div class="weapon__status__kill__wrapper__time__wrapper">
+                  <p class="weapon__status__kill__wrapper__time__wrapper__value">5</p>
+                  <i class="fa-solid fa-circle"></i>
+                </div>
+                <div class="weapon__status__kill__wrapper__time__wrapper"></div>
               </div>
-              <div class="weapon__status__kill__time__wrapper"></div>
-            </div>
-            <div class="weapon__status__kill__time">
-              <div class="weapon__status__kill__time__under">
-                <i class="fa-solid fa-shield"></i>
-                <p class="weapon__status__kill__time__wrapper__label">T6 <span>and under</span></p>
-              </div>
-              <p class="weapon__status__kill__time__value">1.73s</p>
-              <div class="weapon__status__kill__time__wrapper">
-                <p class="weapon__status__kill__time__wrapper__value">5</p>
-                <i class="fa-solid fa-circle"></i>
-              </div>
-              <div class="weapon__status__kill__time__wrapper"></div>
             </div>
           </div>
           <div class="weapon__status__detail">
