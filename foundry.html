@@ -176,13 +176,26 @@
       border-radius: 0px 4px 4px 0px;
       align-items: center;
     }
-    .-right {
+    .type__wrapper__mode__wrapper {
+      display: flex;
+      justify-content: center;
+      width: 80px;
+      gap: 5px;
+    }
+    .type__wrapper__mode__wrapper.-color {
       border-radius: 4px 0px 0px 4px;
       border: 1px solid #772829;
       background-color: #4C1F1F;
     }
-    .-left {
+    .type__wrapper__mode__wrapper.-boder {
+      background-color: #232323;
+      border: 1px solid #3E3E3E;
       border-radius: 0px 4px 4px 0px;
+    }
+    .type__wrapper__mode__wrapper__label {
+      margin: 0px;
+      color: #FBEDEE;
+      font-size: 14px;
     }
     .fa-arrow-rotate-left {
       color: #A0A0A0;
@@ -276,6 +289,9 @@
     .weapon__status__date__list__detail {
       margin-top: 5px;
     }
+    .weapon__status__date__list__detail.-margin {
+      margin-top: 25px;
+    }
     .weapon__status__date__list__detail__head {
       display: flex;
       justify-content: space-between;
@@ -333,9 +349,6 @@
     }
     .weapon__status__date__list__detail__meter__active.-h {
       width: 20%;
-    }
-    .weapon__status__date__list__detail {
-      margin-top: 10px;
     }
     .weapon__status__profile {
       padding: 15px;
@@ -890,18 +903,39 @@
         gap: 10px 30px;
         padding-left: 8px;
       }
+      .type__wrapper.-gap {
+        gap: 50px;
+      }
+      .type__wrapper__icon {
+        width: 35px;
+      }
+      .type__wrapper__mode__wrapper {
+        width: 65px;
+      }
       .weapon {
         display: block;
+        margin-top: 30px;
+      }
+      .weapon__status {
+        border: 0px;
+        border-bottom: 1px solid #3E3E3E;
+        border: 0px;
       }
       .weapon__status__date__list {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px 35px;
+        gap: 10px;
       }
       .weapon__status__date__list__detail {
         width: 44%;
       }
-      .weapon__status__date__list__detail__label {
+      .weapon__status__date__list__detail.-margin {
+        margin-top: 5px;
+      }
+      .weapon__status__date__list__detail__head {
+        align-items: center;
+      }
+      .weapon__status__date__list__detail__head__label {
         font-size: 9px;
         overflow: hidden;
         display: -webkit-box;
@@ -911,6 +945,21 @@
       }
       .weapon__status__date__list__detail__wrapper__value {
         font-size: 11px;
+      }
+      .weapon__custamize__ability {
+        border: 0px;
+        border-bottom: 1px solid #3E3E3E;
+        border-radius: 0px;
+      }
+      .weapon__custamize__masterwork {
+        border: 0px;
+        border-bottom: 1px solid #3E3E3E;
+        border-radius: 0px;
+      }
+      .weapon__custamize__mod {
+        border: 0px;
+        border-bottom: 1px solid #3E3E3E;
+        border-radius: 0px;
       }
       .weapon__custamize__masterwork__wrapper__icon {
         width: 35px;
@@ -922,6 +971,9 @@
       .weapon__custamize__mod__wrapper__icon {
         width: 35px;
         height: 35px;
+      }
+      .weapon__custamize__effect {
+        border: 0px;
       }
       .lunashowl {
         width: 100%;
@@ -1007,15 +1059,15 @@
             </div>
           </div>
         </div>
-        <div class="type__wrapper">
+        <div class="type__wrapper -gap">
           <div class="type__wrapper__mode">
-            <div class="type__wrapper__mode__icon -right">
+            <div class="type__wrapper__mode__wrapper -color">
               <i class="fa-solid fa-hand-holding"></i>
-              <p class="type__wrapper__mode__icon__name">PvP</p>
+              <p class="type__wrapper__mode__wrapper__label">PvP</p>
             </div>
-            <div class="type__wrapper__mode__icon -left">
+            <div class="type__wrapper__mode__wrapper -boder">
               <i class="fa-solid fa-hand-holding"></i>
-              <p class="type__wrapper__mode__icon__name -color">PvE</p>
+              <p class="type__wrapper__mode__wrapper__label -color">PvE</p>
             </div>
           </div>
           <select name="" id="" class="type__select">
@@ -1131,7 +1183,7 @@
                   <div class="weapon__status__date__list__detail__meter__active -h"></div>
                 </div>
               </div>
-              <div class="weapon__status__date__list__detail">
+              <div class="weapon__status__date__list__detail -margin">
                 <div class="weapon__status__date__list__detail__head">
                   <p class="weapon__status__date__list__detail__head__label">Rounds Per Minute</p>
                   <div class="weapon__status__date__list__detail__head__wrapper">
@@ -1140,6 +1192,7 @@
                   </div>
                 </div>
               </div>
+              <div class="weapon__status__date__list__detail">
                 <div class="weapon__status__date__list__detail__head">
                   <p class="weapon__status__date__list__detail__head__label">Magazine</p>
                   <div class="weapon__status__date__list__detail__head__wrapper">
@@ -1157,8 +1210,8 @@
                   </div>
                 </div>
               </div>
-              <div class="weapon__status__date__list__detail">
             </div>
+          </div>
           <div class="weapon__status__detail">
             <i class="fa-solid fa-chevron-down"></i>
             <p class="weapon__status__detail__label">Damage Profile</p>
@@ -1172,21 +1225,21 @@
                 </div>
                 <p class="weapon__status__profile__list__wrapper__label">BODY SHOT</p>
               </div>
-              <div class="weapon__status__profile__list__wrapper">
-                <div class="weapon__status__profile__list__wrapper__damage">
-                  <i class="fa-solid fa-bullseye"></i>
-                  <p class="weapon__status__profile__list__wrapper__damage__value">80.89</p>
+                <div class="weapon__status__profile__list__wrapper">
+                  <div class="weapon__status__profile__list__wrapper__damage">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <p class="weapon__status__profile__list__wrapper__damage__value">80.89</p>
+                  </div>
+                  <p class="weapon__status__profile__list__wrapper__label">CRIT</p>
                 </div>
-                <p class="weapon__status__profile__list__wrapper__label">CRIT</p>
               </div>
+              <p class="weapon__status__profile__value">138.46</p>
+              <p class="weapon__status__profile__label">RPM (IN-GAME)</p>
             </div>
-            <p class="weapon__status__profile__value">138.46</p>
-            <p class="weapon__status__profile__label">RPM (IN-GAME)</p>
-          </div>
-          <div class="weapon__status__detail">
-            <i class="fa-solid fa-chevron-down"></i>
-            <p class="weapon__status__detail__label">Time-to-Kill</p>
-          </div>
+            <div class="weapon__status__detail">
+              <i class="fa-solid fa-chevron-down"></i>
+              <p class="weapon__status__detail__label">Time-to-Kill</p>
+            </div>
           <div class="weapon__status__kill">
             <div class="weapon__status__kill__wrapper -boder">
               <p class="weapon__status__kill__wrapper__label">OPTIMAL TTK</p>
@@ -1464,8 +1517,8 @@
               <div class="weapon__custamize__effect__adapt__status__icon">
                 <i class="fa-solid fa-circle weapon__custamize__effect__adapt__status__icon__circle"></i>
               </div>
-                <p class="weapon__custamize__effect__adapt__status__label">Active</p>
-              </div>
+              <p class="weapon__custamize__effect__adapt__status__label">Active</p>
+            </div>
             <div class="weapon__custamize__effect__select">
               <p class="weapon__custamize__effect__select__label">Exotic Armor</p>
               <p class="weapon__custamize__effect__select__place">＋</p>
@@ -1479,9 +1532,8 @@
               <p class="weapon__custamize__effect__select__place">＋</p>
             </div>
           </div>
-      </div>
         </div>
-
+      </div>
     </div>
     <div class="lunashowl">
       <img src="./runashowl.png" alt="" class="lunashowl__image">
