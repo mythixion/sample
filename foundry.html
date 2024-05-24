@@ -11,6 +11,7 @@
       background-color: #161616;
     }
     .header {
+      width: 1450px;
       display: flex;
       justify-content: space-between;
       padding: 10px 32px;
@@ -47,6 +48,7 @@
       font-size: 20px;
     }
     .main {
+      width: 1450px;
       display: flex;
       justify-content: space-between;
       padding: 10px 32px;
@@ -130,6 +132,7 @@
       font-size: 14px;
     }
     .body {
+      width: 1450px;
       display: flex;
       border-top: 1px solid #030303;
     }
@@ -282,9 +285,10 @@
     }
     .weapon__status__date {
       padding: 0px 15px 15px 15px;
+      margin-top: 10px;
     }
     .weapon__status__date__list {
-      margin-top: 10px;
+
     }
     .weapon__status__date__list__detail {
       margin-top: 5px;
@@ -695,38 +699,37 @@
       color: #A0A0A0;
       font-size: 14px;
     }
-    .lunashowl {
+    .body__lunashowl {
       padding: 40px 30px;
       width: 27%;
     }
-    .lunashowl__image {
+    .body__lunashowl__image {
       width: 315px;
       height: 180px;
       border-radius: 8px;
     }
-    .lunashowl__description {
+    .body__lunashowl__description {
       margin: 0px;
       color: #A0A0A0;
       font-size: 13px;
     }
-    .lunashowl__wrapper {
+    .body__lunashowl__wrapper {
       margin-top: 25px;
       padding-left: 20px;
-      padding-bottom: 30px;
     }
-    .lunashowl__wrapper__detail {
+    .body__lunashowl__wrapper__detail {
       display: flex;
       align-items: center;
       gap: 10px;
     }
-    .lunashowl__wrapper__detail__icon {
+    .body__lunashowl__wrapper__detail__icon {
       width: 6%;
     }
     .fa-fire-flame-simple {
       color: #E36A3A;
       font-size: 14px;
     }
-    .lunashowl__wrapper__detail__label {
+    .body__lunashowl__wrapper__detail__label {
       margin: 0px;
       color: #EDEDED;
       font-size: 12px;
@@ -743,26 +746,28 @@
       color: #FCFCFC;
       font-size: 30px;
     }
-    .lunashowl__custamize__wrapper {
+    .body__lunashowl__custamize__wrapper {
       display: flex;
       gap: 10px;
+      margin-top: 30px;
       padding-top: 35px;
       border-top: 1px solid #343434;
     }
-    .lunashowl__custamize__wrapper__frame {
+    .body__lunashowl__custamize__wrapper__frame {
 
     }
-    .lunashowl__custamize__wrapper__frame__label {
+    .body__lunashowl__custamize__wrapper__frame__label {
       margin: 0px;
       color: #EDEDED;
       font-size: 14px;
     }
-    .lunashowl__custamize__wrapper__frame__description {
+    .body__lunashowl__custamize__wrapper__frame__description {
       margin: 0px;
       font-size: 12px;
       color: #878787;
     }
     .middle {
+      width: 1450px;
       background-color: black;
       padding: 65px 35px;
       border-top: 1px solid #6E6E6E;
@@ -799,6 +804,7 @@
       font-size: 12px;
     }
     .footer {
+      width: 1450px;
       display: flex;
       padding: 65px 32px;
       align-items: center;
@@ -838,8 +844,8 @@
     }
     @media only screen and (max-width: 430px) {
       .header {
-        padding: 5px 10px 5px 8px;
-        gap: 23px;
+        padding: 10px 0px;
+        width: 100%;
       }
       .header__wrapper__detail {
         display: none;
@@ -856,7 +862,8 @@
       }
       .main {
         display: block;
-        padding: 6px 8px;
+        padding: 10px 0px;
+        width: 100%;
       }
       .main__wrapper__image {
         width: 20px;
@@ -893,6 +900,7 @@
       }
       .body {
         flex-direction: column-reverse;
+        width: 100%;
       }
       .body__wrapper {
         padding: 0px;
@@ -924,7 +932,7 @@
       .weapon__status__date__list {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 10px 40px;
       }
       .weapon__status__date__list__detail {
         width: 44%;
@@ -975,18 +983,23 @@
       .weapon__custamize__effect {
         border: 0px;
       }
-      .lunashowl {
+      .body__lunashowl {
         width: 100%;
-        padding: 40px 8px;
+        margin-top: 40px;
+        padding: 0px;
       }
-      .lunashowl__description {
-        font-size: 11px;
+      .body__lunashowl__image {
+        width: 100%;
       }
-      .lunashowl__custamize__wrapper__frame__description {
-        font-size: 11px;
+      .body__lunashowl__description {
+        font-size: 14px;
+      }
+      .body__lunashowl__custamize__wrapper__frame__description {
+        font-size: 14px;
       }
       .middle {
-        padding: 32px 9px;
+        width: 100%;
+        padding: 32px 0px;
       }
       .history {
         padding: 20px ;
@@ -998,7 +1011,8 @@
         font-size: 10px;
       }
       .footer {
-        padding: 32px 9px;
+        width: 100%;
+        padding: 32px 0px;
       }
       .footer__wrapper__description {
         font-size: 12px;
@@ -1535,34 +1549,34 @@
         </div>
       </div>
     </div>
-    <div class="lunashowl">
-      <img src="./runashowl.png" alt="" class="lunashowl__image">
-      <p class="lunashowl__description">"Guardians never die. But we don't forget those who do." —Lord Shaxx</p>
-      <div class="lunashowl__wrapper">
-        <div class="lunashowl__wrapper__detail">
-          <div class="lunashowl__wrapper__detail__icon">
+    <div class="body__lunashowl">
+      <img src="./runashowl.png" alt="" class="body__lunashowl__image">
+      <p class="body__lunashowl__description">"Guardians never die. But we don't forget those who do." —Lord Shaxx</p>
+      <div class="body__lunashowl__wrapper">
+        <div class="body__lunashowl__wrapper__detail">
+          <div class="body__lunashowl__wrapper__detail__icon">
             <i class="fa-solid fa-fire-flame-simple"></i>
           </div>
-          <p class="lunashowl__wrapper__detail__label">Solar</p>
+          <p class="body__lunashowl__wrapper__detail__label">Solar</p>
         </div>
-        <div class="lunashowl__wrapper__detail">
-          <div class="lunashowl__wrapper__detail__icon">
+        <div class="body__lunashowl__wrapper__detail">
+          <div class="body__lunashowl__wrapper__detail__icon">
             <i class="fa-solid fa-gun"></i>
           </div>
-          <p class="lunashowl__wrapper__detail__label">Primary</p>
+          <p class="body__lunashowl__wrapper__detail__label">Primary</p>
         </div>
-        <div class="lunashowl__wrapper__detail">
-          <div class="lunashowl__wrapper__detail__icon">
+        <div class="body__lunashowl__wrapper__detail">
+          <div class="body__lunashowl__wrapper__detail__icon">
             <i class="fa-solid fa-globe"></i>
           </div>
-          <p class="lunashowl__wrapper__detail__label">Into the Light</p>
+          <p class="body__lunashowl__wrapper__detail__label">Into the Light</p>
         </div>
       </div>
-      <div class="lunashowl__custamize__wrapper">
+      <div class="body__lunashowl__custamize__wrapper">
         <i class="fa-solid fa-film"></i>
-        <div class="lunashowl__custamize__wrapper__frame">
-          <p class="lunashowl__custamize__wrapper__frame__label">Precision Frame</p>
-          <p class="lunashowl__custamize__wrapper__frame__description">Recoil pattern on this weapon is more predictably vertical. Fires quickly with high accuracy.</p>
+        <div class="body__lunashowl__custamize__wrapper__frame">
+          <p class="body__lunashowl__custamize__wrapper__frame__label">Precision Frame</p>
+          <p class="body__lunashowl__custamize__wrapper__frame__description">Recoil pattern on this weapon is more predictably vertical. Fires quickly with high accuracy.</p>
         </div>
       </div>
     </div>
@@ -1573,12 +1587,13 @@
         <i class="fa-regular fa-clock"></i>
         <p class="history__wrapper__label">Formula history</p>
       </div>
-      <div class="history__date"></div>
-      <p class="history__date__description">Damage formula updated 28 days ago</p>
-      <p class="history__date__description">Range formula updated 9 months ago</p>
-      <p class="history__date__description">Handling formula updated about 1 year ago</p>
-      <p class="history__date__description">Reload formula updated 8 months ago</p>
-      <p class="history__date__description">Ammo formula updated about 2 months ago</p>
+      <div class="history__date">
+        <p class="history__date__description">Damage formula updated 28 days ago</p>
+        <p class="history__date__description">Range formula updated 9 months ago</p>
+        <p class="history__date__description">Handling formula updated about 1 year ago</p>
+        <p class="history__date__description">Reload formula updated 8 months ago</p>
+        <p class="history__date__description">Ammo formula updated about 2 months ago</p>
+      </div>
     </div>
   </div>
   <div class="footer">
