@@ -833,6 +833,36 @@
         ],
       },
     ];
+    console.log('4-1', orders.map(order => order.items.reduce((sum, item) => sum + item.productid * 100 * item.quantity, 0)))
+    console.log('4-2', orders.filter(order => order.items.map(item => item.productid).includes(3)))
+    const surveyData = [
+      {
+        age: 25,
+        gender: "male",
+        occupation: "student",
+        rating: 4,
+      },
+      {
+        age: 32,
+        gender: "female",
+        occupation: "engineer",
+        rating: 5,
+      },
+      {
+        age: 18,
+        gender: "male",
+        occupation: "student",
+        rating: 3,
+      },
+      {
+        age: 41,
+        gender: "female",
+        occupation: "doctor",
+        rating: 5,
+      },
+    ];
+    console.log('5-1', surveyData.reduce((sum, Data) => sum + Data.age, 0) / surveyData.length)
+    console.log('5-2', surveyData.reduce((sum, Data) => sum + Data.rating, 0) / surveyData.length)
   </script>
 </head>
 <body>
