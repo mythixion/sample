@@ -436,6 +436,20 @@
     console.log('8-10', numbers.reduce((a, b) => Math.max(a, b)))
     console.log('8-11', users.reduce((maxuser, user) => user.age > maxuser.age ? user : maxuser))
     console.log('8-12', words.reduce((maxLength, word) => {const length = word.length;return Math.max(maxLength, length);}, 0))
+    console.log('9-1', words.find(word => word.includes('a')))
+    const data = [
+      [1, 2, 3, 4, 5],
+      [6, 7, 8, 9, 10],
+      [11, 12, 13, 14, 15],
+    ];
+    const firstRow = data[0]
+    console.log('10-1', firstRow.filter(number => number % 3 === 0))
+    const items = [
+      { id: 1, name: '商品1', price: 800 },
+      { id: 2, name: '商品2', price: 1200 },
+      { id: 3, name: '商品3', price: 500 },
+    ];
+    console.log(items.find(item => item.price < 1000))
   </script>
 </head>
 <body>
