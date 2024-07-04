@@ -787,13 +787,39 @@
     }
   </style>
   <script>
-    const numbers =[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     const users = [
       { id: 1, name: '田中 太郎', age: 25 },
       { id: 2, name: '佐藤 花子', age: 30 },
       { id: 3, name: '鈴木 一郎', age: 40 },
     ];
     const words = ['apple', 'orange', 'banana', 'grape', 'strawberry'];
+    console.log('8-1', numbers.map(number => number + 2))
+    console.log('8-2', users.filter(user => user.age >= 30).map(user => user.name))
+    console.log('8-3', words.map(word => word.charAt(0).toUpperCase() + word.slice(1)))
+    console.log('8-4', numbers.reduce((sum, number) => sum + number, 0))
+    console.log('8-5', users.reduce((sum, user) => sum + user.id, 0))
+    console.log('8-6', words.reduce((sum, word) => sum + word.length, 0))
+    console.log('8-7', numbers.filter(number => number % 2 === 0))
+    console.log('8-8', users.filter(user => user.age === 30))
+    console.log('8-9', words.filter(word => word.length >= 5))
+    console.log('8-10', Math.max(...numbers))
+    console.log('8-11', users.find(user => user.age >= 40))
+    console.log('8-12', words.find(word => word >= 'strawberry').length)
+    console.log('9-1', words.find(word => word.includes('o')))
+    const data = [
+      [1, 2, 3, 4, 5],
+      [6, 7, 8, 9, 10],
+      [11, 12, 13, 14, 15],
+    ];
+    const firstRow = data[0];
+    console.log('10-1', firstRow.filter(number => number % 3 === 0))
+    const items = [
+      { id: 1, name: '商品1', price: 800 },
+      { id: 2, name: '商品2', price: 1200 },
+      { id: 3, name: '商品3', price: 500 },
+    ]
+    console.log('11-1', items.find(item => item.price < 1000))
   </script>
 </head>
 <body>
