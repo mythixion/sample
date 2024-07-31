@@ -717,7 +717,7 @@
       },
     ];
     console.log('4-1', orders.map(order => order.items.reduce((sum, item) => sum + item.productid * 100 * item.quantity, 0)))
-    console.log('4-2', orders.filter(order => order.items.map(item => item.productid).includes(3)))
+    console.log('4-2', orders.filter(order => orderitems.map(item => item.productid).includes(3)))
   </script>
 </head>
 <body>
