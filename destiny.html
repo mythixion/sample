@@ -167,6 +167,32 @@
         ];
         console.log('3-1', data.map(number => number.reduce((sum, number) => sum + number, 0)))
         console.log('3-2', data.map((numbers, index) => Math.max(data[0][index], data[1][index], data[2][index])))
+        const orders = [
+        {
+        id: 1,
+        customerName: "Alice",
+        items: [
+            { productid: 1, quantity: 2 },
+            { productid: 3, quantity: 1 }
+        ],
+        },
+        {
+            id: 2,
+            customerName: "Bob",
+            items: [
+            { productid: 2, quantity: 1 },
+            { productid: 4, quantity: 3 }
+            ],
+        },
+        {
+            id: 3,
+            customerName: "Charlie",
+            items: [
+            { productid: 1, quantity: 3 },
+            { productid: 5, quantity: 2 }
+            ],
+        },
+        ];
     </script>
 </head>
 <body>
