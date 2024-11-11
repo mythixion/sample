@@ -1,0 +1,45 @@
+[debug] [2024-11-11T03:43:23.380Z] ----------------------------------------------------------------------
+[debug] [2024-11-11T03:43:23.382Z] Command:       /Users/yoshikikawano/.volta/tools/image/node/20.11.1/bin/node /Users/yoshikikawano/.npm/_npx/ba4f1959e38407b5/node_modules/.bin/firebase init dataconnect
+[debug] [2024-11-11T03:43:23.382Z] CLI Version:   13.24.2
+[debug] [2024-11-11T03:43:23.382Z] Platform:      darwin
+[debug] [2024-11-11T03:43:23.382Z] Node Version:  v20.11.1
+[debug] [2024-11-11T03:43:23.382Z] Time:          Mon Nov 11 2024 12:43:23 GMT+0900 (日本標準時)
+[debug] [2024-11-11T03:43:23.382Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-11T03:43:23.412Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-11T03:43:23.412Z] > authorizing via signed-in user (ixionmyth@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/yoshikikawano/Desktop/sample
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-11-11T03:43:23.413Z] Using project from CLI flag: sample-d7737
+[debug] [2024-11-11T03:43:23.414Z] Checked if tokens are valid: true, expires at: 1731300191475
+[debug] [2024-11-11T03:43:23.414Z] Checked if tokens are valid: true, expires at: 1731300191475
+[debug] [2024-11-11T03:43:23.414Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sample-d7737 [none]
+[debug] [2024-11-11T03:43:23.821Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sample-d7737 403
+[debug] [2024-11-11T03:43:23.822Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sample-d7737 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-11-11T03:43:23.823Z] Request to https://firebase.googleapis.com/v1beta1/projects/sample-d7737 had HTTP Error: 403, The caller does not have permission
+[debug] [2024-11-11T03:43:23.824Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/sample-d7737 had HTTP Error: 403, The caller does not have permission
+    at responseToError (/Users/yoshikikawano/.npm/_npx/ba4f1959e38407b5/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/Users/yoshikikawano/.npm/_npx/ba4f1959e38407b5/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project sample-d7737. Please make sure the project exists and your account has permission to access it.
